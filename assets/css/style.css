@@ -688,7 +688,7 @@ somos demasiado para baixo */
 --------------------------------------------------------------*/
 .btn {
   border-radius: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Coves";
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -854,7 +854,7 @@ somos demasiado para baixo */
 
 /* Forms common style */
 .form-control {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Coves";
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -1271,6 +1271,14 @@ General Styles - Owlcarousel
   animation: load 0.8s infinite linear;
 }
 
+#trouble {
+margin-right: 1px;
+
+}
+#trouble2 {
+  margin-left: -1px;
+  
+  }
 .loader,
 .loader:after {
   border-radius: 50%;

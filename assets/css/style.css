@@ -1328,20 +1328,28 @@ margin-right: 1px;
 
 @font-face {
   font-family: "Seiva";
-  src: url("assets/fonts/seiva-regular-webfont.woff") format("woff"),
+  src: url("assets/fonts/seiva-regular-webfont.woff") format("woff");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "Coves";
   src: url("assets/fonts/coves.otf") format("otf");
+  font-display: swap;
+
 }
 @font-face {
   font-family: "Coves-BD";
   src: url("assets/fonts/covesbold.otf") format("otf");
+  font-display: swap;
+
 }
 @font-face {
   font-family: "Simplifica";
   src: url("assets/fonts/simplifica.otf") format("otf");
+  font-display: swap;
+
 }
 
 

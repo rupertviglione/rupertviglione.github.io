@@ -2533,6 +2533,11 @@ font-style:italic;
   margin: 0;
 }
 
+#profissionais {
+  font-size: 16px !important;
+  font-weight:400;
+}
+
 /* Icon List */
 .widget .icon-list li {
   padding: 5px 0;

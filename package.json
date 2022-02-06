@@ -22,7 +22,6 @@
     "fs": "0.0.1-security",
     "lite-server": "^2.6.1",
     "lite-youtube-embed": "^0.2.0",
-    "popper": "^1.0.1",
     "puppeteer": "^13.1.3"
   }
 }

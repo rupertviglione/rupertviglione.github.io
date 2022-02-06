@@ -1671,13 +1671,14 @@ Google map
 .features-item {
   margin: 20px 0;
   text-align: center;
+  color: #5e410d;
 }
 
 .features-icon,
 .alt-features-icon {
   line-height: 1.2;
   font-size: 42px;
-  color: #111;
+  color: #5e410d;
 }
 
 .features-title,
@@ -1686,7 +1687,7 @@ Google map
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 14px;
-  color: #111;
+  color: #5e410d;
   margin: 16px 0 15px;
 }
 

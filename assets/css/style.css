@@ -966,7 +966,7 @@ color: #aebca7 !important;
   color: #aebca7;
   margin: 25px 0 70px;
 }
-#yoga, #missao, #atelier {
+#yoga, #missao, #atelier, #serviço-educativo {
   font-family: 'Coves';
   font-style: normal;
   font-size: 24px !important;
@@ -975,6 +975,7 @@ color: #aebca7 !important;
   line-height: 32px;
   margin-top: 10px;
 }
+
 .module-subtitle {
   font-family: 'Coves';
   letter-spacing: 1;

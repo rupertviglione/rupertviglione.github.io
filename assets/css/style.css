@@ -11,7 +11,24 @@ html {
     hyphens: auto;
   
 }
+#accordion {
+  background-color: #FFF !important;
+  border: none !important;
+  font-size: 24px;
+}
 
+#accordiontext {
+  background-color: #FFF !important;
+  border: none !important;
+  font-size: 24px;
+  margin-top:30px;
+}
+#accordioncont {
+  background-color: #FFF !important;
+  border: none !important;
+  margin-top:-50px;
+  margin-bottom:50px;
+}
 body {
   background: #fff;
   font: 400 12px/1.8 "Coves";
@@ -108,7 +125,12 @@ a,
 .navbar-custom .dropdown-menu {
   box-shadow: none;
 }
-
+.panel-body {
+  font-family: Coves;
+  font-size: 18px;
+  color: #aebca7;
+  text-align: center;
+}
 /* Reset border-radius */
 .well,
 .label,
@@ -904,7 +926,7 @@ a {
 
 a:hover, a:focus {
   text-decoration: none;
-  color: #aaa;
+  color: #d6e7cd;
   outline: 0;
 }
 
@@ -2434,7 +2456,18 @@ Google map
 
 /* Accordion */
 .panel-title {
-  font-size: 14px;
+  font-size: 18px;
+  font-family: Seiva;
+  left: 80px;
+    
+}
+
+.accordiontitle {
+  background-color: #FFF !important;
+  border: none !important;
+  font-size: 18px;
+  font-family: Seiva;
+  left: 40px;
 }
 
 .panel-heading a {
@@ -2444,9 +2477,9 @@ Google map
 
 .panel-heading a:after {
   position: absolute;
-  content: "\f106";
+  content: "\f107";
   top: 50%;
-  right: 0px;
+  right: 40px;
   font-family: "FontAwesome";
   line-height: 1;
   font-size: 14px;
@@ -2454,7 +2487,7 @@ Google map
 }
 
 .panel-heading a.collapsed:after {
-  content: "\f107";
+  content: "\f106";
 }
 
 /* Tables */
@@ -2587,7 +2620,7 @@ font-style:italic;
 }
 
 .tags a:hover {
-  background: rgba(17, 17, 17, 0.8);
+  background: #d6e7cd;
 }
 
 /*--------------------------------------------------------------

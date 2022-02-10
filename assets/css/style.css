@@ -8,6 +8,7 @@ html {
   font-family: Coves;
   
     scroll-behavior: smooth;
+    hyphens: auto;
   
 }
 

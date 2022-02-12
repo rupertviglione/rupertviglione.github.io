@@ -2454,6 +2454,44 @@ Google map
   padding: 20px 0;
 }
 
+#mais{
+  display:none;
+  font-family: 'Coves';
+  font-style: normal;
+  font-size: 24px !important;
+  letter-spacing: 1;
+  font-weight:normal;
+  line-height: 32px;
+
+  }
+
+  .btn-container {
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+ 
+ 
+  #toggle {
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    cursor:pointer;
+    border:none;
+    font-size:20px;
+    background:#fff;
+    color:#aebca7;
+    font-family:Seiva;
+    box-sizing:border-box;
+  }
+
+
+.btn-container:hover {
+  color: #d6e7cd;
+}
+#toggle:hover {
+  color: #d6e7cd;
+}
 /* Accordion */
 .panel-title {
   font-size: 18px;

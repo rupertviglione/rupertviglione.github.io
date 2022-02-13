@@ -861,18 +861,21 @@ somos demasiado para baixo */
 --------------------------------------------------------------*/
 /* Selection */
 ::-moz-selection {
-  background: #000;
-  color: #fff;
+  background: #aebca7;
+  color: #fbf5e9;
+  opacity:0.8;
 }
 
 ::-webkit-selection {
-  background: #000;
-  color: #fff;
+  background: #aebca7;
+  color: #fbf5e9;
+  opacity:0.8;
 }
 
 ::selection {
-  background: #000;
-  color: #fff;
+  background: #aebca7;
+  color: #fbf5e9;
+  opacity:0.8;
 }
 
 /* Forms common style */
@@ -989,7 +992,7 @@ color: #aebca7 !important;
   color: #aebca7;
   margin: 25px 0 70px;
 }
-#yoga, #missao, #atelier, #serviço-educativo {
+#yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria {
   font-family: 'Coves';
   font-style: normal;
   font-size: 24px !important;

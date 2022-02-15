@@ -924,7 +924,7 @@ somos demasiado para baixo */
 	Typography
 --------------------------------------------------------------*/
 a {
-  color: #111;
+  color: #aebca7;
 }
 
 a:hover, a:focus {
@@ -1344,7 +1344,8 @@ margin-right: 1px;
   z-index: 1000;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: bold;
   transition: background, padding 0.4s ease-in-out 0s;
   color: #aebca7;
   position:fixed !important;

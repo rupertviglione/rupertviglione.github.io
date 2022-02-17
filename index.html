@@ -24,7 +24,7 @@
           <nav id="navbar" class="navbar navbar-custom navbar-transparent navbar-fixed-top" role="navigation">
             <div class="container" id="containernav">
               <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <button class="navbar-toggle" type="button" data-toggle="modal" data-target="#menuModal"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
               </div>
               <div class="collapse navbar-collapse" id="custom-collapse">
                 <ul class="nav navbar-nav">
@@ -40,7 +40,33 @@
           </div>
         </div>
       </nav>      
-      
+    <div class="modal modal-fullscreen" id="menuModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            
+          
+          <div class="modal-body">
+            <ul class="nav navbar-nav" style="margin-top:75px;">
+              <li><a href="index.html" style="color:#fbf5e9!important;">INÍCIO</a></li>
+              <li><a href="quemsomos.html"  style="color:#fbf5e9!important;">QUEM SOMOS</a></li>                  
+              <li><a href="educacao.html"  style="color:#fbf5e9!important;">SERVIÇO EDUCATIVO</a></li>
+              <li><a href="yoga.html"  style="color:#fbf5e9!important;">YOGA</a></li>
+              <li><a href="ecodesign.html"  style="color:#fbf5e9!important;">ECODESIGN</a></li>
+              <li><a href="drogaria.html"  style="color:#fbf5e9!important;">DROGARIA NATURAL</a></li>
+              <li><a href="bazar.html"  style="color:#fbf5e9!important;">BAZAR</a></li>
+              
+            </ul>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    </div>
       <section class="home-section  bg-light" id="home" data-background="assets/images/seivagif.gif">
         
        
@@ -137,6 +163,7 @@ window.onscroll = function() {
     -->
     <!-- Default stylesheets-->
     <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Template specific stylesheets-->
   
     <link href="assets/lib/animate.css/animate.css" rel="stylesheet">

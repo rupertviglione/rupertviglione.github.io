@@ -1410,12 +1410,12 @@ z-index: 1500;
 
 @font-face {
   font-family: 'Seiva';
-  src: url('assets/fonts/Seiva-Regular.eot');
-  src: url('assets/fonts/Seiva-Regular.eot?#iefix') format('embedded-opentype'),
-      url('assets/fonts/Seiva-Regular.woff2') format('woff2'),
-      url('assets/fonts/Seiva-Regular.woff') format('woff'),
-      url('assets/fonts/Seiva-Regular.ttf') format('truetype'),
-      url('assets/fonts/Seiva-Regular.svg#Seiva-Regular') format('svg');
+  src: url('/assets/fonts/Seiva-Regular.eot');
+  src: url('/assets/fonts/Seiva-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Seiva-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Seiva-Regular.woff') format('woff'),
+      url('/assets/fonts/Seiva-Regular.ttf') format('truetype'),
+      url('/assets/fonts/Seiva-Regular.svg#Seiva-Regular') format('svg');
       
   font-weight: normal;
   font-style: normal;

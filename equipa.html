@@ -205,15 +205,18 @@
       var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = 0;
+  if (prevScrollpos > currentScrollPos) {    
+    document.getElementById("navbar").style.visibility ="visible";  
+    
+    
   } else {
-    document.getElementById("navbar").style.top = "-150px";
+    document.getElementById("navbar").style.visibility ="hidden";  
+    
+    
   }
   prevScrollpos = currentScrollPos;
 }
     </script>
-    
 
   </body>
 </html>

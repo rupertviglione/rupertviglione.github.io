@@ -110,7 +110,7 @@
 
       
       
-      <section class="home-section bg-dark-30" id="home" data-background="assets/images/missaoheader.webp" width="1980px" height="900px" style="margin-top:-12px;">
+      <section class="home-section home-parallax bg-dark-30" id="home" data-background="assets/images/missaoheader.webp" width="1980px" height="900px" style="margin-top:-12px;">
         
         <div class="video-player" data-property="{videoURL:'https://youtu.be/JY6f6TCxRAc', optimizeDisplay: true, containment:'.home-section', startAt:0, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}">
           
@@ -384,14 +384,18 @@
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-    <script async defer>
+    <script>
       var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = 0;
+  if (prevScrollpos > currentScrollPos) {    
+    document.getElementById("navbar").style.visibility ="visible";  
+    
+    
   } else {
-    document.getElementById("navbar").style.top = "-150px";
+    document.getElementById("navbar").style.visibility ="hidden";  
+    
+    
   }
   prevScrollpos = currentScrollPos;
 }

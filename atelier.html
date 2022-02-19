@@ -106,7 +106,7 @@
       </div>
     </div> 
       
-      <section class="home-section bg-dark-30" id="home" data-background="assets/images/missaoheader.webp">
+      <section class="home-section home-parallax bg-dark-30" id="home" data-background="assets/images/missaoheader.webp">
         
         <div class="video-player" data-property="{videoURL:'https://youtu.be/JY6f6TCxRAc', optimizeDisplay: true, containment:'.home-section', startAt:0, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
       
@@ -263,10 +263,14 @@ Este foi um processo de crescimento pessoal, criativo e técnico, que nos restri
       var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = 0;
+  if (prevScrollpos > currentScrollPos) {    
+    document.getElementById("navbar").style.visibility ="visible";  
+    
+    
   } else {
-    document.getElementById("navbar").style.top = "-150px";
+    document.getElementById("navbar").style.visibility ="hidden";  
+    
+    
   }
   prevScrollpos = currentScrollPos;
 }

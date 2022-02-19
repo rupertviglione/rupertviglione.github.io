@@ -9,8 +9,22 @@ html {
   
     scroll-behavior: smooth;
     hyphens: auto;
-  
+     
 }
+
+.navbar-up {
+position: absolute !important;
+top: 5%;
+
+}
+
+.navbar-up {
+  position: absolute !important;
+  top: 5%;
+  visibility: hidden;
+  
+  }
+
 #accordion {
   background-color: #FFF !important;
   border: none !important;
@@ -1348,7 +1362,7 @@ margin-right: 1px;
   font-weight: bold;
   transition: background, padding 0.4s ease-in-out 0s;
   color: #aebca7;
-  position:absolute !important;
+  position:fixed !important;
   font-family: 'Seiva';
   
 }
@@ -1570,7 +1584,7 @@ z-index: 1500;
   margin-top: 40px !important;
 text-align: right !important;
   font-style: italic;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 .titan-title-size-1 {
@@ -3085,7 +3099,7 @@ font-style:italic;
     letter-spacing: 0;
     font-size: 13px;
     margin-top: 0px !important;
-    position:absolute !important;
+    position:fixed !important;
   }
   /* Headers */
   .titan-title-size-3 {
@@ -3114,7 +3128,7 @@ font-style:italic;
   /* Navbar */
   .navbar-custom .navbar-nav {
     letter-spacing: 0px;
-    position:absolute !important;
+    position:fixed !important;
 
   }
 

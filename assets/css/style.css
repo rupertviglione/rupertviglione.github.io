@@ -1416,11 +1416,11 @@ z-index: 1500;
       url('/assets/fonts/Seiva-Regular.woff') format('woff'),
       url('/assets/fonts/Seiva-Regular.ttf') format('truetype'),
       url('/assets/fonts/Seiva-Regular.svg#Seiva-Regular') format('svg');
-      
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 
 @font-face {
   font-family: "Coves";

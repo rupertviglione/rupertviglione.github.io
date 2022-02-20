@@ -43,8 +43,8 @@
     <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
     <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="node_modules/owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="node_modules/owl-carousel/owl-carousel/owl.theme.css" rel="stylesheet">
     <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
     <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
     <!-- Main stylesheet and color file-->
@@ -56,56 +56,71 @@
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
-      <!-- <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
-        <div class="container">
+      <nav id="navbar" class="navbar navbar-custom navbar-transparent navbar-fixed-top" role="navigation">
+        <div class="container" id="containernav">
           <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Titan</a>
-          </div>-->
-          <nav id="navbar" class="navbar navbar-custom navbar-transparent navbar-fixed-top" role="navigation">
-            <div class="container" id="containernav">
-              <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="modal" data-target="#menuModal"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-              </div>
-              <div class="collapse navbar-collapse" id="custom-collapse">
-                <ul class="nav navbar-nav">
-              <li><a href="#" >INÍCIO</a></li>
-              <li><a href="quemsomos.html" >QUEM SOMOS</a></li>                  
-              <li><a href="educacao.html" >SERVIÇO EDUCATIVO</a></li>
-              <li><a href="yoga.html" >YOGA</a></li>
-              <li><a href="ecodesign.html" >ECODESIGN</a></li>
-              <li><a href="drogaria.html" >DROGARIA NATURAL</a></li>
-              <li><a href="bazar.html" >BAZAR</a></li>
-              
-            </ul>
+            <button class="navbar-toggle" type="button" data-toggle="modal" data-target="#menuModal"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
-        </div>
-      </nav>      
-    <div class="modal modal-fullscreen" id="menuModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-        
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav">
+          <li><a href="index.html" >INÍCIO</a></li>
+          <li class="dropdown">
+            <a href="" data-toggle="dropdown">QUEM SOMOS</a>
+              <ul class="dropdown-menu" id="dropdownmenuinicial">
+                <li class="dropdown">
+                  <a href="#">MISSÃO</a>
+                </li>
+             
+                <li><a href="atelier.html">ATELIER</a></li>
+                <li><a href="equipa.html">EQUIPA</a></li>
+              </ul>
+            </li>
+          <li><a href="educacao.html" >SERVIÇO EDUCATIVO</a></li>
+          <li><a href="yoga.html" >YOGA</a></li>
+          <li><a href="ecodesign.html" >ECODESIGN</a></li>
+          <li><a href="drogaria.html" >DROGARIA NATURAL</a></li>
+          <li><a href="bazar.html" >BAZAR</a></li>
           
-          <div class="modal-body">
-            <ul class="nav navbar-nav" style="margin-top:75px;">
-              <li><a href="index.html" style="color:#fbf5e9!important;">INÍCIO</a></li>
-              <li><a href="quemsomos.html"  style="color:#fbf5e9!important;">QUEM SOMOS</a></li>                  
-              <li><a href="educacao.html"  style="color:#fbf5e9!important;">SERVIÇO EDUCATIVO</a></li>
-              <li><a href="yoga.html"  style="color:#fbf5e9!important;">YOGA</a></li>
-              <li><a href="ecodesign.html"  style="color:#fbf5e9!important;">ECODESIGN</a></li>
-              <li><a href="drogaria.html"  style="color:#fbf5e9!important;">DROGARIA NATURAL</a></li>
-              <li><a href="bazar.html"  style="color:#fbf5e9!important;">BAZAR</a></li>
-              
-            </ul>
-          </div>
-        
-        </div>
+        </ul>
       </div>
-    </div>  
-      <section class="home-section home-parallax bg-light" id="home" data-background="assets/images/missaoheader.webp">
+    </div>
+  </nav>      
+<div class="modal modal-fullscreen" id="menuModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        
+      
+      <div class="modal-body">
+        <ul class="nav navbar-nav" style="margin-top:75px;">
+          <li><a href="index.html" style="color:#fbf5e9!important;">INÍCIO</a></li>
+          <li class="dropdown">
+            <a href="" data-toggle="dropdown" style="color:#fbf5e9!important;">QUEM SOMOS</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown">
+                  <a href="#" style="color:#fbf5e9!important;">MISSÃO</a>
+                </li>
+             
+                <li><a href="atelier.html" style="color:#fbf5e9!important;">ATELIER</a></li>
+                <li><a href="equipa.html" style="color:#fbf5e9!important;">EQUIPA</a></li>
+              </ul>
+            </li>
+          <li><a href="educacao.html"  style="color:#fbf5e9!important;">SERVIÇO EDUCATIVO</a></li>
+          <li><a href="yoga.html"  style="color:#fbf5e9!important;">YOGA</a></li>
+          <li><a href="ecodesign.html"  style="color:#fbf5e9!important;">ECODESIGN</a></li>
+          <li><a href="drogaria.html"  style="color:#fbf5e9!important;">DROGARIA NATURAL</a></li>
+          <li><a href="bazar.html"  style="color:#fbf5e9!important;">BAZAR</a></li>
+          
+        </ul>
+      </div>
+    
+    </div>
+  </div>
+</div>
+      <section class="home-section home-parallax bg-light" id="home" data-background="assets/images/missao.webp">
         
        
       </section>        
@@ -195,7 +210,7 @@
     <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
     <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
     <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="node_modules/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
     <script src="node_modules/smoothscroll-polyfill/dist/smoothscroll.js"></script>
     <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
@@ -217,24 +232,23 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
     </script>
-
-<script>
-  $(document).ready(function() {
-    $("#toggle").click(function() {
-      var elem = $("#toggle").text();
-      if (elem == "VER MAIS") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle").text("VER MENOS");
-        $("#mais").slideDown();
-        $("#seta").addClass("fa fa-angle-up");
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle").text("VER MAIS");
-        $("#mais").slideUp();
-        $("#seta").addClass("fa fa-angle-down");
-      }
-    });
-  });
-  </script>
+        <script>
+          $(document).ready(function() {
+            $("#toggle").click(function() {
+              var elem = $("#toggle").text();
+              if (elem == "VER MAIS") {
+                //Stuff to do when btn is in the read more state
+                $("#toggle").text("VER MENOS");
+                $("#mais").slideDown();
+                $("#seta").addClass("fa fa-angle-up");
+              } else {
+                //Stuff to do when btn is in the read less state
+                $("#toggle").text("VER MAIS");
+                $("#mais").slideUp();
+                $("#seta").addClass("fa fa-angle-down");
+              }
+            });
+          });
+          </script>
   </body>
 </html>

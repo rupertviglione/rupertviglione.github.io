@@ -70,10 +70,20 @@
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav">
-          <li><a href="#" >INÍCIO</a></li>
-          <li><a href="quemsomos.html" >QUEM SOMOS</a></li>                  
+          <li><a href="index.html" >INÍCIO</a></li>
+          <li class="dropdown">
+            <a href="" data-toggle="dropdown">QUEM SOMOS</a>
+              <ul class="dropdown-menu" id="dropdownmenuinicial">
+                <li class="dropdown">
+                  <a href="missao.html">MISSÃO</a>
+                </li>
+             
+                <li><a href="atelier.html">ATELIER</a></li>
+                <li><a href="equipa.html">EQUIPA</a></li>
+              </ul>
+            </li>
           <li><a href="educacao.html" >SERVIÇO EDUCATIVO</a></li>
-          <li><a href="yoga.html" >YOGA</a></li>
+          <li><a href="#" >YOGA</a></li>
           <li><a href="ecodesign.html" >ECODESIGN</a></li>
           <li><a href="drogaria.html" >DROGARIA NATURAL</a></li>
           <li><a href="bazar.html" >BAZAR</a></li>
@@ -94,9 +104,19 @@
       <div class="modal-body">
         <ul class="nav navbar-nav" style="margin-top:75px;">
           <li><a href="index.html" style="color:#fbf5e9!important;">INÍCIO</a></li>
-          <li><a href="quemsomos.html"  style="color:#fbf5e9!important;">QUEM SOMOS</a></li>                  
+          <li class="dropdown">
+            <a href="" data-toggle="dropdown" style="color:#fbf5e9!important;">QUEM SOMOS</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown">
+                  <a href="missao.html" style="color:#fbf5e9!important;">MISSÃO</a>
+                </li>
+             
+                <li><a href="atelier.html" style="color:#fbf5e9!important;">ATELIER</a></li>
+                <li><a href="equipa.html" style="color:#fbf5e9!important;">EQUIPA</a></li>
+              </ul>
+            </li>
           <li><a href="educacao.html"  style="color:#fbf5e9!important;">SERVIÇO EDUCATIVO</a></li>
-          <li><a href="yoga.html"  style="color:#fbf5e9!important;">YOGA</a></li>
+          <li><a href="#"  style="color:#fbf5e9!important;">YOGA</a></li>
           <li><a href="ecodesign.html"  style="color:#fbf5e9!important;">ECODESIGN</a></li>
           <li><a href="drogaria.html"  style="color:#fbf5e9!important;">DROGARIA NATURAL</a></li>
           <li><a href="bazar.html"  style="color:#fbf5e9!important;">BAZAR</a></li>
@@ -106,7 +126,7 @@
     
     </div>
   </div>
-</div>  
+</div>
 
       
       
@@ -577,5 +597,23 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
     </script>
+        <script>
+          $(document).ready(function() {
+            $("#toggle").click(function() {
+              var elem = $("#toggle").text();
+              if (elem == "VER MAIS") {
+                //Stuff to do when btn is in the read more state
+                $("#toggle").text("VER MENOS");
+                $("#mais").slideDown();
+                $("#seta").addClass("fa fa-angle-up");
+              } else {
+                //Stuff to do when btn is in the read less state
+                $("#toggle").text("VER MAIS");
+                $("#mais").slideUp();
+                $("#seta").addClass("fa fa-angle-down");
+              }
+            });
+          });
+          </script>
   </body>
 </html>

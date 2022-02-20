@@ -43,8 +43,8 @@
     <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
     <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="node_modules/owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="node_modules/owl-carousel/owl-carousel/owl.theme.css" rel="stylesheet">
     <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
     <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
     <!-- Main stylesheet and color file-->
@@ -146,8 +146,8 @@
     <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
     <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
     <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="node_modules/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+    <script src="node_modules/smoothscroll-polyfill/dist/smoothscroll.js"></script>
     <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
@@ -168,5 +168,24 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
     </script>
+        <script>
+          $(document).ready(function() {
+            $("#toggle").click(function() {
+              var elem = $("#toggle").text();
+              if (elem == "VER MAIS") {
+                //Stuff to do when btn is in the read more state
+                $("#toggle").text("VER MENOS");
+                $("#mais").slideDown();
+                $("#seta").addClass("fa fa-angle-up");
+              } else {
+                //Stuff to do when btn is in the read less state
+                $("#toggle").text("VER MAIS");
+                $("#mais").slideUp();
+                $("#seta").addClass("fa fa-angle-down");
+              }
+            });
+          });
+          </script>
+
    </body>
 </html>

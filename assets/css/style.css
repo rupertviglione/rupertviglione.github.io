@@ -217,10 +217,12 @@ transform:scale(105%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fe29e', endColorstr='#5bdad1',GradientType=1 );
   opacity: 0.8!important;}
 
+  
 .pr-remove {
   /*vertical-align: middle !important;*/
   text-align: center;
 }
+
 
 
 .examples {
@@ -1592,6 +1594,18 @@ z-index: 1500;
 .dropdown-menu {
   min-width: 180px;
   font-size: 11px;
+}
+
+#dropdownmenuinicial {
+  background: none !important;
+
+}
+
+#dropdownmenuinicial>li>a {
+border:none!important;
+
+font-size:12px;
+font-weight: bold;
 }
 
 /* Navbar search

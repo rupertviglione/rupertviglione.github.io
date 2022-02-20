@@ -1483,6 +1483,11 @@ z-index: 1500;
 
 }
 
+#dropdownmenumodal {
+  text-align: center;
+  vertical-align: center;
+  font-size: 20px;
+}
 @font-face {
   font-family: 'Seiva';
   src: url('/assets/fonts/Seiva-Regular.eot');

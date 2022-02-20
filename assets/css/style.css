@@ -2187,7 +2187,7 @@ Google map
 
 }
 
-#work-item-quemsomos {
+.work-item-quemsomos {
   margin: 100px 0;
 }
 
@@ -3389,7 +3389,8 @@ font-style:italic;
     text-align: left;
   }
 }
-
+.mobile {
+}
 @media only screen and (max-width: 480px) {
   .work-item,
   .works-grid-3 .work-item,
@@ -3401,5 +3402,22 @@ font-style:italic;
   .navbar-custom {
 margin-top: 10px;
   }
- 
+  #work-item-nuno {
+    margin: 0;
+  }
+  #work-item-goncalo {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  #work-item-samanta {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  #homeequipa {
+   height: 100%!important;
+  }
+#mainequipa {
+  margin-top: 450px!important;
+}
+
 }

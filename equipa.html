@@ -125,10 +125,10 @@
         </div>
       </div>
     </div>
-    <section class="home-section home-parallax bg-light" id="home" data-background="assets/images/white.webp">
+    <section class="home-section home-parallax bg-light" id="homeequipa" data-background="assets/images/white.webp">
       
       <ul class="works-grid works-grid-gut works-grid-3 works-hover-g" id="works-grid">
-            <li class="work-item illustration webdesign" id="work-item-quemsomos"><a id="equipaimagem1" href="missao.html">
+            <li class="work-item illustration webdesign work-item-quemsomos" id="work-item-nuno"><a id="equipaimagem1">
                 <div class="work-image"><img src="assets/images/nuno.webp" alt="Nuno Gonçalo"/></div>
                 <div class="work-caption font-alt">
                   <div class="work-title">Nuno Gonçalo</div>
@@ -142,8 +142,9 @@
                   
                 
             </li>
-               
-            <li class="work-item marketing photography" id="work-item-quemsomos"><a id="equipaimagem2" href="atelier.html">
+            
+            
+            <li class="work-item marketing photography work-item-quemsomos" id="work-item-goncalo"><a id="equipaimagem2" >
                 <div class="work-image"><img src="assets/images/goncalo.webp" alt="Gonçalo Quirino"/></div>
                 <div class="work-caption font-alt">
                   <div class="work-title">Gonçalo Quirino</div>
@@ -153,10 +154,12 @@
   
                     <div id="equipatexto2" class="equipatexto">O Gonçalo é um sonhador, tem asas nos pés e encontrou no yoga uma forma de equilibrar os níveis de energia e um veículo que o liga à natureza - porque nunca é demais nos aprofundarmos e conhecermos melhor quem somos hoje, para nos relacionamos com mais qualidade. Estudou circo, licenciou-se em Teatro-Educação e tem trabalhado em muitas áreas artísticas e pedagógicas. É um criativo nato, com competências muito abrangentes, focado em transformar positivamente o que o rodeia e cheio de sede de absorver o mundo. 
                     </div>
+                    
               </li>
+            
                
                
-            <li class="work-item illustration photography" id="work-item-quemsomos"><a id="equipaimagem3" href="equipa.html">
+            <li class="work-item illustration photography work-item-quemsomos" id="work-item-samanta"><a id="equipaimagem3" >
                 <div class="work-image"><img src="assets/images/samanta.webp" alt="Samanta Quirino"/></div>
                 <div class="work-caption font-alt">
                   <div class="work-title">Samanta Quirino</div>
@@ -166,9 +169,11 @@
               
                     <div id="equipatexto3" class="equipatexto">A Samanta é um ser muito bonito que veio acrescentar beleza ao mundo. É a personificação da bondade e a professora mais empatica que existe. Licenciada em design de equipamento e com mestrado em educação, no pouco tempo em que as filhas lhe dão folga, ou até com uma a trepar-lhe pelas pernas e a outra agarrada como um koala, dedica-se a criar delicadas peças decorativas e de adorno pessoal. Encontrou nos materiais naturais um refúgio de tranquilidade e serenidade que precisa para se manter equibrada e sã.
                     </div>
-              ></li>
-              
-          </ul>
+                    
+              </li>
+            
+
+            </ul>
          
       
        
@@ -176,7 +181,7 @@
 
 
     
-      <div class="main">
+      <div class="main" id="mainequipa">
           <div class="container">
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
@@ -262,13 +267,12 @@ window.onscroll = function() {
               if (elem == "VER MAIS") {
                 //Stuff to do when btn is in the read more state
                 $("#toggle").text("VER MENOS");
-                $("#mais").slideDown();
-                $("#seta").addClass("fa fa-angle-up");
+                $("#equipaimagem2").style("visibility: hidden");
+                
               } else {
                 //Stuff to do when btn is in the read less state
                 $("#toggle").text("VER MAIS");
-                $("#mais").slideUp();
-                $("#seta").addClass("fa fa-angle-down");
+                $("#equipaimagem2").style("visibility: visible");
               }
             });
           });

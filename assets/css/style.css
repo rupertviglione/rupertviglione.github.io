@@ -3388,7 +3388,7 @@ font-style:italic;
 }
 #equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
   display: none;
-  font-size: 10px;
+  font-size: 9px;
   margin-top: 5px;
   background-color: rgba(174, 188, 167, 0.4);
 }

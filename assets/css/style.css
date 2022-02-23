@@ -3388,7 +3388,7 @@ font-style:italic;
 }
 #equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
   display: none;
-  font-size: 9px;
+  font-size: 11px;
   margin-top: 5px;
   background-color: rgba(174, 188, 167, 0.4);
 }
@@ -3423,7 +3423,7 @@ margin-top: 10px;
   margin-top: 300px;
 }
 .work-title {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 .work-descr {

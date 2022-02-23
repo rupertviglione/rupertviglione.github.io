@@ -131,7 +131,7 @@
                 <div class="work-image" ><img src="assets/images/nuno.webp" alt="Nuno Gonçalo"/></div>
                 <div class="work-caption font-alt">
                   <div class="work-title">Nuno Gonçalo</div>
-                  <div class="work-descr">Artista e Ecodesigner
+                  <div class="work-descr"><span id="descr-n">Artista e Ecodesigner</span>
                     <div id="equipatexto1mobile">Cromo por natureza, o Nuno é um expert em novas tecnologias e essas coisas modernas como webdesign. Encontra na natureza a calma e liberdade de expressão de que precisa. Mora num T1 com mais de 200 plantas, e isso revela o cuidador incrível que este lindo ser é. Embora viesse da área das ciências e fosse um apaixonado por biologia e botânica, deixou-se levar pelo encanto das letras e licenciou-se em Teatro. Trabalha como actor e produtor e é o nosso querido cientista que faz as maravilhosas formulações da nossa drogaria natural, e incansável homem dos 7 ofícios.</div>
                   </div>
                 </div></a>
@@ -140,7 +140,7 @@
                 <div class="work-image"><img src="assets/images/goncalo.webp" alt="Gonçalo Quirino"/></div>
                 <div class="work-caption font-alt">
                   <div class="work-title">Gonçalo Quirino</div>
-                  <div class="work-descr">Artista, Ecodesigner e Pedagogo
+                  <div class="work-descr"><span id="descr-g">Artista, Ecodesigner e Pedagogo</span>
                     <div id="equipatexto2mobile">O Gonçalo é um sonhador, tem asas nos pés e encontrou no yoga uma forma de equilibrar os níveis de energia e um veículo que o liga à natureza - porque nunca é demais nos aprofundarmos e conhecermos melhor quem somos hoje, para nos relacionamos com mais qualidade. Estudou circo, licenciou-se em Teatro-Educação e tem trabalhado em muitas áreas artísticas e pedagógicas. É um criativo nato, com competências muito abrangentes, focado em transformar positivamente o que o rodeia e cheio de sede de absorver o mundo. </div>
                   </div>
                 </div></a> 
@@ -149,7 +149,7 @@
                 <div class="work-image"><img src="assets/images/samanta.webp" alt="Samanta Quirino"/></div>
                 <div class="work-caption font-alt">
                   <div class="work-title">Samanta Quirino</div>
-                  <div class="work-descr">Artista, Ecodesigner e Pedagoga
+                  <div class="work-descr"><span id="descr-s"></span>Artista, Ecodesigner e Pedagoga</span>
                     <div id="equipatexto3mobile" class="work-descr">A Samanta é um ser muito bonito que veio acrescentar beleza ao mundo. É a personificação da bondade e a professora mais empatica que existe. Licenciada em design de equipamento e com mestrado em educação, no pouco tempo em que as filhas lhe dão folga, ou até com uma a trepar-lhe pelas pernas e a outra agarrada como um koala, dedica-se a criar delicadas peças decorativas e de adorno pessoal. Encontrou nos materiais naturais um refúgio de tranquilidade e serenidade que precisa para se manter equibrada e sã.</div>
                   </div>
                 </div></a> 
@@ -309,6 +309,7 @@ $(document).ready(function() {
   $(document).ready(function() {
     $("#equipaimagem1").click(function() {
       if (screen.width < 480) {
+        $("#descr-n").hide();
         $("#equipatexto1").hide();
         $("#equipatexto2mobile").hide();
         $("#equipatexto3mobile").hide();
@@ -320,6 +321,7 @@ $(document).ready(function() {
   
     $("#equipaimagem2").click(function() {
       if (screen.width < 480) {
+        $("#descr-g").hide();
         $("#equipatexto2").hide();
         $("#equipatexto1mobile").hide();
         $("#equipatexto3mobile").hide();
@@ -329,6 +331,7 @@ $(document).ready(function() {
   
     $("#equipaimagem3").click(function() {
       if (screen.width < 480) {
+        $("#descr-s").hide();
         $("#equipatexto3").hide();
         $("#equipatexto1mobile").hide();
         $("#equipatexto2mobile").hide();

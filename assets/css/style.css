@@ -3423,9 +3423,14 @@ margin-top: 10px;
   margin-top: 300px;
 }
 .work-title {
-  margin-top: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .work-descr {
-  margin-top: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.work-caption .font-alt{
+  margin-top: 0px;
 }
 }

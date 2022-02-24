@@ -3413,7 +3413,7 @@ font-style:italic;
   margin-left: 20px;
   padding-right: 20px;
   height: 5px;
-margin-bottom: 10px;
+margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -3472,3 +3472,72 @@ margin-top: 10px;
 }
 
 }
+@media only screen and (max-width: 375px) {
+
+  .work-item,
+  .works-grid-3 .work-item,
+  .works-grid-4 .work-item,
+  .works-grid-5 .work-item {
+    width: 100%;
+  }
+
+  .navbar-custom {
+margin-top: 10px;
+  }
+  #work-item-nuno {
+    margin: 0;
+    position: relative!important;
+  }
+  #work-item-goncalo {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    position: relative!important;
+  }
+  #work-item-samanta {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    position: relative!important;
+
+  }
+  .initial {
+    transform: translateY(-100%);
+  }
+  .initials {
+    transform: translateY(-204%);
+  }
+
+  .mid {
+    transform: translateY(-100%)!important;
+  }
+  #homeequipa {
+    height: 150% !important;
+  }
+#mainequipa {
+  position: relative;
+}
+.expanded, .expanded2, .expanded3 {
+  transform: translateY(100%);
+}
+.work-title {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.work-descr {
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+#equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
+  font-size: 13px;
+}
+}
+@media only screen and (max-width: 327px) {
+#equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
+  font-size: 11px;
+}
+}
+
+@media only screen and (max-width: 281px) {
+  #equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
+    font-size: 9px;
+  }
+  }

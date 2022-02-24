@@ -123,7 +123,7 @@
           </div>
         
         </div>
-      </div>
+      </div> 
     </div>
     <section class="home-section home-parallax bg-light" id="homeequipa" data-background="assets/images/white.webp">      
       <ul class="works-grid works-grid-gut works-grid-3 works-hover-g" id="works-grid">
@@ -132,27 +132,35 @@
                 <div class="work-caption font-alt">
                   <div class="work-title">Nuno Gonçalo</div>
                   <div class="work-descr"><span id="descr-n">Artista e Ecodesigner</span>
-                    <div id="equipatexto1mobile">Cromo por natureza, o Nuno é um expert em novas tecnologias e essas coisas modernas como webdesign. Encontra na natureza a calma e liberdade de expressão de que precisa. Mora num T1 com mais de 200 plantas, e isso revela o cuidador incrível que este lindo ser é. Embora viesse da área das ciências e fosse um apaixonado por biologia e botânica, deixou-se levar pelo encanto das letras e licenciou-se em Teatro. Trabalha como actor e produtor e é o nosso querido cientista que faz as maravilhosas formulações da nossa drogaria natural, e incansável homem dos 7 ofícios.</div>
-                  </div>
+                              </div>
                 </div></a>
             </li>
-            <li class="work-item marketing photography work-item-quemsomos" id="work-item-goncalo"><a id="equipaimagem2" >
+            <li id="equipatexto1mobile">
+              Cromo por natureza, o Nuno é um expert em novas tecnologias e essas coisas modernas como webdesign. Encontra na natureza a calma e liberdade de expressão de que precisa. Mora num T1 com mais de 200 plantas, e isso revela o cuidador incrível que este lindo ser é. Embora viesse da área das ciências e fosse um apaixonado por biologia e botânica, deixou-se levar pelo encanto das letras e licenciou-se em Teatro. Trabalha como actor e produtor e é o nosso querido cientista que faz as maravilhosas formulações da nossa drogaria natural, e incansável homem dos 7 ofícios.
+            </li>
+            <li class="work-item marketing photography work-item-quemsomos initial" id="work-item-goncalo"><a id="equipaimagem2" >
                 <div class="work-image"><img src="assets/images/goncalo.webp" alt="Gonçalo Quirino"/></div>
                 <div class="work-caption font-alt">
                   <div class="work-title">Gonçalo Quirino</div>
                   <div class="work-descr"><span id="descr-g">Artista, Ecodesigner e Pedagogo</span>
-                    <div id="equipatexto2mobile">O Gonçalo é um sonhador, tem asas nos pés e encontrou no yoga uma forma de equilibrar os níveis de energia e um veículo que o liga à natureza - porque nunca é demais nos aprofundarmos e conhecermos melhor quem somos hoje, para nos relacionamos com mais qualidade. Estudou circo, licenciou-se em Teatro-Educação e tem trabalhado em muitas áreas artísticas e pedagógicas. É um criativo nato, com competências muito abrangentes, focado em transformar positivamente o que o rodeia e cheio de sede de absorver o mundo. </div>
+                   
                   </div>
                 </div></a> 
               </li>
-            <li class="work-item illustration photography work-item-quemsomos" id="work-item-samanta"><a id="equipaimagem3" >
+              <li id="equipatexto2mobile">
+                <div class="equipatexto">O Gonçalo é um sonhador, tem asas nos pés e encontrou no yoga uma forma de equilibrar os níveis de energia e um veículo que o liga à natureza - porque nunca é demais nos aprofundarmos e conhecermos melhor quem somos hoje, para nos relacionamos com mais qualidade. Estudou circo, licenciou-se em Teatro-Educação e tem trabalhado em muitas áreas artísticas e pedagógicas. É um criativo nato, com competências muito abrangentes, focado em transformar positivamente o que o rodeia e cheio de sede de absorver o mundo. </div>
+              </li>
+            <li class="work-item illustration photography work-item-quemsomos initials" id="work-item-samanta"><a id="equipaimagem3" >
                 <div class="work-image"><img src="assets/images/samanta.webp" alt="Samanta Quirino"/></div>
                 <div class="work-caption font-alt">
                   <div class="work-title">Samanta Quirino</div>
                   <div class="work-descr"><span id="descr-s">Artista, Ecodesigner e Pedagoga</span>
-                    <div id="equipatexto3mobile" class="work-descr">A Samanta é um ser muito bonito que veio acrescentar beleza ao mundo. É a personificação da bondade e a professora mais empatica que existe. Licenciada em design de equipamento e com mestrado em educação, no pouco tempo em que as filhas lhe dão folga, ou até com uma a trepar-lhe pelas pernas e a outra agarrada como um koala, dedica-se a criar delicadas peças decorativas e de adorno pessoal. Encontrou nos materiais naturais um refúgio de tranquilidade e serenidade que precisa para se manter equibrada e sã.</div>
+                    
                   </div>
                 </div></a> 
+              </li>
+              <li id="equipatexto3mobile">
+                <div class="equipatexto">A Samanta é um ser muito bonito que veio acrescentar beleza ao mundo. É a personificação da bondade e a professora mais empatica que existe. Licenciada em design de equipamento e com mestrado em educação, no pouco tempo em que as filhas lhe dão folga, ou até com uma a trepar-lhe pelas pernas e a outra agarrada como um koala, dedica-se a criar delicadas peças decorativas e de adorno pessoal. Encontrou nos materiais naturais um refúgio de tranquilidade e serenidade que precisa para se manter equibrada e sã.</div>
               </li>
               <li id="equipatexto1">
                 <div class="equipatexto">Cromo por natureza, o Nuno é um expert em novas tecnologias e essas coisas modernas como webdesign. Encontra na natureza a calma e liberdade de expressão de que precisa. Mora num T1 com mais de 200 plantas, e isso revela o cuidador incrível que este lindo ser é. Embora viesse da área das ciências e fosse um apaixonado por biologia e botânica, deixou-se levar pelo encanto das letras e licenciou-se em Teatro. Trabalha como actor e produtor e é o nosso querido cientista que faz as maravilhosas formulações da nossa drogaria natural, e incansável homem dos 7 ofícios.</div>
@@ -309,37 +317,68 @@ $(document).ready(function() {
   $(document).ready(function() {
     $("#equipaimagem1").click(function() {
       if (screen.width < 480) {
-        $("#descr-n").hide();
         $("#equipatexto1").hide();
-        $("#equipatexto2mobile").hide();
-        $("#equipatexto3mobile").hide();
-         $("#equipatexto1mobile").show();
-       
-      }
-      
-    });
+         $("#equipatexto1mobile").slideDown();
+         $("#work-item-goncalo").removeClass('initial');
+         $("#work-item-samanta").removeClass('initials').addClass('initial');
+         $("#mainequipa").addClass('expanded');
+                    }
+          });
   
     $("#equipaimagem2").click(function() {
       if (screen.width < 480) {
-        $("#descr-g").hide();
         $("#equipatexto2").hide();
-        $("#equipatexto1mobile").hide();
-        $("#equipatexto3mobile").hide();
-      $("#equipatexto2mobile").show();
+      $("#equipatexto2mobile").slideDown();
+      $("#work-item-samanta").addClass('mid');
+      $("#mainequipa").addClass('expanded2');
+      
       }
     });
   
     $("#equipaimagem3").click(function() {
       if (screen.width < 480) {
-        $("#descr-s").hide();
         $("#equipatexto3").hide();
-        $("#equipatexto1mobile").hide();
-        $("#equipatexto2mobile").hide();
-      $("#equipatexto3mobile").show();
+      
+      $("#equipatexto3mobile").slideDown();
+      $("#mainequipa").addClass('expanded3');
       }
     });
     
   });
   </script>
+  <script>
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if (!$target.closest('#equipaimagem1').length) {
+      $('#equipatexto1mobile').slideUp();
+      $("#work-item-goncalo").addClass('initial');
+      $("#work-item-samanta").removeClass('initial').addClass('initials');
+      $("#mainequipa").removeClass('expanded');
+         
+    
+    }        
+  });
+</script>
+<script>
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if (!$target.closest('#equipaimagem2').length) {
+      $('#equipatexto2mobile').slideUp();
+      $("#work-item-samanta").removeClass('mid');
+      $("#mainequipa").removeClass('expanded2');
+    }        
+  });
+</script>
+<script>
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if (!$target.closest('#equipaimagem3').length) {
+      $('#equipatexto3mobile').slideUp();
+      $("#mainequipa").removeClass('expanded3');
+
+
+    }        
+  });
+</script>
   </body>
 </html>

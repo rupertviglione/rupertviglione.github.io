@@ -1503,12 +1503,12 @@ z-index: 1500;
 
 @font-face {
   font-family: 'Coves';
-  src: url('Coves-Light.eot');
-  src: url('Coves-Light.eot?#iefix') format('embedded-opentype'),
-      url('Coves-Light.woff2') format('woff2'),
-      url('Coves-Light.woff') format('woff'),
-      url('Coves-Light.ttf') format('truetype'),
-      url('Coves-Light.svg#Coves-Light') format('svg');
+  src: url('assets/fonts/Coves-Light');
+  src: url('assets/fonts/Coves-Light.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/Coves-Light.woff2') format('woff2'),
+      url('assets/fonts/Coves-Light.woff') format('woff'),
+      url('assets/fonts/Coves-Light.ttf') format('truetype'),
+      url('assets/fonts/Coves-Light.svg#Coves-Light') format('svg');
   font-weight: 300;
   font-style: normal;
   font-display: swap;

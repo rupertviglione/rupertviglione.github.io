@@ -639,6 +639,11 @@ somos demasiado para baixo */
   .mb-sm-80 {
     margin-bottom: 80px !important;
   }
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+
+  top: 300px !important;
+
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -3120,10 +3125,57 @@ font-style:italic;
 /*--------------------------------------------------------------
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
+@media (max-width:768px) {
+  .work-title {
+    font-size: 20px;
+      }
+    
+      .work-descr {
+    font-size: 12px;
+      }
+      #equipatexto1, #equipatexto2, #equipatexto3 {
+        font-size: 14px;
+          }
+}
+@media (max-width:579px) {
+  .work-title {
+    font-size: 18px;
+      }
+    
+      .work-descr {
+    font-size: 10px;
+      }
+      .work-item-quemsomos {
+        margin-top: 100px;
+        margin-bottom: 20px !important;
+      }
+      #equipatexto1, #equipatexto2, #equipatexto3 {
+        font-size: 12px;
+        top: 250px !important;
+          }
+}
+@media (max-width:542px) {
+  .work-title {
+    font-size: 15px;
+      }
+    
+      .work-descr {
+    font-size: 7px;
+      }
+      .work-item-quemsomos {
+        margin-top: 100px;
+        margin-bottom: 20px !important;
+      }
+      #equipatexto1, #equipatexto2, #equipatexto3 {
+        font-size: 12px;
+        top: 250px !important;
+          }
+}
 @media (min-width: 768px) {
   .container {
     width: 100%!important;
   }
+
   .work-item-quemsomos {
     margin: 100px 0;
   }
@@ -3231,6 +3283,7 @@ font-style:italic;
   .work-item-quemsomos {
     margin: 100px 0;
   }
+
   /* Headers */
   .titan-title-size-3 {
     letter-spacing: 8px;
@@ -3252,6 +3305,7 @@ font-style:italic;
     position: relative;
     height: 300px;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -3463,12 +3517,12 @@ margin-top: 10px;
   transform: translateY(100%);
 }
 .work-title {
-  margin-top: 20px;
-  margin-bottom: 0px;
+
+  font-size: 22px;
 }
 .work-descr {
-  margin-top: -10px;
-  margin-bottom: 0px;
+
+  font-size: 16px;
 }
 
 }

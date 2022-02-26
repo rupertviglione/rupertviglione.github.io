@@ -698,6 +698,11 @@ somos demasiado para baixo */
 }
 
 @media only screen and (max-width: 767px) {
+  #itemsempresas, #itemsescolas {
+    margin-left: 50px!important;
+    margin-right: 50px!important;
+  }
+
 #educacaonavtabs {
 }
 
@@ -1158,7 +1163,6 @@ color: #aebca7 !important;
   font-family: 'Coves';
   letter-spacing: 1;
   text-align: center;
-  font-size: 30px !important;
   color: #aebca7;
   margin-bottom: 70px;
   font-style: normal;
@@ -1658,6 +1662,7 @@ z-index: 1500;
   position: absolute;
   display: block;
   right: 0;
+  margin-right: 10px;
   top: 50%;
   margin-top: -6px;
   font: normal normal normal 14px/1 FontAwesome;
@@ -2876,7 +2881,6 @@ font-style:italic;
 }
 
 #profissionais {
-  font-size: 16px !important;
   font-weight:400;
 }
 
@@ -3207,12 +3211,27 @@ font-style:italic;
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
 @media (max-width:768px) {
+
+  #tituloeducacao, #destaqueeducacao, #personalizadas h2, #escolas h2 {
+font-size: 25px !important;
+  }
+
+#personalizadas, #escolas {
+  font-size: 14px!important;
+}
+#yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
+    
+  font-size: 22px !important;
+  margin-left: 20px!important;
+  margin-right: 20px!important;
+}
   #btnempresas {
     font-size: 17px!important;
       }
      #btnescolas {
     font-size: 21px!important;
      }
+    
   #trouble3 {
     margin-left: 0;
     
@@ -3267,6 +3286,7 @@ font-style:italic;
           }
 }
 @media (min-width: 768px) {
+  
   .container {
     width: 100%!important;
   }
@@ -3314,7 +3334,9 @@ font-style:italic;
 }
 
 @media (min-width: 2000px) {
-  .navbar-custom {
+
+
+   .navbar-custom {
     letter-spacing: 1px;
     font-size: 16px;
   }  
@@ -3323,7 +3345,6 @@ font-style:italic;
   }
 }  
 @media (min-width: 1439px) {
-  
   .navbar-custom {
     letter-spacing: 1px;
     font-size: 14px;
@@ -3393,6 +3414,10 @@ font-style:italic;
   }
 }
 @media (min-width: 991px) {
+  #profissionais {
+    font-size: 16px!important;
+    
+  } 
   #educacaonavtabs {
 
   }
@@ -3440,6 +3465,10 @@ font-style:italic;
 }
 
 @media (max-width: 767px) {
+  .btn-container {
+    float: right!important;
+    margin-right: 30px!important;
+  }
 
   #btnempresas {
     font-size: 20px!important;
@@ -3606,6 +3635,27 @@ font-style:italic;
 margin-bottom: 20px;
 }
 @media only screen and (max-width: 650px) {
+
+  .scroll-up {
+    position: fixed;
+    display: none;
+    bottom: 45px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  .navbar-toggle {
+    
+  }
+  #homeeducacao {
+    background-position-x:-290px;
+  width:100%!important;
+  margin-right: 0px!important;
+  padding-right: 0px!important;
+  }
+.scroll-up {
+    margin-right: 0px!important;
+  }
   #btnempresas {
     font-size: 16px!important;
       }
@@ -3637,6 +3687,26 @@ font-size: 18px!important;
 
 }
 @media only screen and (max-width: 480px) {
+  #toggle {
+    font-size: 18px!important;
+  }
+  #profissionais {
+    font-size: 14px!important;
+    
+  } 
+  #tituloeducacao, #destaqueeducacao, #personalizadas h2, #escolas h2 {
+    font-size: 20px !important;
+      }
+    
+    #personalizadas, #escolas {
+      font-size: 12px!important;
+    }
+    #yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
+        
+      font-size: 18px !important;
+      margin-left: 20px!important;
+      margin-right: 20px!important;
+    }
   #btnempresas {
     font-size: 12px!important;
     
@@ -3688,19 +3758,13 @@ margin-top: 10px;
 
   .module-subtitle {
     font-size: 25px !important;
-  }
-  #yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
-    
-    font-size: 21px !important;
-    
-}
+  } 
+
 .btn-container {
   float: right !important;
 }
 
-#toggle {
-  font-size: 21px !important;
-}
+
   .initial {
     transform: translateY(-100%);
   }
@@ -3751,6 +3815,37 @@ margin-top: 10px;
   }
 }
 @media only screen and (max-width: 375px) {
+  #homeeducacao {
+    background-position-x:-350px;
+  width:100%!important;
+  margin-right: 0px!important;
+  padding-right: 0px!important;
+  }
+  #toggle {
+    font-size: 16px!important;
+  }
+  #profissionais {
+    font-size: 13px!important;
+    
+  } 
+  #itemsescolas, #itemsempresas {
+    margin-left: 30px!important;
+    margin-right: 30px!important;
+  }
+  #tituloeducacao, #destaqueeducacao, #personalizadas h2, #escolas h2 {
+    font-size: 18px !important;
+      }
+    
+    #personalizadas, #escolas {
+      font-size: 12px!important;
+    }
+    #yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
+        
+      font-size: 16px !important;
+      margin-left: 20px!important;
+      margin-right: 20px!important;
+    }
+  
   #btnempresas {
     font-size: 11px!important;
     padding: 0 0!important;
@@ -3870,6 +3965,12 @@ margin-top: 10px;
   }
 }
 @media only screen and (max-width: 327px) {
+  #homeeducacao {
+    background-position-x:-380px;
+  width:100%!important;
+  margin-right: 0px!important;
+  padding-right: 0px!important;
+  }
   #btnempresas {
     font-size: 11px!important;
       }

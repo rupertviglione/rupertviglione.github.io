@@ -185,32 +185,76 @@ transform:scale(105%);
 .nav-pills > li > a {
   border-radius: 2px;
 }
+
+
 #yoganavtabs {
   border:none!important;
-  font-size: 18px!important;
+  font-size: 16px!important;
   color:#fbf5e9!important;
   display:inline-flex!important;
   align-content:flex-start!important;
   justify-content: space-between !important;
   margin-left: 0px!important;
+  border-radius: 50%!important;
+padding: 0;
+padding-left: 20px;
+padding-right: 20px;
 }
+#educacaonavtabs {
+  border:none!important;
+  font-size: 16px;
+  color:#fbf5e9!important;
+  display:inline-flex!important;
+  align-content:flex-start!important;
+  align-items: center!important;
+  justify-content: space-between !important;
+  margin-left: 0px!important;
+  border-radius: 50%!important;
+  padding: 0px 0px;
+  
+}
+
+#educacaonavtabs>li>a {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50px;
+  background: #aebca7;
+  padding: 0px 0px;
+  font-size: 20px;
+
+}
+
+
+
+
 .nav-tabs>li>a {
   background-color: #aebca7;
   color:#fbf5e9;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  background: #aebca7;
+  padding: 0px 0px;
+  font-size: 16px;
 }
 .nav-tabs>li.active>a {
   color: #fbf5e9!important;
-
+background-color: #aebca7!important;
   border: none!important;
-  transform:scale(120%);
-  background: linear-gradient(135deg, #aebca7 55%, #fbf5e9 150%)!important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fe29e', endColorstr='#5bdad1',GradientType=1 );
+  transform:scale(105%);
   opacity: 0.8!important;
 }
 
 .nav-tabs>li>a:hover {
   color: #fbf5e9!important;
-
+  transform:scale(105%);
   border: none!important;
   
   background: linear-gradient(135deg, #aebca7 55%, #fbf5e9 150%)!important;
@@ -585,6 +629,13 @@ somos demasiado para baixo */
 }
 
 @media only screen and (max-width: 991px) {
+
+  #btnempresas {
+    font-size: 18px!important;
+      }
+     #btnescolas {
+    font-size: 22px!important;
+     }
   .mt-sm-0 {
     margin-top: 0 !important;
   }
@@ -647,6 +698,18 @@ somos demasiado para baixo */
 }
 
 @media only screen and (max-width: 767px) {
+#educacaonavtabs {
+}
+
+#btnempresas {
+  font-size: 20px!important;
+  padding: 0 30px!important;
+
+}
+     #btnescolas {
+    font-size: 22px!important;
+    padding: 0 30px!important;
+     }
   .mt-xs-0 {
     margin-top: 0 !important;
   }
@@ -935,7 +998,16 @@ somos demasiado para baixo */
 .image-button {
   margin: 0px 5px;
 }
-
+#itemsempresas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#itemsescolas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /*--------------------------------------------------------------
 	Forms
 --------------------------------------------------------------*/
@@ -1386,6 +1458,10 @@ margin-right: 1px;
   margin-left: -1px;
   
   }
+  #trouble3 {
+    margin-left: -1px;
+    
+    }
 .loader,
 .loader:after {
   border-radius: 50%;
@@ -1852,13 +1928,13 @@ Google map
 .features-item {
   margin: 20px 0;
   text-align: center;
-  color: #5e410d;
+  color: #aebca7;
 }
 
 .features-icon,
 .alt-features-icon {
-  line-height: 1.2;
-  font-size: 42px;
+  
+  font-size: 43px;
   color: #5e410d;
 }
 
@@ -1868,8 +1944,9 @@ Google map
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 14px;
-  color: #5e410d;
+  color: #aebca7;
   margin: 16px 0 15px;
+  min-height: 58.78px;
 }
 
 .alt-features-item {
@@ -2892,8 +2969,12 @@ font-style:italic;
 }
 
 @media (min-width: 768px) {
+  #educacaonavtabs {
+ 
+  }
   
 }
+
 
 /*--------------------------------------------------------------
 	Client
@@ -3126,6 +3207,20 @@ font-style:italic;
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
 @media (max-width:768px) {
+  #btnempresas {
+    font-size: 17px!important;
+      }
+     #btnescolas {
+    font-size: 21px!important;
+     }
+  #trouble3 {
+    margin-left: 0;
+    
+    }
+
+    .troublem {
+      margin-left: -1px;
+    }
   .work-title {
     font-size: 20px;
       }
@@ -3228,6 +3323,7 @@ font-style:italic;
   }
 }  
 @media (min-width: 1439px) {
+  
   .navbar-custom {
     letter-spacing: 1px;
     font-size: 14px;
@@ -3237,6 +3333,16 @@ font-style:italic;
   }
 }  
 @media (min-width: 1201px) {
+  #btnempresas {
+    min-height: 70px !important;
+  }
+  #btnempresas {
+    font-size: 20px!important;
+      }
+  
+  #btnescolas {
+    font-size: 24px!important;
+  }
   .navbar-custom {
     letter-spacing: 1px;
     font-size: 13px;
@@ -3247,6 +3353,13 @@ font-style:italic;
 }  
 @media (max-width: 1200px) {
   /* Features */
+  #btnempresas {
+    font-size: 20px!important;
+      }
+     #btnescolas {
+    font-size: 24px!important;
+     }
+
   .alt-features-item {
     margin: 20px 0 0;
     
@@ -3259,9 +3372,17 @@ font-style:italic;
     font-size: 13px;
   }  
 }
+@media (max-width: 1100px) {
 
+}
 @media (max-width: 1050px) {
   /* Navbar */
+  #btnempresas {
+    font-size: 20px!important;
+      }
+     #btnescolas {
+    font-size: 22px!important;
+     }
   .navbar-custom {
     letter-spacing: 1px;
     font-size: 13px;
@@ -3271,7 +3392,11 @@ font-style:italic;
     margin: 100px 0;
   }
 }
+@media (min-width: 991px) {
+  #educacaonavtabs {
 
+  }
+}
 @media (max-width: 991px) {
   /* Navbar */
   .navbar-custom {
@@ -3307,9 +3432,20 @@ font-style:italic;
   }
 
 }
+@media (max-width: 900px) {
+
+}
+@media (max-width: 815px) {
+
+}
 
 @media (max-width: 767px) {
+
+  #btnempresas {
+    font-size: 20px!important;
+  }
   /* Navbar */
+
   .work-item-quemsomos {
     margin: 100px 0;
   }
@@ -3469,9 +3605,58 @@ font-style:italic;
   height: 5px;
 margin-bottom: 20px;
 }
+@media only screen and (max-width: 650px) {
+  #btnempresas {
+    font-size: 16px!important;
+      }
+     #btnescolas {
+    font-size: 20px!important;
+     }
+  #homemissao {
+    background-position: right center;
+    
+  }
 
+}
+@media only screen and (max-width: 520px) {
+  #btnempresas {
+font-size: 16px!important;
+  }
+ #btnescolas {
+font-size: 18px!important;
+ }
+  #homemissao {
+    background-position: right top;
+    background-size: 120%;
+  
+    
+  }
+  #mainmissao {
+    margin-top: -50px;
+  }
+
+}
 @media only screen and (max-width: 480px) {
+  #btnempresas {
+    font-size: 12px!important;
+    
 
+      }
+      #btnescolas {
+        font-size: 16px!important;
+       
+          }
+
+      
+  #homemissao {
+    background-position: right top;
+    background-size: 100%;
+  
+    
+  }
+  #mainmissao {
+    margin-top: -100px;
+  }
   .work-item,
   .works-grid-3 .work-item,
   .works-grid-4 .work-item,
@@ -3497,6 +3682,25 @@ margin-top: 10px;
     position: relative!important;
 
   }
+  .module-title {
+    font-size: 25px !important;
+  }
+
+  .module-subtitle {
+    font-size: 25px !important;
+  }
+  #yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
+    
+    font-size: 21px !important;
+    
+}
+.btn-container {
+  float: right !important;
+}
+
+#toggle {
+  font-size: 21px !important;
+}
   .initial {
     transform: translateY(-100%);
   }
@@ -3526,8 +3730,62 @@ margin-top: 10px;
 }
 
 }
+@media only screen and (max-width: 425px) {
+  
+  #btnempresas {
+    font-size: 12px!important;
+    padding: 5 5!important;
+      }
+#btnescolas {
+  padding: 5 5!important;
+}
+     
+  #homemissao {
+    background-position: right top;
+    background-size: 100%;
+  
+    
+  }
+  #mainmissao {
+    margin-top: -150px;
+  }
+}
 @media only screen and (max-width: 375px) {
+  #btnempresas {
+    font-size: 11px!important;
+    padding: 0 0!important;
+      }
+     #btnescolas {
+       padding: 0 0!important;
+     }
+  #homemissao {
+    background-position: right top;
+    background-size: 120%;
+  
+    
+  }
+  #mainmissao {
+    margin-top: -150px;
+  }
+  .module-title {
+    font-size: 24px !important;
+  }
 
+  .module-subtitle {
+    font-size: 22px !important;
+  }
+  #yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
+    
+    font-size: 18px !important;
+    
+}
+.btn-container {
+  float: right !important;
+}
+
+#toggle {
+  font-size: 18px !important;
+}
   .work-item,
   .works-grid-3 .work-item,
   .works-grid-4 .work-item,
@@ -3584,14 +3842,87 @@ margin-top: 10px;
   font-size: 13px;
 }
 }
+
+@media only screen and (max-width: 350px) {
+  #btnempresas {
+    font-size: 11px!important;
+      }
+      #btnescolas {
+        font-size: 16px!important;
+          }
+
+  #homemissao {
+    background-position: right top;
+    background-size: 120%;
+  
+    
+  }
+  #mainmissao {
+    margin-top: -150px;
+  }
+
+ #homeatelier {
+    background-size:195%;
+    background-position: center top;
+  }
+  #mainatelier { 
+    margin-top:-50px;
+  }
+}
 @media only screen and (max-width: 327px) {
+  #btnempresas {
+    font-size: 11px!important;
+      }
+      #btnescolas {
+        font-size: 15px!important;
+          }
+  #educacaonavtabs {
+
+  }
+  #homemissao {
+    background-position: right top;
+    background-size: 120%;
+  
+    
+  }
+  #mainmissao {
+    margin-top: -200px;
+  }
 #equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
   font-size: 11px;
+}
+.module-title {
+  font-size: 23px !important;
+}
+
+.module-subtitle {
+  font-size: 20px !important;
+}
+#yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
+  
+  font-size: 16px !important;
+  
+}
+.btn-container {
+float: right !important;
+}
+
+#toggle {
+font-size: 16px !important;
 }
 }
 
 @media only screen and (max-width: 281px) {
   #equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
     font-size: 9px;
+  }
+  #homemissao {
+    background-position: right top;
+    background-size: 120%;
+  
+    
+  }
+  #mainmissao {
+    margin-top: -200px;
   }
   }

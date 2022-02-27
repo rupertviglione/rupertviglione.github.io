@@ -189,16 +189,16 @@ transform:scale(105%);
 
 #yoganavtabs {
   border:none!important;
-  font-size: 16px!important;
+  font-size: 16px;
   color:#fbf5e9!important;
   display:inline-flex!important;
   align-content:flex-start!important;
-  justify-content: space-between !important;
-  margin-left: 0px!important;
+  justify-content:center !important;
+  align-items: center!important;
+  margin: 0px!important;
   border-radius: 50%!important;
-padding: 0;
-padding-left: 20px;
-padding-right: 20px;
+  padding: 0!important;
+  
 }
 #educacaonavtabs {
   border:none!important;
@@ -210,10 +210,21 @@ padding-right: 20px;
   justify-content: space-between !important;
   margin-left: 0px!important;
   border-radius: 50%!important;
-  padding: 0px 0px;
+  padding: 0!important;
   
 }
-
+#yoganavtabs>li>a {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50px;
+  background: #aebca7;
+  margin: 0px!important;
+  padding: 0px!important;
+  
+}
 #educacaonavtabs>li>a {
   display: flex;
   align-content: center;
@@ -223,7 +234,7 @@ padding-right: 20px;
   border-radius: 50px;
   background: #aebca7;
   padding: 0px 0px;
-  font-size: 20px;
+  
 
 }
 
@@ -243,6 +254,7 @@ padding-right: 20px;
   background: #aebca7;
   padding: 0px 0px;
   font-size: 16px;
+  margin: 0px!important;
 }
 .nav-tabs>li.active>a {
   color: #fbf5e9!important;
@@ -3397,6 +3409,7 @@ font-size: 25px !important;
 
 }
 @media (max-width: 1050px) {
+
   /* Navbar */
   #btnempresas {
     font-size: 20px!important;
@@ -3414,6 +3427,8 @@ font-size: 25px !important;
   }
 }
 @media (min-width: 991px) {
+
+ 
   #profissionais {
     font-size: 16px!important;
     
@@ -3423,6 +3438,8 @@ font-size: 25px !important;
   }
 }
 @media (max-width: 991px) {
+
+
   /* Navbar */
   .navbar-custom {
     letter-spacing: 0;
@@ -3458,7 +3475,8 @@ font-size: 25px !important;
 
 }
 @media (max-width: 900px) {
-
+ 
+  
 }
 @media (max-width: 815px) {
 
@@ -3669,6 +3687,8 @@ margin-bottom: 20px;
 
 }
 @media only screen and (max-width: 520px) {
+ 
+
   #btnempresas {
 font-size: 16px!important;
   }
@@ -3687,6 +3707,7 @@ font-size: 18px!important;
 
 }
 @media only screen and (max-width: 480px) {
+  
   #toggle {
     font-size: 18px!important;
   }

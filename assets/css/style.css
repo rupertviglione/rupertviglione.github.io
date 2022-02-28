@@ -191,10 +191,10 @@ transform:scale(105%);
   border:none!important;
   font-size: 16px;
   color:#fbf5e9!important;
-  display:inline-flex!important;
-  align-content:flex-start!important;
-  justify-content:center !important;
-  align-items: center!important;
+  display:inline-flex;
+  align-content:flex-start;
+  justify-content:center;
+  align-items: center;
   margin: 0px!important;
   border-radius: 50%!important;
   padding: 0!important;
@@ -204,13 +204,13 @@ transform:scale(105%);
   border:none!important;
   font-size: 16px;
   color:#fbf5e9!important;
-  display:inline-flex!important;
-  align-content:flex-start!important;
-  align-items: center!important;
-  justify-content: space-between !important;
-  margin-left: 0px!important;
-  border-radius: 50%!important;
-  padding: 0!important;
+  display:inline-flex;
+  align-content:flex-start;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0px;
+  border-radius: 50%;
+  padding: 0;
   
 }
 #yoganavtabs>li>a {
@@ -1530,7 +1530,9 @@ margin-right: 1px;
   align-content: center!important;
   align-items: center!important;
   justify-content: center!important;
+  padding: 0;
 }
+
 
 .modal.modal-fullscreen .modal-dialog {
   width: 100vw;
@@ -3652,8 +3654,27 @@ font-size: 25px !important;
   height: 5px;
 margin-bottom: 20px;
 }
-@media only screen and (max-width: 650px) {
+.navbar-header {
+  margin-right: 15px!important;
+}
 
+@media only screen and (max-width: 650px) {
+  #navbar {
+    width: 650px!important;
+  }
+  #yoganavtabs>li {
+  
+    width: 150% !important;
+  }
+  #yoganavtabs>li>a {
+  
+    font-size: 13px;
+  }
+
+  #btnpers {
+font-size: 13px !important;
+  }
+  
   .scroll-up {
     position: fixed;
     display: none;

@@ -50,6 +50,9 @@ body {
   color: #666;
   -webkit-font-smoothing: antialiased;
 }
+.titan-caption {
+  filter:brightness(1)!important;
+}
 /*--------------------------------------------------------------
 	Scrollbar
 --------------------------------------------------------------*/
@@ -265,6 +268,17 @@ background-color: #aebca7!important;
   opacity: 0.8!important;
 }
 
+#title2 {
+  border: none !important;
+  padding: 0!important;
+  margin: 0!important;
+  line-height: 40px;
+}
+
+#captionyoga {
+  width: 25%;
+}
+
 .nav-tabs>li>a:hover {
   color: #fbf5e9!important;
   transform:scale(105%);
@@ -447,7 +461,7 @@ somos demasiado para baixo */
 
 .bg-dark-30:before {
   position: absolute;
-  background: rgba(2, 2, 2, 0.4);
+  background: rgba(2, 2, 2, 0.2);
   content: " ";
   height: 100%;
   width: 100%;
@@ -1746,10 +1760,11 @@ font-weight: bold;
   width: 100%;
   z-index: 0;
   background-size:cover;
-    filter: brightness(0.9);
 
 }
-
+#titleequipa {
+  color: #aebca7;
+}
 #slogan {
   margin-top: 40px !important;
 text-align: right !important;
@@ -3711,9 +3726,7 @@ font-size: 13px !important;
      #btnescolas {
     font-size: 20px!important;
      }
-  #homemissao {
-    
-  }
+
 
 }
 @media only screen and (max-width: 520px) {
@@ -3732,6 +3745,10 @@ font-size: 18px!important;
 
 @media only screen and (max-width: 480px) {
 
+  #homeatelier {
+    background-image: url("/assets/images/ateliermob.webp")!important;
+    
+  }
   #yoganavtabs {
     display: flex!important;
     flex-wrap: wrap;
@@ -3869,6 +3886,7 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 375px) {
+
   #homemissao {
     
       background-image: url("/assets/images/missao2.webp")!important;
@@ -4003,12 +4021,6 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 327px) {
- 
-    
-  #homeatelier {
-    background-image: url("/assets/images/ateliermob.webp")!important;
-    
-  }
 
   #homeeducacao {
     background-position-x:-380px;

@@ -12,6 +12,7 @@ html {
      
 }
 
+
 .navbar-up {
 position: absolute !important;
 top: 5%;
@@ -1141,7 +1142,7 @@ blockquote {
 
 .large-text {
   font-size: 24px !important;
-  margin-top: -50px;
+  margin-top: 50px;
   margin-bottom:20px;
   font-weight: 300 !important;
 
@@ -1355,19 +1356,13 @@ Hero Slider
 }
 
 /* Caption */
-.titan-caption {
-  position: relative;
-  display: table;
-  height: 100%;
-  width: 70%;
-  margin: 0 auto;
-}
+
 
 .titan-caption {
   position: relative;
   display: table;
   height: 100%;
-  width: 100%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -1751,6 +1746,7 @@ font-weight: bold;
   width: 100%;
   z-index: 0;
   background-size:cover;
+    filter: brightness(0.9);
 
 }
 
@@ -1779,9 +1775,19 @@ text-align: right !important;
 }
 
 .titan-title-size-4 {
-  letter-spacing: 24px;
   font-weight: 400;
-  font-size: 48px;
+  display: flex;
+  color: white!important;
+  font-size: 70px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  border-bottom: solid 3px white;
+}
+
+.titleletter {
+
 }
 
 /* Agency Page Header */
@@ -3226,6 +3232,10 @@ font-style:italic;
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
 @media (max-width:768px) {
+  .titan-title-size-4 {
+    border-bottom: solid 2px white;
+    font-size: 38px;
+}
 
   #tituloeducacao, #destaqueeducacao, #personalizadas h2, #escolas h2 {
 font-size: 25px !important;
@@ -3409,7 +3419,6 @@ font-size: 25px !important;
   }  
 }
 @media (max-width: 1100px) {
-
 }
 @media (max-width: 1050px) {
 
@@ -3460,7 +3469,7 @@ font-size: 25px !important;
     font-size: 36px;
   }
   .titan-title-size-4 {
-    letter-spacing: 12px;
+    
     font-size: 38px;
   }
   .work-item,
@@ -3582,8 +3591,8 @@ font-size: 25px !important;
     font-size: 26px;
   }
   .titan-title-size-4 {
-    letter-spacing: 6px;
-    font-size: 28px;
+    border-bottom: solid 2px white;
+    font-size: 38px;
   }
   /* Features */
   .features-item {
@@ -3661,6 +3670,8 @@ margin-bottom: 20px;
 
 @media only screen and (max-width: 650px) {
 
+
+
   #yoganavtabs>li {
   
     width: 150% !important;
@@ -3701,7 +3712,7 @@ font-size: 13px !important;
     font-size: 20px!important;
      }
   #homemissao {
-    background-position: right center;
+    background-position-x:-200px;
     
   }
 
@@ -3715,19 +3726,13 @@ font-size: 16px!important;
  #btnescolas {
 font-size: 18px!important;
  }
-  #homemissao {
-    background-position: right top;
-    background-size: 120%;
   
-    
-  }
-  #mainmissao {
-    margin-top: -50px;
-  }
+
 
 }
 
 @media only screen and (max-width: 480px) {
+
   #yoganavtabs {
     display: flex!important;
     flex-wrap: wrap;
@@ -3745,9 +3750,7 @@ font-size: 18px!important;
     align-items: center;
     align-content: center;
   }
-  h2.module-title.font-alt.yoga {
-  margin-top: 25px!important;
-}
+
   #toggle {
     font-size: 18px!important;
   }
@@ -3780,15 +3783,7 @@ font-size: 18px!important;
           }
 
       
-  #homemissao {
-    background-position: right top;
-    background-size: 100%;
-  
-    
-  }
-  #mainmissao {
-    margin-top: -100px;
-  }
+ 
   .work-item,
   .works-grid-3 .work-item,
   .works-grid-4 .work-item,
@@ -3857,7 +3852,10 @@ margin-top: 10px;
 
   font-size: 16px;
 }
-
+.titan-title-size-4 {
+  border-bottom: solid 2px white;
+  font-size: 30px;
+}
 }
 @media only screen and (max-width: 425px) {
   
@@ -3869,17 +3867,16 @@ margin-top: 10px;
   padding: 5 5!important;
 }
      
-  #homemissao {
-    background-position: right top;
-    background-size: 100%;
-  
-    
-  }
-  #mainmissao {
-    margin-top: -150px;
-  }
+
 }
 @media only screen and (max-width: 375px) {
+  #homemissao {
+    background-position-x:-200px;
+    
+      background-image: url("/assets/images/missao2.webp")!important;
+      
+    
+  }
   #homeeducacao {
     background-position-x:-350px;
   width:100%!important;
@@ -3918,15 +3915,8 @@ margin-top: 10px;
      #btnescolas {
        padding: 0 0!important;
      }
-  #homemissao {
-    background-position: right top;
-    background-size: 120%;
-  
-    
-  }
-  #mainmissao {
-    margin-top: -150px;
-  }
+
+
   .module-title {
     font-size: 24px !important;
   }
@@ -4004,6 +3994,7 @@ margin-top: 10px;
 }
 
 @media only screen and (max-width: 350px) {
+
   #btnempresas {
     font-size: 11px!important;
       }
@@ -4011,25 +4002,19 @@ margin-top: 10px;
         font-size: 16px!important;
           }
 
-  #homemissao {
-    background-position: right top;
-    background-size: 120%;
-  
-    
-  }
-  #mainmissao {
-    margin-top: -150px;
-  }
 
- #homeatelier {
-    background-size:195%;
-    background-position: center top;
-  }
-  #mainatelier { 
-    margin-top:-50px;
-  }
 }
 @media only screen and (max-width: 327px) {
+  #homemissao {
+    background-position-x:-250px;
+    
+      
+    
+  #homeatelier {
+    background-image: url("/assets/images/ateliermob.webp")!important;
+    
+  }
+
   #homeeducacao {
     background-position-x:-380px;
   width:100%!important;
@@ -4045,21 +4030,14 @@ margin-top: 10px;
   #educacaonavtabs {
 
   }
-  #homemissao {
-    background-position: right top;
-    background-size: 120%;
-  
-    
-  }
-  #mainmissao {
-    margin-top: -200px;
-  }
+
 #equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
   font-size: 11px;
 }
 .module-title {
   font-size: 23px !important;
 }
+
 
 .module-subtitle {
   font-size: 20px !important;
@@ -4082,13 +4060,6 @@ font-size: 16px !important;
   #equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
     font-size: 9px;
   }
-  #homemissao {
-    background-position: right top;
-    background-size: 120%;
-  
-    
-  }
-  #mainmissao {
-    margin-top: -200px;
-  }
+
+
   }

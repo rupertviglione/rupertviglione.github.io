@@ -3712,7 +3712,6 @@ font-size: 13px !important;
     font-size: 20px!important;
      }
   #homemissao {
-    background-position-x:-200px;
     
   }
 
@@ -3871,7 +3870,6 @@ margin-top: 10px;
 }
 @media only screen and (max-width: 375px) {
   #homemissao {
-    background-position-x:-200px;
     
       background-image: url("/assets/images/missao2.webp")!important;
       
@@ -4005,10 +4003,7 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 327px) {
-  #homemissao {
-    background-position-x:-250px;
-    
-  }      
+ 
     
   #homeatelier {
     background-image: url("/assets/images/ateliermob.webp")!important;

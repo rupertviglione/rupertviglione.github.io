@@ -3726,6 +3726,7 @@ font-size: 18px!important;
   }
 
 }
+
 @media only screen and (max-width: 480px) {
   #yoganavtabs {
     display: flex!important;
@@ -3744,7 +3745,7 @@ font-size: 18px!important;
     align-items: center;
     align-content: center;
   }
-  h2.module-title.font-alt {
+  h2.module-title.font-alt.yoga {
   margin-top: 25px!important;
 }
   #toggle {

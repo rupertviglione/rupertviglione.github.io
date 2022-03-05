@@ -1129,7 +1129,7 @@ blockquote {
 .font-alt {
   font-family: 'Seiva';
   letter-spacing: 2px;
-  color: white;
+  color: #aebca7;
   font-size: 35px;
 
 }
@@ -3660,7 +3660,7 @@ margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 650px) {
- 
+
   #yoganavtabs>li {
   
     width: 150% !important;
@@ -3727,12 +3727,32 @@ font-size: 18px!important;
 
 }
 @media only screen and (max-width: 480px) {
-  
+  #yoganavtabs {
+    display: flex!important;
+    flex-wrap: wrap;
+    width: 40%;
+
+  }
+  #yoganavtabs>li>a {
+   margin-top: 5px!important;
+   margin-bottom: 5px!important;
+
+  }
+  #yoganavtabscontainer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  h2.module-title.font-alt {
+  margin-top: 25px!important;
+}
   #toggle {
     font-size: 18px!important;
   }
   #profissionais {
     font-size: 14px!important;
+
     
   } 
   #tituloeducacao, #destaqueeducacao, #personalizadas h2, #escolas h2 {
@@ -3795,7 +3815,7 @@ margin-top: 10px;
   }
   .module-title {
     font-size: 40px !important;
-    color: white;
+    color: #aebca7;
 
 
   }

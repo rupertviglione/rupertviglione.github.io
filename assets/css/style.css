@@ -1129,8 +1129,9 @@ blockquote {
 .font-alt {
   font-family: 'Seiva';
   letter-spacing: 2px;
-  color: #aebca7;
-  font-size: 24px;
+  color: white;
+  font-size: 35px;
+
 }
 
 .font-serif {
@@ -3659,9 +3660,7 @@ margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 650px) {
-  #navbar {
-    width: 650px!important;
-  }
+ 
   #yoganavtabs>li {
   
     width: 150% !important;
@@ -3795,7 +3794,10 @@ margin-top: 10px;
 
   }
   .module-title {
-    font-size: 25px !important;
+    font-size: 40px !important;
+    color: white;
+
+
   }
 
   .module-subtitle {

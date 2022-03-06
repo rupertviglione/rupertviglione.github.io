@@ -125,7 +125,7 @@
         </div>
       </div> 
     </div>
-    <section class="home-section home-parallax bg-light" id="homeequipa" data-background="assets/images/white.webp">      
+    <section class="home-section home-parallax bg-light tabletcollapsed" id="homeequipa" data-background="assets/images/white.webp">      
       <ul class="works-grid works-grid-gut works-grid-3 works-hover-g" id="works-grid">
             <li class="work-item illustration webdesign work-item-quemsomos" id="work-item-nuno"><a id="equipaimagem1">
                 <div class="work-image" ><img src="/assets/images/nuno.webp" alt="Nuno Gonçalo"/></div>
@@ -181,7 +181,7 @@
     
       <div class="main" id="mainequipa">
           <div class="container">
-            <div class="row">
+            <div class="row" id="teamrow">
               <div class="col-sm-8 col-sm-offset-2">
                 <h2 class="module-title font-alt">EQUIPA</h2>
                 <div class="module-subtitle font-serif large-text">Somos artistas, pedagogos, designers e apaixonados pelo que é natural e nos faz sentir vivos e conectados. Ligam-nos afectos e muita vontade de contribuir positivamente no mundo. Confeccionamos parte do que precisamos e consumimos. A Seiva Atelier é a nossa forma de partilhar uma mudança de paradigma que procurámos e que foi mudando a nossa forma de estar com o mundo.
@@ -201,7 +201,7 @@
                  
         <div class="module-small bg-light">
           <div class="container">
-            <div class="row">
+            <div class="row" id="footer">
               <div class="col-sm-6">
                 <div class="widget">
                   <h5 class="widget-title font-alt">SEIVA ATELIER</h5>
@@ -284,31 +284,48 @@ $(document).ready(function() {
   $("#equipaimagem1").mouseover(function() {
     if (screen.width > 481) {
     $("#equipatexto1").show();
+    document.getElementById("containernav").style.paddingRight = "30px";
+    $("#homeequipa").removeClass('tabletcollapsed').addClass('tabletexpanded');
+
   }
   });
   $("#equipaimagem1").mouseout(function() {
     if (screen.width > 481) {
-  $("#equipatexto1").hide();  
+  $("#equipatexto1").hide(); 
+  document.getElementById("containernav").style.paddingRight = "10px";
+  $("#homeequipa").removeClass('tabletexpanded').addClass('tabletcollapsed');
 }
   });
   $("#equipaimagem2").mouseover(function() {
     if (screen.width > 481) {
   $("#equipatexto2").show();
+  document.getElementById("containernav").style.paddingRight = "30px";
+  $("#homeequipa").removeClass('tabletcollapsed').addClass('tabletexpanded');
+
 }
   });
   $("#equipaimagem2").mouseout(function() {
     if (screen.width > 481) {
       $("#equipatexto2").hide(); 
+      document.getElementById("containernav").style.paddingRight = "10px";
+      $("#homeequipa").removeClass('tabletexpanded').addClass('tabletcollapsed');
+
 }
   });
   $("#equipaimagem3").mouseover(function() {
     if (screen.width > 481) {
   $("#equipatexto3").show();
+  document.getElementById("containernav").style.paddingRight = "30px";
+  $("#homeequipa").removeClass('tabletcollapsed').addClass('tabletexpanded');
+
+
 }
   });
   $("#equipaimagem3").mouseout(function() {
     if (screen.width > 481) {
   $("#equipatexto3").hide();
+  document.getElementById("containernav").style.paddingRight = "10px";
+  $("#homeequipa").removeClass('tabletexpanded').addClass('tabletcollapsed');
 }
   });
 });
@@ -380,5 +397,7 @@ $(document).ready(function() {
     }        
   });
 </script>
+
+
   </body>
 </html>

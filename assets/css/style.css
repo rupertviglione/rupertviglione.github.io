@@ -11,7 +11,10 @@ html {
     hyphens: auto;
      
 }
-
+  
+#teamrow {
+  margin-top: 0px!important;
+}
 
 .navbar-up {
 position: absolute !important;
@@ -717,11 +720,7 @@ somos demasiado para baixo */
   .mb-sm-80 {
     margin-bottom: 80px !important;
   }
-  #equipatexto1, #equipatexto2, #equipatexto3 {
 
-  top: 300px !important;
-
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2394,6 +2393,7 @@ padding-right: 40px !important;
 #equipaimagem1:hover + #equipatexto1 {
   display: block;
 }
+
 #equipaimagem2:hover + #equipatexto2 {
   display: block;
   left: 0 !important;
@@ -3009,10 +3009,10 @@ font-style:italic;
 }
 
 @media (min-width: 768px) {
-  #educacaonavtabs {
- 
-  }
   
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 300px!important;
+  }
 }
 
 
@@ -3247,6 +3247,15 @@ font-style:italic;
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
 @media (max-width:768px) {
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+
+    top: 275px !important;
+  
+    }
+
+  #containernav {
+    padding-right:10px;
+  }
   .titan-title-size-4 {
     border-bottom: solid 2px white;
     font-size: 38px;
@@ -3326,6 +3335,10 @@ font-size: 25px !important;
           }
 }
 @media (min-width: 768px) {
+
+  .equipatexto {
+    font-size: 16px!important;
+  }
   
   .container {
     width: 100%!important;
@@ -3374,8 +3387,10 @@ font-size: 25px !important;
 }
 
 @media (min-width: 2000px) {
-
-
+  .equipatexto {
+    font-size:22px!important;
+padding-top: 225px;
+  }
    .navbar-custom {
     letter-spacing: 1px;
     font-size: 16px;
@@ -3385,6 +3400,12 @@ font-size: 25px !important;
   }
 }  
 @media (min-width: 1439px) {
+ 
+  .equipatexto {
+    font-size:20px!important;
+padding-top: 20px;
+  }
+
   .navbar-custom {
     letter-spacing: 1px;
     font-size: 14px;
@@ -3412,7 +3433,102 @@ font-size: 25px !important;
     margin: 100px 0;
   }
 }  
+@media (min-width: 1024px) {
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 325px!important;
+  }
+}
+@media (min-width: 1050px) {
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 375px!important;
+  }
+}
+@media (min-width: 1500px) {
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 450px!important;
+  }
+  .equipatexto {
+    font-size:20px!important;
+  }
+}
+@media (min-width: 1800px) {
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 500px!important;
+  }
+  .equipatexto {
+    font-size:24px!important;
+  }
+}
+@media (min-width: 2100px) {
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 600px!important;
+  }
+  .equipatexto {
+    font-size:26px!important;
+  }
+}
+@media (min-width: 2400px) {
+  #footer > div:nth-child(1) > div > h5 {
+    font-size: 30px;
+  }
+  #footer > div:nth-child(1) > div > p.footer-text {
+    font-size: 24px;
+  }
+  #footer > div:nth-child(1) > div > p {
+    font-size:22px;
+  }
+
+  #navbar {
+    font-size: 20px!important;
+  }
+  #teamrow > div > h2 {
+    font-size: 50px!important;
+  }
+  #teamrow > div > div {
+    font-size: 38px!important;
+  }
+  #teamrow {
+    height: 45vh!important;
+  }
+  .tabletcollapsed {
+    height: 40vh!important;
+  }
+  .tabletexpanded {
+    height: 50vh!important;
+  }
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 625px!important;
+  }
+  .equipatexto {
+    font-size:26px!important;
+  }
+}
+@media (max-width: 1600px) {
+  .tabletcollapsed {
+    height: 55vh!important;
+    }
+    .tabletexpanded {
+      height: 75vh!important;
+    }
+
+}
+
+@media (max-width: 1344px) {
+  .tabletcollapsed {
+    height: 55vh!important;
+    }
+    .tabletexpanded {
+      height: 75vh!important;
+    }
+
+}
 @media (max-width: 1200px) {
+  .tabletcollapsed {
+    height: 55vh!important;
+    }
+    .tabletexpanded {
+      height: 75vh!important;
+    }
   /* Features */
   #btnempresas {
     font-size: 20px!important;
@@ -3436,6 +3552,7 @@ font-size: 25px !important;
 @media (max-width: 1100px) {
 }
 @media (max-width: 1050px) {
+  
 
   /* Navbar */
   #btnempresas {
@@ -3465,6 +3582,12 @@ font-size: 25px !important;
   }
 }
 @media (max-width: 991px) {
+  .tabletcollapsed {
+    height: 50vh!important;
+    }
+    .tabletexpanded {
+      height: 90vh!important;
+    }
 
 
   /* Navbar */
@@ -3730,7 +3853,7 @@ font-size: 13px !important;
 
 }
 @media only screen and (max-width: 520px) {
- 
+
 
   #btnempresas {
 font-size: 16px!important;
@@ -3744,6 +3867,12 @@ font-size: 18px!important;
 }
 
 @media only screen and (max-width: 480px) {
+  .tabletcollapsed {
+    height: 210vh!important;
+    }
+    .tabletexpanded {
+      height: 240vh!important;
+    }
 
   #homeatelier {
     background-image: url("/assets/images/ateliermob.webp")!important;
@@ -3811,17 +3940,17 @@ font-size: 18px!important;
 margin-top: 10px;
   }
   #work-item-nuno {
-    margin: 0;
+    margin: 0px!important;
     position: relative!important;
   }
   #work-item-goncalo {
     margin-top: 10px;
-    margin-bottom: 0px;
+  margin-bottom: 0px!important;
     position: relative!important;
   }
   #work-item-samanta {
-    margin-top: 10px;
-    margin-bottom: 0px;
+    margin-top: 10px!important;
+    margin-bottom: 0px!important;
     position: relative!important;
 
   }
@@ -3851,9 +3980,7 @@ margin-top: 10px;
   .mid {
     transform: translateY(-100%)!important;
   }
-  #homeequipa {
-    height: 150% !important;
-  }
+
 #mainequipa {
   position: relative;
 }
@@ -3886,7 +4013,12 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 375px) {
-
+  .tabletcollapsed {
+    height: 180vh!important;
+    }
+    .tabletexpanded {
+      height: 210vh!important;
+    }
   #homemissao {
     
       background-image: url("/assets/images/missao2.webp")!important;
@@ -3963,17 +4095,17 @@ margin-top: 10px;
 margin-top: 10px;
   }
   #work-item-nuno {
-    margin: 0;
+    margin: 0px!important;
     position: relative!important;
   }
   #work-item-goncalo {
-    margin-top: 10px;
-    margin-bottom: 0px;
+    margin-top: 20px!important;
+    margin-bottom: 0px!important;
     position: relative!important;
   }
   #work-item-samanta {
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 10px!important;
     position: relative!important;
 
   }
@@ -3987,9 +4119,7 @@ margin-top: 10px;
   .mid {
     transform: translateY(-100%)!important;
   }
-  #homeequipa {
-    height: 150% !important;
-  }
+
 #mainequipa {
   position: relative;
 }
@@ -4022,6 +4152,12 @@ margin-top: 10px;
 }
 @media only screen and (max-width: 327px) {
 
+  .tabletcollapsed {
+    height: 130vh!important;
+    }
+    .tabletexpanded {
+      height: 150vh!important;
+    }
   #homeeducacao {
     background-position-x:-380px;
   width:100%!important;

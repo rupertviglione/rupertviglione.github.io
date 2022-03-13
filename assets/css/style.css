@@ -3875,7 +3875,7 @@ padding-top: 20px;
 margin-bottom: 20px;
 }
 .navbar-header {
-  margin-right: 15px!important;
+  margin-right: 15px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -4095,6 +4095,15 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 375px) {
+ .navbar-header:not(#navbar-headerindex) {
+    margin-top: -50px;
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+    
+  }
+  button.navbar-toggle:not(#navbar-toggleindex) {
+    margin: 8px 0px!important;
+  }
   #ecodesignhome {
     background-position-x: -150px;
   }

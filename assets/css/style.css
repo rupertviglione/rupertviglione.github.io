@@ -11,6 +11,20 @@ html {
     hyphens: auto;
      
 }
+#menuModal {
+  padding-left: 0!important;
+}
+#navbarindex {
+  margin-top:17px;
+}
+#seivabrand {
+  width: 3%;
+  margin: 0 auto;
+}
+#seivabrandmobile {
+  width: 7%;
+  margin: 0 auto;
+}
   #ecodesignhome {
     filter:brightness(1.3);
   }
@@ -1534,6 +1548,7 @@ margin-right: 1px;
   color: #aebca7;
   position:fixed !important;
   font-family: 'Seiva';
+  margin-top: 5px;
   
 }
 
@@ -1543,6 +1558,7 @@ margin-right: 1px;
   align-items: center!important;
   justify-content: center!important;
   padding: 0;
+  
 }
 
 
@@ -1570,7 +1586,7 @@ z-index: 1500;
   background-color: rgba(174, 188, 167, 0.7);
   font-family: Seiva;
   text-align: center;
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .modal.modal-fullscreen .modal-body {
@@ -1578,18 +1594,18 @@ z-index: 1500;
 }
 
 .modal.modal-fullscreen .modal-body a {
-  line-height: 30px!important;
+  line-height: 20px!important;
   
 }
 .modal.modal-fullscreen .modal-body a:hover{
-  font-size: 30px;
+  font-size: 20px;
   
   background-color: transparent !important;
   
 
 }
 .modal.modal-fullscreen .modal-body a:active{
-  font-size: 30px;
+  font-size: 20px;
   background-color: transparent !important;
 
 }
@@ -1597,7 +1613,7 @@ z-index: 1500;
 #dropdownmenumodal {
   text-align: center;
   vertical-align: center;
-  font-size: 20px;
+  font-size: 16px;
 }
 @font-face {
   font-family: 'Seiva';
@@ -1634,6 +1650,7 @@ z-index: 1500;
   padding: 0;
   box-shadow: none;
   color: #aebca7;
+  
 }
 
 .navbar-custom .navbar-brand {
@@ -3259,6 +3276,9 @@ font-style:italic;
   #containernav {
     padding-right:10px;
   }
+  .navbar-nav:not(#navbar-navindex) {
+    margin-top: -10px;
+  }
   .titan-title-size-4 {
     border-bottom: solid 2px white;
     font-size: 38px;
@@ -3400,6 +3420,9 @@ font-size: 25px !important;
 }
 
 @media (min-width: 2000px) {
+  #navbarindex {
+    margin-top: 45px!important;
+  }
   #captionyoga {
     width: 13%;
   }
@@ -3434,11 +3457,17 @@ padding-top: 20px;
     letter-spacing: 1px;
     font-size: 14px;
   }  
+  #navbarindex {
+    margin-top: 25px;
+  }
   .work-item-quemsomos {
     margin: 100px 0;
   }
 }  
 @media (min-width: 1201px) {
+  .navbar-nav:not(#navbar-navindex) {
+    margin-top: 20px;
+  }
   #btnempresas {
     min-height: 70px !important;
   }
@@ -3451,7 +3480,7 @@ padding-top: 20px;
   }
   .navbar-custom {
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 15px;
   }  
   .work-item-quemsomos {
     margin: 100px 0;
@@ -3479,6 +3508,9 @@ padding-top: 20px;
   }
 }
 @media (min-width: 1800px) {
+  .navbar-nav:not(#navbar-navindex) {
+    margin-top: 40px;
+  }
   #equipatexto1, #equipatexto2, #equipatexto3 {
     top: 500px!important;
   }
@@ -3487,6 +3519,9 @@ padding-top: 20px;
   }
 }
 @media (min-width: 2100px) {
+  .navbar-nav:not(#navbar-navindex) {
+    margin-top: 50px;
+  }
   #equipatexto1, #equipatexto2, #equipatexto3 {
     top: 600px!important;
   }
@@ -3495,6 +3530,9 @@ padding-top: 20px;
   }
 }
 @media (min-width: 2400px) {
+  .navbar-nav:not(#navbar-navindex) {
+    margin-top: 80px;
+  }
   #footer > div:nth-child(1) > div > h5 {
     font-size: 30px;
   }
@@ -3505,8 +3543,8 @@ padding-top: 20px;
     font-size:22px;
   }
 
-  #navbar {
-    font-size: 20px!important;
+  #navbar, #navbarindex {
+    font-size: 25px!important;
   }
   #teamrow > div > h2 {
     font-size: 50px!important;
@@ -3623,9 +3661,12 @@ padding-top: 20px;
   /* Navbar */
   .navbar-custom {
     letter-spacing: 0;
-    font-size: 13px;
+    font-size: 11px;
     margin-top: 0px !important;
     position:fixed !important;
+  }
+  #navbarindex {
+    margin-top: 5px!important;
   }
   .work-item-quemsomos {
     margin: 100px 0;
@@ -3899,6 +3940,9 @@ font-size: 18px!important;
 
 @media only screen and (max-width: 480px) {
 
+  .navbar-custom .navbar-brand {
+    visibility: hidden;
+  }
   .home-section:not(#homeequipa) {
     max-height: 300px !important;
   }

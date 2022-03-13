@@ -19,6 +19,21 @@ html {
     left: 50px;
  
 }
+#bannertext {
+  
+  width: 103%;
+  background-color: rgba(32, 21, 2, 0.7);
+  padding: 0!important;
+
+  margin-left: -15px!important;
+  margin-top: 50px;
+}
+
+#bannertext p {
+  
+    margin: 20px 20px 20px;
+
+}
 .highlighttext {
   margin-bottom: 40px;
   margin-top: 40px;

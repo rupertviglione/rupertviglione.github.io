@@ -11,6 +11,42 @@ html {
     hyphens: auto;
      
 }
+
+.highlightblock {
+  background-color: #fbf5e9;
+  display: block;
+    margin: 50px 0 0 0;
+    left: 50px;
+ 
+}
+.highlighttext {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-family: 'Coves';
+  letter-spacing: 1;
+  text-align: center;
+  color: #aebca7;
+  line-height: 38px;
+  font-size: 24px;
+  font-weight: 300;
+}
+#quoterow {
+  display:inline-flex;
+  align-items:flex-end;
+}
+#quoteecodesign, #quoteecodesign>p {
+  margin-bottom: 0px!important;
+  
+}
+#quoteecodesign {
+font-style: italic !important;
+  text-align: right;
+  position: relative;
+    right: -90px;
+    width: 110%;
+}
+
+
 #menuModal {
   padding-left: 0!important;
 }

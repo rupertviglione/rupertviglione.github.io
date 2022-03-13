@@ -724,6 +724,7 @@ somos demasiado para baixo */
 }
 
 @media only screen and (max-width: 767px) {
+
   #itemsempresas, #itemsescolas {
     margin-left: 50px!important;
     margin-right: 50px!important;
@@ -3867,6 +3868,13 @@ font-size: 18px!important;
 }
 
 @media only screen and (max-width: 480px) {
+
+  .home-section:not(#homeequipa) {
+    max-height: 300px !important;
+  }
+  #ecodesignhome {
+    background-position-x: -100px;
+  }
   .tabletcollapsed {
     height: 210vh!important;
     }
@@ -3876,7 +3884,7 @@ font-size: 18px!important;
 
   #homeatelier {
     background-image: url("/assets/images/ateliermob.webp")!important;
-    
+    background-size: 180%;
   }
   #yoganavtabs {
     display: flex!important;
@@ -4013,6 +4021,9 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 375px) {
+  #ecodesignhome {
+    background-position-x: -150px;
+  }
   .tabletcollapsed {
     height: 180vh!important;
     }
@@ -4022,11 +4033,12 @@ margin-top: 10px;
   #homemissao {
     
       background-image: url("/assets/images/missao2.webp")!important;
+      background-size: 150%;
       
     
   }
   #homeeducacao {
-    background-position-x:-350px;
+    background-position-x:-250px;
   width:100%!important;
   margin-right: 0px!important;
   padding-right: 0px!important;
@@ -4152,6 +4164,9 @@ margin-top: 10px;
 }
 @media only screen and (max-width: 327px) {
 
+  #ecodesignhome {
+    background-position-x: -180px;
+  }
   .tabletcollapsed {
     height: 130vh!important;
     }
@@ -4159,7 +4174,7 @@ margin-top: 10px;
       height: 150vh!important;
     }
   #homeeducacao {
-    background-position-x:-380px;
+    background-position-x:-280px;
   width:100%!important;
   margin-right: 0px!important;
   padding-right: 0px!important;

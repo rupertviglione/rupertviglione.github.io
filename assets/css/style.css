@@ -28,10 +28,24 @@ html {
   margin-left: -15px!important;
   margin-top: 50px;
 }
+#bannertext2 {
+  
+  width: 103%;
+  background-color: rgba(174, 188, 167, 0.7);
+  padding: 0!important;
+
+  margin-left: -15px!important;
+  margin-top: 50px;
+}
 
 #bannertext p {
   
     margin: 20px 20px 20px;
+
+}
+#bannertext2 p {
+  color: #fbf5e9!important;
+  margin: 20px 20px 20px;
 
 }
 .highlighttext {

@@ -23,20 +23,18 @@ html {
 }
 #bannertext {
   
-  width: 103%;
+  width: 100vw!important;
   background-color: rgba(32, 21, 2, 0.7);
   padding: 0!important;
 
-  margin-left: -15px!important;
   margin-top: 50px;
 }
 #bannertext2 {
   
-  width: 103%;
+  width:100vw!important;
   background-color: rgba(174, 188, 167, 0.7);
   padding: 0!important;
 
-  margin-left: -15px!important;
   margin-top: 50px;
 }
 
@@ -3371,8 +3369,7 @@ font-size: 25px !important;
 #yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
     
   font-size: 22px !important;
-  margin-left: 20px!important;
-  margin-right: 20px!important;
+
 }
   #btnempresas {
     font-size: 17px!important;
@@ -4016,14 +4013,7 @@ font-size: 18px!important;
 }
 
 @media only screen and (max-width: 480px) {
-  #bannertext2 {
-    margin-left: -30px!important;
-    width: 113%;
-  }
-  #bannertext {
-    margin-left: -35px!important;
-    width: 119.78%;
-  }
+
   .ecodesigntitles {
     font-size: 20px;
     margin-top: 100px!important;
@@ -4099,8 +4089,7 @@ line-height: 24px;
     #yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
         
       font-size: 18px !important;
-      margin-left: 20px!important;
-      margin-right: 20px!important;
+  
     }
   #btnempresas {
     font-size: 12px!important;
@@ -4197,14 +4186,7 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 375px) {
-  #bannertext2 {
-    margin-left: -30px!important;
-    width: 115%;
-  }
-  #bannertext {
-    margin-left: -35px!important;
-    width: 123%;
-  }
+
   .ecodesigntitles {
   
     margin-top: 70px!important;
@@ -4261,8 +4243,7 @@ margin-top: 10px;
     #yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
         
       font-size: 16px !important;
-      margin-left: 20px!important;
-      margin-right: 20px!important;
+     
     }
   
   #btnempresas {
@@ -4377,14 +4358,7 @@ margin-top: 10px;
     font-size: 12px;
     line-height: 18px;
   }
-  #bannertext2 {
-    margin-left: -30px!important;
-    width: 117.7%;
-  }
-  #bannertext {
-    margin-left: -35px!important;
-    width: 127.9%;
-  }
+
   .ecodesigntitles {
   
     margin-top: 30px!important;

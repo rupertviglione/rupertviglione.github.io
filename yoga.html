@@ -158,14 +158,14 @@
           <section class="module pb-0">
             <div class="container">
               <div class="row" id="quoterow">
-                <div class="col-sm-4 highlightblock">
+                <div class="col-sm-4 col-xs-5 highlightblock">
                   <div class="highlighttext">
                     Criamos e recriamos peças de ecodesign para decorar com funcionalidade o interior da sua casa, alojamento local, espaços hoteleiros, estabelecimentos comerciais, escritórios, e eventos. Ou, criamos integralmente o projecto de ecodesign de interior para compor todo o recheio do seu espaço, focados em criar ambientes serenos e equilibrados sem descuidar do conforto que merecemos.
   
                   </div>
                 </div>
               
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-xs-6">
                   <div class="module-subtitle font-serif large-text" id="quoteecodesign"><p>Individualmente ou em grupo, programamos aulas de <span style="  font-weight: bold">Prana Yoga</span> para nos ligarmos à nossa natureza e a uma vida mais <span style=" font-weight: bold">saudável</span> e <span style=" font-weight: bold">equilibrada</span>.
                   Conscientes da importância de cuidar do natural, olhamos também para a natureza interior.  É partindo desta perspectiva que promovemos <span style="  font-weight: bold">Prana Yoga</span>.</p>
 
@@ -708,6 +708,30 @@ window.onscroll = function() {
             });
           });
           </script>
-                        
+                         <script>
+
+                          var owl = $('.owl-carousel');
+                          owl.owlCarousel({
+                            // Number of items
+                            autoHeight : false,
+                              items : 7,	    
+                              itemsDesktop : [1900,4.3], //4.3 items between 1900px and 901px
+                              itemsDesktopSmall : [1200,3.3], // 3.3 items betweem 1200px and 601px
+                              itemsTablet : [768,2.3], // 2.3 items 
+                            itemsMobile : [600, 1.3], // 1.3 items between 600 and 0
+                      
+                              // LazyLoad
+                              lazyLoad : false,
+                              lazyEffect: 'zoom',
+                              rewindNav: false,
+                      
+                              // Navigation
+                              navigation : true,
+                              scrollPerPage: false,
+                              slideSpeed: 300,
+                              navigationText : ["",""],
+                              pagination: false
+                          })
+                        </script>
   </body>
 </html>

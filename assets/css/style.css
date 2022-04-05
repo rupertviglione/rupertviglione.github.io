@@ -35,6 +35,8 @@ html {
 
   margin-top: 50px;
 }
+
+
 #bannertext2 {
   
   width:100vw!important;
@@ -357,12 +359,7 @@ background-color: #aebca7!important;
   opacity: 0.8!important;
 }
 
-#title2 {
-  border: none !important;
-  padding: 0!important;
-  margin: 0!important;
-  line-height: 20px;
-}
+
 
 #captionyoga {
   width: 30%;
@@ -2478,14 +2475,16 @@ margin-left: 20px;
 padding-right: 40px !important;
 }
 
-#text1, #text2, #text3, #text4, #text5, #text6 {
+#text1, #text2, #text3, #text4, #text5, 
+#text6, #text7, #text8, #text9, #text10, 
+#text11, #text12, #text13, #tex1, #tex2, 
+#tex3, #tex4, #tex5, #tex6, #tex7, #tex8, 
+#tex9, #text10, #text11 {
   display: none;
+  margin-top: -20px;
+  padding-top: 20px;
 }
 
-#title1:hover + #text1, #text1:hover + #text1, #title2:hover +#text2, #title3:hover +#text3, 
-#title4:hover +#text4, #title5:hover +#text5, #title6:hover +#text6 {
-  display: block;
-}
 
 #equipaimagem1:hover + #equipatexto1 {
   display: block;

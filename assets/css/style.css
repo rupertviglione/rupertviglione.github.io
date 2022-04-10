@@ -424,7 +424,9 @@ background-color: #aebca7!important;
   font-size: 13px;
 }
 .educationlist {
-padding-inline-start: 15px!important;
+  margin-top: -15px;
+  margin-bottom: 5px;
+  padding-inline-start: 15px!important;
 }
 .fa-icons > div > i {
   display: inline-block;
@@ -2485,7 +2487,7 @@ padding-right: 40px !important;
 #text6, #text7, #text8, #text9, #text10, 
 #text11, #text12, #text13, #tex1, #tex2, 
 #tex3, #tex4, #tex5, #tex6, #tex7, #tex8, 
-#tex9, #tex10, #tex11 {
+#tex9, #tex10, #tex11, #tex12 {
   display: none;
   margin-top: -20px;
   padding-top: 20px;

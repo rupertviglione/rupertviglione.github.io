@@ -11,6 +11,12 @@ html {
     hyphens: auto;
      
 }
+#filters {
+font-family: Coves;
+margin-top:10px;
+margin-bottom: 30px;
+font-size: 22px;
+}
 #navbar-navindex >li >a {
   color: #aebca7;
 }
@@ -202,8 +208,26 @@ a,
 .btn {
   transition: all 0.125s ease-in-out 0s;
 }
-#containeryoga {
 
+#portfolio {
+  color:#aebca7!important;
+border: none!important;
+margin-left: 10px;
+}
+#portfolio:hover {
+  border: none !important;
+  background: none!important;
+  color:#cadac1!important;
+  border-color:#cadac1!important;
+
+}
+#portfolio:active {
+  border: none !important;
+  background: none!important;
+  color:#cadac1!important;
+  border-color:#cadac1!important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none!important;
 
 }
 .btn-yoga {
@@ -216,11 +240,15 @@ a,
 font-size: 18px !important;
 text-align:center;
 vertical-align: center;
-  
-  
+}
+  #voltarbtn {
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 22px;
+  }
   
 
-}
+
 .btn-yoga:hover {
   background-color: #aebca7!important;
   background: linear-gradient(135deg, #aebca7 75%, #fbf5e9 150%)!important;
@@ -2402,7 +2430,7 @@ Google map
 .filter > li {
   display: inline-block;
   padding: 0 0 10px;
-  margin: 0 25px;
+  margin: 0 75px;
 }
 
 /* Portfolio grid */

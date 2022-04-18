@@ -247,7 +247,10 @@ vertical-align: center;
     font-size: 22px;
   }
   
-
+.btnseducacao {
+  margin-left: 10px;
+  list-style-type: none!important;
+}
 
 .btn-yoga:hover {
   background-color: #aebca7!important;
@@ -334,6 +337,7 @@ transform:scale(105%);
   justify-content: space-around;
   margin-left: 0px;
   padding: 0;
+  list-style: none!important;
   margin-bottom: 80px;
   
 }

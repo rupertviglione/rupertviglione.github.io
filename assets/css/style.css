@@ -11,6 +11,11 @@ html {
     hyphens: auto;
      
 }
+
+#homeyoga {
+background-image:url("/assets/images/yoga.webp")!important;
+}
+
 #filters {
 font-family: Coves;
 margin-top:10px;
@@ -312,8 +317,9 @@ transform:scale(105%);
 .nav-pills > li > a {
   border-radius: 2px;
 }
-
-
+.portfolio .works-grid.works-grid-gut {
+  margin: 0 0 0 30px;
+}
 #yoganavtabs {
   border:none!important;
   font-size: 16px;
@@ -4127,6 +4133,10 @@ font-size: 18px!important;
 }
 
 @media only screen and (max-width: 480px) {
+
+  #homeyoga {
+    background-image:url("/assets/images/yogamobile.webp")!important;
+  }
 
   .ecodesigntitles {
     font-size: 20px;

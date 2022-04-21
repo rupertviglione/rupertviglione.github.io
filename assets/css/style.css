@@ -4125,7 +4125,25 @@ font-size: 18px!important;
 }
 
 @media only screen and (max-width: 480px) {
-
+  #educacaonavtabs {
+    flex-wrap: wrap;
+    line-height:10px;
+  }
+  #educacaonavtabs>li>a {
+    font-size:15px!important;
+    margin-bottom:10px;
+  }
+  #personalizadas > h2,   #grupo > h2,   #cadeira > h2,   #seniores > h2,  #criancas > h2 {
+    margin-top:0px!important;
+  }
+  #prana {
+    float: none!important;
+margin-left: auto;
+margin-right: auto;
+  }
+  #portfolio {
+    margin-left: -30px;
+  }
   #homeyoga {
     background-image:url("/assets/images/yogamobile.webp")!important;
   }

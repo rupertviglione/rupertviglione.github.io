@@ -11,7 +11,9 @@ html {
     hyphens: auto;
      
 }
-
+.samantamargin {
+  display: block!important;
+}
 #homeyoga {
 background-image:url("/assets/images/yoga.webp")!important;
 }
@@ -416,9 +418,8 @@ color: #fbf5e9;
   margin: 0px!important;
 }
 .nav-tabs>li.active>a {
-  color: ##fbf5e9;
+  color: #fbf5e9;
   filter: brightness(1.3);
-
   border: none!important;
   transform:scale(110%);
   opacity: 0.8!important;
@@ -3198,7 +3199,13 @@ font-style:italic;
 }
 
 @media (min-width: 768px) {
-  
+  .work-item,
+  .works-grid-3 .work-item,
+  .container .works-grid-3 .work-item,
+  .works-grid-4 .work-item,
+  .works-grid-5 .work-item {
+    width: 33%;
+  }
   #equipatexto1, #equipatexto2, #equipatexto3 {
     top: 300px!important;
   }
@@ -3749,12 +3756,7 @@ padding-top: 20px;
   #teamrow {
     height: 45vh!important;
   }
-  .tabletcollapsed {
-    height: 40vh!important;
-  }
-  .tabletexpanded {
-    height: 50vh!important;
-  }
+ 
   #equipatexto1, #equipatexto2, #equipatexto3 {
     top: 625px!important;
   }
@@ -3763,31 +3765,16 @@ padding-top: 20px;
   }
 }
 @media (max-width: 1600px) {
-  .tabletcollapsed {
-    height: 55vh!important;
-    }
-    .tabletexpanded {
-      height: 75vh!important;
-    }
+
 
 }
 
 @media (max-width: 1344px) {
-  .tabletcollapsed {
-    height: 55vh!important;
-    }
-    .tabletexpanded {
-      height: 75vh!important;
-    }
+
 
 }
 @media (max-width: 1200px) {
-  .tabletcollapsed {
-    height: 55vh!important;
-    }
-    .tabletexpanded {
-      height: 75vh!important;
-    }
+
   /* Features */
   #btnempresa {
     font-size: 20px!important;
@@ -3844,12 +3831,6 @@ padding-top: 20px;
   }
 }
 @media (max-width: 991px) {
-  .tabletcollapsed {
-    height: 50vh!important;
-    }
-    .tabletexpanded {
-      height: 90vh!important;
-    }
 
 
   /* Navbar */
@@ -3876,13 +3857,7 @@ padding-top: 20px;
     
     font-size: 20px;
   }
-  .work-item,
-  .works-grid-3 .work-item,
-  .container .works-grid-3 .work-item,
-  .works-grid-4 .work-item,
-  .works-grid-5 .work-item {
-    width: 33%;
-  }
+  
   /* Half-image */
   .side-image {
     position: relative;
@@ -4062,11 +4037,23 @@ padding-top: 20px;
   display: none;
   text-align: center;
   color: #aebca7;
-  position: relative !important;
+  position: absolute !important;
   margin-left: 20px;
   padding-right: 20px;
   height: 5px;
 margin-bottom: 20px;
+}
+#equipatexto1mobile {
+ 
+    margin-top: 78%;
+}
+#equipatexto2mobile {
+margin-top: 140%;
+}
+#equipatexto3mobile {
+margin-top: 205%;
+}
+
 }
 .navbar-header {
   margin-right: 15px;
@@ -4166,12 +4153,7 @@ right: -20px;
   #ecodesignhome {
     background-position-x: -100px;
   }
-  .tabletcollapsed {
-    height: 210vh!important;
-    }
-    .tabletexpanded {
-      height: 240vh!important;
-    }
+ 
 
   #homeatelier {
     background-image: url("/assets/images/ateliermob.webp")!important;
@@ -4238,18 +4220,22 @@ line-height: 24px;
 margin-top: 10px;
   }
   #work-item-nuno {
-    margin: 0px!important;
+    margin-bottom: -25px!important;
+    margin-top:50px;
     position: relative!important;
+    width: 100% !important;
   }
   #work-item-goncalo {
-    margin-top: 10px;
+    margin-top: 0px!important;
   margin-bottom: 0px!important;
     position: relative!important;
+    width:100%!important;
   }
   #work-item-samanta {
     margin-top: 10px!important;
     margin-bottom: 0px!important;
     position: relative!important;
+    width:100%!important;
 
   }
   .module-title {
@@ -4279,10 +4265,12 @@ margin-top: 10px;
   }
 
 #mainequipa {
-  position: relative;
+  position:relative!important;
+  height: 25%;
+  width: 100%;
+  display:none;
 }
 .expanded, .expanded2, .expanded3 {
-  transform: translateY(100%);
 }
 .work-title {
 
@@ -4324,12 +4312,7 @@ margin-top: 10px;
   #ecodesignhome {
     background-position-x: -150px;
   }
-  .tabletcollapsed {
-    height: 180vh!important;
-    }
-    .tabletexpanded {
-      height: 210vh!important;
-    }
+  
   #homemissao {
     
       background-image: url("/assets/images/missao2.webp")!important;
@@ -4395,7 +4378,7 @@ margin-top: 10px;
   .works-grid-3 .work-item,
   .works-grid-4 .work-item,
   .works-grid-5 .work-item {
-    width: 100%;
+    width: 100%!important;
   }
 
   .navbar-custom {
@@ -4404,34 +4387,33 @@ margin-top: 10px;
   #work-item-nuno {
     margin: 0px!important;
     position: relative!important;
+    margin-top: 50px!important;
+    width: 100%!important;
   }
   #work-item-goncalo {
-    margin-top: 20px!important;
+    margin-top: 10px!important;
     margin-bottom: 0px!important;
     position: relative!important;
+    width: 100%!important;
   }
   #work-item-samanta {
-    margin-top: 10px;
+    margin-top: 10px!important;
     margin-bottom: 10px!important;
     position: relative!important;
+    width: 100%!important;
 
   }
   .initial {
-    transform: translateY(-100%);
   }
   .initials {
-    transform: translateY(-204%);
   }
 
   .mid {
-    transform: translateY(-100%)!important;
   }
 
 #mainequipa {
-  position: relative;
 }
 .expanded, .expanded2, .expanded3 {
-  transform: translateY(100%);
 }
 .work-title {
   margin-top: 20px;
@@ -4441,6 +4423,7 @@ margin-top: 10px;
   margin-top: -10px;
   margin-bottom: 0px;
 }
+
 #equipatexto1mobile, #equipatexto2mobile, #equipatexto3mobile {
   font-size: 13px;
 }
@@ -4483,12 +4466,7 @@ margin-top: 10px;
   #ecodesignhome {
     background-position-x: -180px;
   }
-  .tabletcollapsed {
-    height: 130vh!important;
-    }
-    .tabletexpanded {
-      height: 150vh!important;
-    }
+
   #homeeducacao {
     background-position-x:-280px;
   width:100%!important;

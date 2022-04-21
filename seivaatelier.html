@@ -163,8 +163,8 @@
               </div>
             </div>
             <div class="row">
-              <div class="tabletcollapsed" id="homeequipa" style="transform: translateY(-20px);">      
-                <ul class="works-grid works-grid-gut works-grid-3 works-hover-g" id="works-grid">
+              <div class="tabletcollapsed" id="homeequipa" style="transform: translateY(-20px);" >      
+                <ul class="works-grid works-grid-gut works-grid-3 works-hover-g" id="works-grid" >
                       <li class="work-item illustration webdesign work-item-quemsomos" id="work-item-nuno"><a id="equipaimagem1">
                           <div class="work-image" ><img src="/assets/images/nuno.webp" alt="Nuno Gonçalo"/></div>
                           <div class="work-caption font-alt">
@@ -207,6 +207,15 @@
                         </li>
                         <li id="equipatexto3">
                           <div class="equipatexto">A Samanta é um ser muito bonito que veio acrescentar beleza ao mundo. É a personificação da bondade e a professora mais empatica que existe. Licenciada em design de equipamento e com mestrado em educação, no pouco tempo em que as filhas lhe dão folga, ou até com uma a trepar-lhe pelas pernas e a outra agarrada como um koala, dedica-se a criar delicadas peças decorativas e de adorno pessoal. Encontrou nos materiais naturais um refúgio de tranquilidade e serenidade que precisa para se manter equibrada e sã.</div>
+                        </li>
+                        <li class="work-item" id="mainequipa"><a>
+                          <div class="work-image"></div>
+                          <div class="work-caption font-alt">
+                            <div class="work-title"></div>
+                            <div class="work-descr"><span id="descr-s"></span>
+                              
+                            </div>
+                          </div></a> 
                         </li>
                 </ul>
               </div>
@@ -358,6 +367,7 @@ window.onscroll = function() {
           });
         });
         </script>
+
         <script>
           $(document).ready(function() {
             $("#equipaimagem1").click(function() {
@@ -366,7 +376,7 @@ window.onscroll = function() {
                  $("#equipatexto1mobile").slideDown();
                  $("#work-item-goncalo").removeClass('initial');
                  $("#work-item-samanta").removeClass('initials').addClass('initial');
-                 $("#mainequipa").addClass('expanded');
+                 $("#mainequipa").addClass('samantamargin');
                             }
                   });
           
@@ -375,7 +385,7 @@ window.onscroll = function() {
                 $("#equipatexto2").hide();
               $("#equipatexto2mobile").slideDown();
               $("#work-item-samanta").addClass('mid');
-              $("#mainequipa").addClass('expanded2');
+              $("#mainequipa").addClass('samantamargin');
               
               }
             });
@@ -383,9 +393,8 @@ window.onscroll = function() {
             $("#equipaimagem3").click(function() {
               if (screen.width < 481) {
                 $("#equipatexto3").hide();
-              
               $("#equipatexto3mobile").slideDown();
-              $("#mainequipa").addClass('expanded3');
+              $("#mainequipa").addClass('samantamargin');
               }
             });
             
@@ -398,7 +407,7 @@ window.onscroll = function() {
               $('#equipatexto1mobile').slideUp();
               $("#work-item-goncalo").addClass('initial');
               $("#work-item-samanta").removeClass('initial').addClass('initials');
-              $("#mainequipa").removeClass('expanded');
+              $("#mainequipa").removeClass('samantamargin');
                  
             
             }        
@@ -410,7 +419,7 @@ window.onscroll = function() {
             if (!$target.closest('#equipaimagem2').length) {
               $('#equipatexto2mobile').slideUp();
               $("#work-item-samanta").removeClass('mid');
-              $("#mainequipa").removeClass('expanded2');
+              $("#mainequipa").removeClass('samantamargin');
             }        
           });
         </script>
@@ -419,12 +428,12 @@ window.onscroll = function() {
             var $target = $(event.target);
             if (!$target.closest('#equipaimagem3').length) {
               $('#equipatexto3mobile').slideUp();
-              $("#mainequipa").removeClass('expanded3');
+              $("#mainequipa").removeClass('samantamargin');
         
         
             }        
           });
         </script>
-
+ 
   </body>
 </html>

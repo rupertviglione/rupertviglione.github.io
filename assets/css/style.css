@@ -11,9 +11,14 @@ html {
     hyphens: auto;
      
 }
-.samantamargin {
+
+
+.samantamargin, .samantamargin2, 
+.samantamargin3 {
   display: block!important;
 }
+
+
 #homeyoga {
 background-image:url("/assets/images/yoga.webp")!important;
 }

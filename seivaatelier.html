@@ -385,7 +385,7 @@ window.onscroll = function() {
                 $("#equipatexto2").hide();
               $("#equipatexto2mobile").slideDown();
               $("#work-item-samanta").addClass('mid');
-              $("#mainequipa").addClass('samantamargin');
+              $("#mainequipa").addClass('samantamargin2');
               
               }
             });
@@ -394,7 +394,7 @@ window.onscroll = function() {
               if (screen.width < 481) {
                 $("#equipatexto3").hide();
               $("#equipatexto3mobile").slideDown();
-              $("#mainequipa").addClass('samantamargin');
+              $("#mainequipa").addClass('samantamargin3');
               }
             });
             
@@ -408,7 +408,7 @@ window.onscroll = function() {
               $("#work-item-goncalo").addClass('initial');
               $("#work-item-samanta").removeClass('initial').addClass('initials');
               $("#mainequipa").removeClass('samantamargin');
-                 
+
             
             }        
           });
@@ -419,7 +419,8 @@ window.onscroll = function() {
             if (!$target.closest('#equipaimagem2').length) {
               $('#equipatexto2mobile').slideUp();
               $("#work-item-samanta").removeClass('mid');
-              $("#mainequipa").removeClass('samantamargin');
+              $("#mainequipa").removeClass('samantamargin2');
+
             }        
           });
         </script>
@@ -428,12 +429,25 @@ window.onscroll = function() {
             var $target = $(event.target);
             if (!$target.closest('#equipaimagem3').length) {
               $('#equipatexto3mobile').slideUp();
-              $("#mainequipa").removeClass('samantamargin');
+              $("#mainequipa").removeClass('samantamargin3');
+
         
         
             }        
           });
         </script>
- 
+   <script>
+   $(document).ready(function() {
+      if ( $('#equipatexto1mobile').is(':visible') && $('#equipatexto2mobile').is(':visible') && $('#equipatexto3mobile').is(':visible')) {
+        $("#mainequipa").removeClass('samantamargin');
+
+      } else {
+        $("#mainequipa").addClass('samantamargin');
+
+      }; 
+
+      });
+    </script>
+
   </body>
 </html>

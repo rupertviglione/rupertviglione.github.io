@@ -42,6 +42,25 @@
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
+.tab-content, #yoganavtabscontainer {
+    background-color: rgb(251, 245, 233)!important;
+
+}
+#profissionais {
+  color: #aebca7!important;
+ 
+}
+#profissionais>a {
+  color: #aebca7!important;
+}
+#profissionais>a:hover {
+  color: #aebca7!important;
+  font-weight: bold;
+}
+#tabcarousel {
+  margin: 0 auto !important; 
+  float: none !important;
+}
 
 #navbar {
 position:absolute!important;
@@ -84,7 +103,7 @@ font-size: 22px;
   background-color: #aebca7!important;
 }
 .highlightblock {
-  background-color: #fbf5e9;
+  background-color: #aebca7;
   display: block;
     margin: 50px 0 0 0;
     left: 50px;
@@ -98,8 +117,15 @@ font-size: 22px;
 
   margin-top: 50px;
 }
-
-
+#yoga > div:nth-child(1), #serviço-educativo > div.col-sm-8.col-sm-offset-2 {
+  margin-top: 100px;
+}
+.caixaextended {
+  position: absolute;
+  width: %;
+  left: -1349px;
+  right: -264px; 
+}
 #bannertext2 {
   
   width:100vw!important;
@@ -126,7 +152,7 @@ font-size: 22px;
   font-family: 'Coves';
   letter-spacing: 1;
   text-align: center;
-  color: #aebca7;
+  color: #fbf5e9;
   line-height: 38px;
   font-size: 24px;
   font-weight: 300;
@@ -447,9 +473,9 @@ color: #fbf5e9;
   text-align: center;
   background: none!important;
   padding: 0px 0px;
-  font-size: 30px!important;
+  font-size: 20px!important;
   border: none!important;
-  
+  margin-top: 10px;
 
 }
 
@@ -1368,7 +1394,7 @@ blockquote {
 }
 h2.module-title.font-alt {
   font-family: Coves-Light;
-color: #85917f;
+color: #aebca7;
 }
 #arrow{
 color: #aebca7 !important;
@@ -3654,6 +3680,9 @@ font-size: 25px !important;
 }
 
 @media (min-width: 2000px) {
+  #profissionais {
+    font-size: 20px!important;
+  }
   #btnempresa {
   }
   #btnempresa {
@@ -3873,8 +3902,7 @@ padding-top: 20px;
 }
  
   #profissionais {
-    font-size: 16px!important;
-    
+    font-size: 16px;
   } 
   #educacaonavtabs {
 

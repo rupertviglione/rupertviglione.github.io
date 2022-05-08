@@ -1,6 +1,52 @@
+#myController {
+  background: var(--media-control-background,rgba(174, 188, 167, 0.8));
+  background-color: rgba(174, 188, 167, 0.8);
+  width:52px;
+  height:52px;
+  top: 92%;
+  left:2%;
+  border-radius:50px;
+
+
+}
+
+#myController:hover {
+  background: var(--media-control-hover-background,rgba(210, 227, 202, 0.8));
+  background-color: rgba(210, 227, 202, 0.8);
+  width:52px;
+  height:52px;
+  width:52px;
+  height:52px;
+  top: 92%;
+  left:2%;
+
+}
+
+#myButton {
+  background: var(--media-control-background,rgba(174, 188, 167, 0.8));
+  background-color: transparent;
+  width:52px;
+  height:52px;
+
+}
+
+#myButton:hover {
+  background: var(--media-control-hover-background,rgba(210, 227, 202, 0.8));
+  background-color: transparent;
+  width:52px;
+  height:52px;
+
+}
+
+
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
+
+#navbar {
+position:absolute!important;
+}
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -11,7 +57,6 @@ html {
     hyphens: auto;
      
 }
-
 
 .samantamargin, .samantamargin2, 
 .samantamargin3 {

@@ -3678,6 +3678,13 @@ font-size: 25px !important;
 }
 
 @media (min-width: 2000px) {
+  #homeyoga {
+margin-top: -10px!important;
+
+  }
+  #mainyoga {
+    margin-top: -35px!important;
+  }
   #profissionais {
     font-size: 20px!important;
   }

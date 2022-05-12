@@ -2477,6 +2477,10 @@ Google map
   line-height: 1.2;
   font-size: 42px;
 }
+#projectos, #educacaonavtabs, .ecodesigntitles, .tabpanel {
+  background-color: #fbf5e9;
+}
+
 
 /*--------------------------------------------------------------
 	Video Box

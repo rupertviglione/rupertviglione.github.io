@@ -1871,6 +1871,9 @@ z-index: 1500;
   
 }
 
+body > main > div.main > section > div > div.row.col-lg-10.col-lg-offset-1 > div > div:nth-child(3)  {
+background: #fbf5e9;
+}
 .navbar-custom .navbar-brand {
   letter-spacing: 4px;
   font-weight: 400;

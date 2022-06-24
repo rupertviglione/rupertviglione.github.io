@@ -427,6 +427,7 @@ transform:scale(105%);
   padding: 0;
   list-style: none!important;
   margin-bottom: 80px;
+  flex-wrap: wrap;
   
 }
 .tabpanel .work-title {
@@ -960,7 +961,13 @@ somos demasiado para baixo */
 }
 
 @media only screen and (max-width: 768px) {
+  #prana {
+margin-left: 50px!important;
+  }
 
+  #educacaonavtabs > li:nth-child(4), #educacaonavtabs > li:nth-child(5) {
+    width:50%!important;
+  }
   #itemsempresas, #itemsescolas {
     margin-left: 50px!important;
     margin-right: 50px!important;
@@ -3689,6 +3696,9 @@ font-size: 25px !important;
 }
 
 @media (min-width: 2000px) {
+  #prana {
+    margin-left: 420px;
+      }
   #homeyoga {
 margin-top: -10px!important;
 
@@ -3743,7 +3753,12 @@ padding-top: 225px;
   .work-item-quemsomos {
     margin: 100px 0;
   }
-}  
+} 
+@media (max-width: 1440px) {
+  #prana {
+    margin-left: 150px;
+      }
+    }
 @media (min-width: 1439px) {
  
   .equipatexto {
@@ -3782,7 +3797,13 @@ padding-top: 20px;
     margin: 100px 0;
   }
 }  
+@media (max-width: 1024px) {
+  #prana {
+    margin-left: 80px;
+      } 
+    }
 @media (min-width: 1024px) {
+  
   #equipatexto1, #equipatexto2, #equipatexto3 {
     top: 325px!important;
   }
@@ -3826,6 +3847,13 @@ padding-top: 20px;
   }
 }
 @media (min-width: 2400px) {
+  .work-title {
+    font-size: 60px!important;
+  
+  }
+  .work-descr {
+    font-size: 40px!important;
+  }
   .navbar-nav:not(#navbar-navindex) {
     margin-top: 80px;
   }
@@ -3870,7 +3898,16 @@ padding-top: 20px;
     top: 500px!important;
 }
 
+}
 
+@media (min-width: 1451px) {
+  .work-title {
+    font-size: 40px;
+  
+  }
+  .work-descr {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -3882,7 +3919,6 @@ padding-top: 20px;
   #equipatexto1, #equipatexto2, #equipatexto3 {
     top: 400px!important;
 }
-
 
 }
 
@@ -3930,6 +3966,13 @@ padding-top: 20px;
   }
 }
 @media (min-width: 991px) {
+  .work-title {
+    font-size: 35px;
+  
+  }
+  .work-descr {
+    font-size: 20px;
+  }
 .titan-title-size-4 {
   margin-bottom: 20px!important;
   font-size: 28px;
@@ -3985,7 +4028,23 @@ padding-top: 20px;
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .features-title, .features-text {
+    font-size: 20px!important;
+  }
+  #profissionais {
+    font-size: 20px!important;
+line-height: 30px;
+    
+  } 
+  .module-title {
+    color: #aebca7;
+    font-size: 22px !important;
+    margin-top: 0px !important;
+
+
+  }
+
   .btn-container {
     float: right!important;
     margin-right: 30px!important;
@@ -4232,11 +4291,27 @@ font-size: 18px!important;
 }
 
 @media only screen and (max-width: 480px) {
+  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 1px!important;
+    
+}
+
+  #educacaonavtabs > li:nth-child(3),  #educacaonavtabs > li:nth-child(4)  {
+    width:100%!important;
+
+  }
   #educacaonavtabs {
     flex-wrap: wrap;
     line-height:10px;
+    left:20px!important;
+    width: 90%!important;
   }
-  
+  #educacaonavtabs > li.active.col-xs-5.col-sm-4.col-md-3.col-lg-3, #educacaonavtabs > li:nth-child(2) {
+
+width: 100%!important;
+margin: 0 auto!important;
+left:10px;
+  }
 
   #myController {
     transform: scale(85%)translateY(-70%);
@@ -4251,8 +4326,8 @@ font-size: 18px!important;
   }
   #prana {
     float: none!important;
-margin-left: auto;
-margin-right: auto;
+   margin-left: 25px!important;
+    margin-right: auto;
   }
   #portfolio {
     margin-left: -30px;
@@ -4317,11 +4392,14 @@ right: -20px;
     font-size: 18px!important;
   }
   #profissionais {
-    font-size: 14px!important;
-line-height: 24px;
+    font-size: 18px!important;
+line-height: 28px;
     
   } 
-  #tituloeducacao, #destaqueeducacao, #personalizadas h2, #escolas h2 {
+  .features-title, .features-text {
+    font-size: 18px!important;
+  }
+  #tituloeducacao, #destaqueeducacao, #personalizadas h2, #cadeira h2, #grupo h2, #seniores h2, #criancas h2, #escolas h2 {
     font-size: 20px !important;
       }
     
@@ -4374,8 +4452,11 @@ margin-top: 10px;
     width:100%!important;
 
   }
+ 
   .module-title {
     color: #aebca7;
+    font-size: 22px !important;
+    margin-top: 0px !important;
 
 
   }
@@ -4444,6 +4525,15 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 375px) {
+  #educacaonavtabs {
+    flex-wrap: wrap;
+    line-height: 10px;
+    left: 20px!important;
+    width: 85%!important;
+}
+  .features-title, .features-text {
+    font-size: 16px!important;
+  }
   #equipatexto1mobile {
  
     padding-top: 80%;
@@ -4491,7 +4581,7 @@ margin-top: 10px;
     font-size: 16px!important;
   }
   #profissionais {
-    font-size: 13px!important;
+    font-size: 16px!important;
     
   } 
   #itemsescolas, #itemsempresas {
@@ -4517,7 +4607,8 @@ margin-top: 10px;
     
 
   .module-title {
-    font-size: 24px !important;
+    font-size: 20px !important;
+    margin-top: 0px!important;
   }
 
   .module-subtitle {
@@ -4571,6 +4662,9 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 327px) {
+  .features-title, .features-text {
+    font-size: 15px!important;
+  }
   .highlightblock {
     left: 5px;
     width:45%;
@@ -4618,11 +4712,12 @@ margin-top: 10px;
 }
 .module-title {
   font-size: 16px !important;
+  margin-top: 0px!important;
 }
 
 
-.module-subtitle {
-  font-size: 20px !important;
+#profissionais {
+  font-size: 14px!important;
 }
 #yoga, #missao, #atelier, #serviço-educativo, #ecodesign, #drogaria, #mais {
   

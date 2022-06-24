@@ -10,6 +10,10 @@
 
 }
 
+.equipatexto {
+  background-color: #fbf5e9;
+}
+
 #myController:hover {
   background: var(--media-control-hover-background,rgba(210, 227, 202, 0.8));
   background-color: rgba(210, 227, 202, 0.8);
@@ -122,7 +126,7 @@ font-size: 22px;
 }
 .caixaextended {
   position: absolute;
-  width: %;
+  width: 100%;
   left: -1349px;
   right: -264px; 
 }
@@ -3854,16 +3858,34 @@ padding-top: 20px;
   .equipatexto {
     font-size:26px!important;
   }
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 630px!important
+
+  }
 }
+
+
+@media (max-width: 1800px) {
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 500px!important;
+}
+
+
+}
+
 @media (max-width: 1600px) {
 
 
 }
 
-@media (max-width: 1344px) {
+@media (max-width: 1450px) {
+  #equipatexto1, #equipatexto2, #equipatexto3 {
+    top: 400px!important;
+}
 
 
 }
+
 @media (max-width: 1200px) {
 
   /* Features */
@@ -4135,16 +4157,16 @@ margin-bottom: 20px;
 }
 #equipatexto1mobile {
  
-    margin-top: 78%;
+    padding-top: 80%;
 }
 #equipatexto2mobile {
-margin-top: 140%;
+  padding-top: 145%;
 }
 #equipatexto3mobile {
-margin-top: 205%;
+  padding-top: 210%;
 }
 
-}
+
 .navbar-header {
   margin-right: 15px;
 }
@@ -4214,6 +4236,12 @@ font-size: 18px!important;
     flex-wrap: wrap;
     line-height:10px;
   }
+  
+
+  #myController {
+    transform: scale(85%)translateY(-70%);
+  }
+
   #educacaonavtabs>li>a {
     font-size:15px!important;
     margin-bottom:10px;
@@ -4391,10 +4419,23 @@ margin-top: 10px;
 .titan-title-size-4 {
   border-bottom: solid 2px white;
   font-size: 20px;
+  margin-bottom: 20px!important;
+}
+#homeatelier > div > div {
+  padding-bottom: 38px;
 }
 }
 @media only screen and (max-width: 425px) {
-  
+  #equipatexto1mobile {
+ 
+    padding-top: 75%;
+}
+#equipatexto2mobile {
+  padding-top: 135%;
+}
+#equipatexto3mobile {
+  padding-top: 200%;
+}
   #btnempresa {
     font-size: 12px!important;
       }
@@ -4403,7 +4444,19 @@ margin-top: 10px;
 
 }
 @media only screen and (max-width: 375px) {
-
+  #equipatexto1mobile {
+ 
+    padding-top: 80%;
+}
+#equipatexto2mobile {
+  padding-top: 145%;
+}
+#equipatexto3mobile {
+  padding-top: 210%;
+}
+  #myController {
+    transform: scale(65%)translateY(-70%);
+  }
   .ecodesigntitles {
   
     margin-top: 70px!important;
@@ -4492,38 +4545,7 @@ margin-top: 10px;
   .navbar-custom {
 margin-top: 10px;
   }
-  #work-item-nuno {
-    margin: 0px!important;
-    position: relative!important;
-    margin-top: 50px!important;
-    width: 100%!important;
-  }
-  #work-item-goncalo {
-    margin-top: 10px!important;
-    margin-bottom: 0px!important;
-    position: relative!important;
-    width: 100%!important;
-  }
-  #work-item-samanta {
-    margin-top: 10px!important;
-    margin-bottom: 10px!important;
-    position: relative!important;
-    width: 100%!important;
-
-  }
-  .initial {
-  }
-  .initials {
-  }
-
-  .mid {
-  }
-
-#mainequipa {
-}
-.expanded, .expanded2, .expanded3 {
-}
-.work-title {
+ .work-title {
   margin-top: 20px;
   margin-bottom: 0px;
 }

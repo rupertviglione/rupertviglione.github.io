@@ -23,7 +23,7 @@ function getCookie(c_name)
 }
 
 var song = document.getElementsByTagName('audio')[0];
-var played = false;
+var played = true;
 var tillPlayed = getCookie('timePlayed');
 function update()
 {
@@ -41,6 +41,7 @@ function update()
 
     else {
     setCookie('timePlayed', song.currentTime);
+
     }
 }
 setInterval(update,1000); 

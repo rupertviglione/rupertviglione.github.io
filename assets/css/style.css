@@ -3299,7 +3299,7 @@ font-style:italic;
     width: 33%;
   }
   #equipatexto1, #equipatexto2, #equipatexto3 {
-    top: 300px!important;
+    top: 325px!important;
   }
 }
 
@@ -3561,7 +3561,7 @@ line-height: 26px;
     font-size: 38px;
 }
 
-  #tituloeducacao, #destaqueeducacao, #personalizadas h2, #escolas h2 {
+  #tituloeducacao, #destaqueeducacao {
 font-size: 25px !important;
   }
 
@@ -3801,19 +3801,23 @@ padding-top: 20px;
   #prana {
     margin-left: 80px;
       } 
+      #equipatexto1, #equipatexto2, #equipatexto3 {
+        top: 325px;
+      }
     }
-@media (min-width: 1024px) {
-  
+@media (min-width: 1025px) {
   #equipatexto1, #equipatexto2, #equipatexto3 {
-    top: 325px!important;
+    top: 400px!important;
   }
+  
+ 
 }
 @media (min-width: 1050px) {
   .titan-title-size-4 {
     font-size: 38px!important;
   }
   #equipatexto1, #equipatexto2, #equipatexto3 {
-    top: 375px!important;
+    top: 375px;
   }
 }
 @media (min-width: 1500px) {
@@ -3895,7 +3899,7 @@ padding-top: 20px;
 
 @media (max-width: 1800px) {
   #equipatexto1, #equipatexto2, #equipatexto3 {
-    top: 500px!important;
+    top: 500px;
 }
 
 }
@@ -3917,7 +3921,7 @@ padding-top: 20px;
 
 @media (max-width: 1450px) {
   #equipatexto1, #equipatexto2, #equipatexto3 {
-    top: 400px!important;
+    top: 400px;
 }
 
 }
@@ -4399,7 +4403,7 @@ line-height: 28px;
   .features-title, .features-text {
     font-size: 18px!important;
   }
-  #tituloeducacao, #destaqueeducacao, #personalizadas h2, #cadeira h2, #grupo h2, #seniores h2, #criancas h2, #escolas h2 {
+  #tituloeducacao, #destaqueeducacao {
     font-size: 20px !important;
       }
     
@@ -4455,7 +4459,7 @@ margin-top: 10px;
  
   .module-title {
     color: #aebca7;
-    font-size: 22px !important;
+    font-size: 20px !important;
     margin-top: 0px !important;
 
 
@@ -4487,8 +4491,7 @@ margin-top: 10px;
   width: 100%;
   display:none;
 }
-.expanded, .expanded2, .expanded3 {
-}
+
 .work-title {
 
   font-size: 22px;
@@ -4497,13 +4500,23 @@ margin-top: 10px;
 
   font-size: 16px;
 }
+
+.caption-content {
+  padding-bottom: 60px;
+}
+#captionyoga > div {
+  padding-bottom: 10px!important;
+}
 .titan-title-size-4 {
   border-bottom: solid 2px white;
   font-size: 20px;
-  margin-bottom: 20px!important;
+  margin-bottom: 0px!important;
 }
-#homeatelier > div > div {
-  padding-bottom: 38px;
+#equipatexto2mobile {
+  padding-top: 140%;
+}
+#equipatexto3mobile {
+  padding-top: 200%;
 }
 }
 @media only screen and (max-width: 425px) {
@@ -4512,7 +4525,7 @@ margin-top: 10px;
     padding-top: 75%;
 }
 #equipatexto2mobile {
-  padding-top: 135%;
+  padding-top: 140%;
 }
 #equipatexto3mobile {
   padding-top: 200%;
@@ -4524,6 +4537,17 @@ margin-top: 10px;
      
 
 }
+@media only screen and (min-width: 401px) {
+  #equipatexto2mobile {
+    transform: scale(.87);
+  }
+}
+@media only screen and (min-width: 376px) {
+  #equipatexto2mobile {
+    transform: scale(.90);
+  }
+}
+
 @media only screen and (max-width: 375px) {
   #educacaonavtabs {
     flex-wrap: wrap;
@@ -4535,11 +4559,11 @@ margin-top: 10px;
     font-size: 16px!important;
   }
   #equipatexto1mobile {
- 
-    padding-top: 80%;
+    padding-top: 77%;
+    transform: scale(.95);
 }
 #equipatexto2mobile {
-  padding-top: 145%;
+  padding-top: 140%;
 }
 #equipatexto3mobile {
   padding-top: 210%;
@@ -4588,7 +4612,7 @@ margin-top: 10px;
     margin-left: 30px!important;
     margin-right: 30px!important;
   }
-  #tituloeducacao, #destaqueeducacao, #personalizadas h2, #escolas h2 {
+  #tituloeducacao, #destaqueeducacao {
     font-size: 18px !important;
       }
     
@@ -4607,7 +4631,7 @@ margin-top: 10px;
     
 
   .module-title {
-    font-size: 20px !important;
+    font-size: 17px !important;
     margin-top: 0px!important;
   }
 
@@ -4661,7 +4685,20 @@ margin-top: 10px;
 
 
 }
+@media only screen and (min-width: 327px) {
+  #equipatexto2mobile {
+    transform: scale(.93);
+  }
+}
 @media only screen and (max-width: 327px) {
+  #equipatexto2mobile {
+    padding-top: 138%;
+  }
+
+  #equipatexto1mobile {
+ 
+    padding-top: 77%;
+}
   .features-title, .features-text {
     font-size: 15px!important;
   }
@@ -4711,7 +4748,7 @@ margin-top: 10px;
   font-size: 11px;
 }
 .module-title {
-  font-size: 16px !important;
+  font-size: 15px !important;
   margin-top: 0px!important;
 }
 

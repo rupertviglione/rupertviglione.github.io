@@ -9,6 +9,9 @@
 
 
 }
+#portfolio {
+  z-index:9000;
+}
 
 .equipatexto {
   background-color: #fbf5e9;
@@ -4632,7 +4635,7 @@ margin-top: 10px;
 
   .module-title {
     font-size: 17px !important;
-    margin-top: 0px!important;
+    margin-top: 60px!important;
   }
 
   .module-subtitle {

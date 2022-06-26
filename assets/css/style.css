@@ -4467,6 +4467,13 @@ font-size: 18px!important;
 }
 
 @media only screen and (max-width: 480px) {
+  #botoesyoga > #tabeducacao > #educacaonavtabs > #btnpersonalizadas > #btnescola > div.work-caption.font-alt > div {
+    font-size: 44px!important;
+    font-weight: 900!important;
+    text-align: right!important;
+    padding-top: 25px!important;
+    overflow-wrap: break-word;
+  }
 
   #educacaonavtabs > li:nth-child(1),   #educacaonavtabs > li:nth-child(2) {
     left: 0px!important;
@@ -4476,17 +4483,14 @@ font-size: 18px!important;
     
 }
 
-  #educacaonavtabs > li:nth-child(3),  #educacaonavtabs > li:nth-child(4)  {
-    width:100%!important;
 
-  }
   #educacaonavtabs {
     flex-wrap: wrap;
     line-height:10px;
     left:20px!important;
     width: 90%!important;
   }
-  #educacaonavtabs > li.active.col-xs-5.col-sm-4.col-md-3.col-lg-3, #educacaonavtabs > li:nth-child(2) {
+  #educacaonavtabs > li:nth-child(1), #educacaonavtabs > li:nth-child(2),  #educacaonavtabs > li:nth-child(3),  #educacaonavtabs > li:nth-child(4), #educacaonavtabs > li:nth-child(5)   {
 
 width: 100%!important;
 margin: 0 auto!important;
@@ -4729,6 +4733,10 @@ margin-top: 10px;
   max-height: 300px;
   padding: 0 !important;
 }
+#botoesyoga {
+  max-height: 750px;
+  padding: 0 !important;
+}
   #equipatexto1mobile {
  
     padding-top: 75%;
@@ -4790,6 +4798,10 @@ margin-top: 10px;
 }
 #botoeseducacao {
   max-height: 300px;
+  padding: 0 !important;
+}
+#botoesyoga {
+  max-height: 750px;
   padding: 0 !important;
 }
   #educacaonavtabs {
@@ -4919,6 +4931,15 @@ margin-top: 10px;
 
 @media only screen and (max-width: 350px) {
 
+  #botoesyoga > #tabeducacao > #educacaonavtabs > #btnpersonalizadas > #btnescola > div.work-caption.font-alt > div {
+    font-size: 40px!important;
+    font-weight: 900!important;
+    text-align: right!important;
+    padding-top: 25px!important;
+    padding-right: 30px!important;
+    overflow-wrap: break-word;
+  }
+
   #yoga > div:nth-child(1), #serviço-educativo > div.col-sm-8.col-sm-offset-2 {
     margin-top: -150px!important;
 }
@@ -4951,6 +4972,10 @@ margin-top: 10px;
 }
 #botoeseducacao {
   max-height: 300px;
+  padding: 0 !important;
+}
+#botoesyoga{
+  max-height: 750px;
   padding: 0 !important;
 }
 

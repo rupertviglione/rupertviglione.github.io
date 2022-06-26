@@ -967,6 +967,15 @@ somos demasiado para baixo */
 }
 
 @media only screen and (max-width: 768px) {
+.quemsomos .work-image img {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  
+height:100%!important;  
+  object-fit:contain;
+  object-position:center;
+}
 
   .work-image img {
     height: 150px;
@@ -988,7 +997,7 @@ somos demasiado para baixo */
 }
 
 #title-esc {
-  font-size: 40px!important;
+  font-size: 30px!important;
   font-weight: 900!important;
   text-align: right!important;
   padding-right: 5px!important;
@@ -1001,13 +1010,13 @@ somos demasiado para baixo */
 margin-left: 50px!important;
   }
 
-  #educacaonavtabs > li:nth-child(1), #educacaonavtabs > li:nth-child(2) {
+  #educacaonavtabs > li:nth-child(1), #educacaonavtabs > li:nth-child(2), #educacaonavtabs > li:nth-child(3), #educacaonavtabs > li:nth-child(4), #educacaonavtabs > li:nth-child(5) {
     width:50%!important;
   }
-  #educacaonavtabs > li:nth-child(1) {
+  #educacaonavtabs > li:nth-child(1), #educacaonavtabs > li:nth-child(3) {
     left:-50px!important;
   }
-  #educacaonavtabs > li:nth-child(2) {
+  #educacaonavtabs > li:nth-child(2), #educacaonavtabs > li:nth-child(4) {
     left: 50px!important;
   }
 
@@ -3901,6 +3910,12 @@ padding-top: 20px;
   #educacaonavtabs > li:nth-child(2) {
     left: 80px;
   }
+  .quemsomos .work-image img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+  
   .work-image img {
     height: 330px;
     width: 815px;
@@ -4009,6 +4024,12 @@ transform: scale(1.5);
   #educacaonavtabs > li:nth-child(2) {
     left: 80px;
   }
+  .quemsomos .work-image img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+  
   .work-image img {
     height: 180px;
     width: 410px;
@@ -4030,7 +4051,7 @@ transform: scale(1.5);
 }
 
 #title-esc {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 900;
   text-align: right;
   padding-right: 81px;
@@ -4083,6 +4104,12 @@ transform: scale(1.5);
   #educacaonavtabs > li:nth-child(2) {
     left: 50px;
   }
+  .quemsomos .work-image img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+  
   .work-image img {
     height: 150px;
     width: 340px;
@@ -4103,7 +4130,7 @@ transform: scale(1.5);
 }
 
 #title-esc {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 900;
   text-align: right;
   padding-right: 30px;
@@ -4467,14 +4494,7 @@ font-size: 18px!important;
 }
 
 @media only screen and (max-width: 480px) {
-  #botoesyoga > #tabeducacao > #educacaonavtabs > #btnpersonalizadas > #btnescola > div.work-caption.font-alt > div {
-    font-size: 44px!important;
-    font-weight: 900!important;
-    text-align: right!important;
-    padding-top: 25px!important;
-    overflow-wrap: break-word;
-  }
-
+ 
   #educacaonavtabs > li:nth-child(1),   #educacaonavtabs > li:nth-child(2) {
     left: 0px!important;
 }
@@ -4703,6 +4723,12 @@ margin-top: 10px;
   #yoga > div:nth-child(1), #serviço-educativo > div.col-sm-8.col-sm-offset-2 {
     margin-top: -150px!important;
 }
+.quemsomos .work-image img {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
   .work-image img {
     display: block;
     overflow: hidden;
@@ -4723,7 +4749,7 @@ margin-top: 10px;
 }
 
 #title-esc {
-  font-size: 40px!important;
+  font-size: 30px!important;
   font-weight: 900!important;
   text-align: right!important;
   padding-right: 40px!important;
@@ -4770,6 +4796,12 @@ margin-top: 10px;
   #yoga > div:nth-child(1), #serviço-educativo > div.col-sm-8.col-sm-offset-2 {
     margin-top: -150px!important;
 }
+.quemsomos .work-image img {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
   .work-image img {
     display: block;
     overflow: hidden;
@@ -4790,7 +4822,7 @@ margin-top: 10px;
 }
 
 #title-esc {
-  font-size: 40px!important;
+  font-size: 30px!important;
   font-weight: 900!important;
   text-align: right!important;
   padding-right: 10px!important;
@@ -4931,18 +4963,16 @@ margin-top: 10px;
 
 @media only screen and (max-width: 350px) {
 
-  #botoesyoga > #tabeducacao > #educacaonavtabs > #btnpersonalizadas > #btnescola > div.work-caption.font-alt > div {
-    font-size: 40px!important;
-    font-weight: 900!important;
-    text-align: right!important;
-    padding-top: 25px!important;
-    padding-right: 30px!important;
-    overflow-wrap: break-word;
-  }
 
   #yoga > div:nth-child(1), #serviço-educativo > div.col-sm-8.col-sm-offset-2 {
     margin-top: -150px!important;
 }
+.quemsomos .work-image img {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
   .work-image img {
     display: block;
     overflow: hidden;
@@ -4958,13 +4988,13 @@ margin-top: 10px;
     line-height: 40px!important;
     font-weight: 900!important;
     text-align: right!important;
-    padding-top: 55px!important;
+    padding-top: 35px!important;
     padding-right: 26px!important;
 
 }
 
 #title-esc {
-  font-size: 40px!important;
+  font-size: 30px!important;
   font-weight: 900!important;
   text-align: right!important;
   padding-top: 68px!important;

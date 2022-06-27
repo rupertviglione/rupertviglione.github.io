@@ -4101,73 +4101,7 @@ transform: scale(1.5);
   .work-descr {
     font-size: 30px;
   }
-    .quemsomos .titan-title-size-4 { 
-      transform:translateY(-80px);
-      }
-      .quemsomos #myController {
-        transform:translateY(-80px)scale(1);
-    
-      }
-    .equipatexto {
-      transform:translateY(-80px);
-    }
-    #atelier > div:nth-child(1) {
-      margin-top: 90px;
-    }
-    #educacaonavtabs > li:nth-child(1), #educacaonavtabs > li:nth-child(2) {
-      width:50%;
-    }
-    #educacaonavtabs > li:nth-child(1) {
-      left:-80px;
-    }
-    #educacaonavtabs > li:nth-child(2) {
-      left: 80px;
-    }
-    .quemsomos .work-image img {
-      display: block;
-      overflow: hidden;
-      width: 100%;
-    }
-    
-    .work-image img {
-      height: 180px;
-      width: 410px;
-      object-fit: cover;
-    }
-    #btnempresa > div.work-image > img {
-      object-position: bottom;
-      transform: scaleX(-1);
-    }
-  
-    .tabpanel .work-title {
-      font-size: 30px;
-      line-height: 40px;
-      font-weight: 900;
-      text-align: right;
-      padding-right: 80px;
-      padding-top: 103px;
-      padding-left: 135px;
-  }
-  
-  #title-esc {
-    font-size: 30px;
-    font-weight: 900;
-    text-align: right;
-    padding-right: 81px;
-    padding-top: 135px;
-  }
-    #myController {
-      top: 92%;
-  
-    }
-    .caption-content {
-      padding-bottom:55px;
-    }
-    #equipatexto1, #equipatexto2, #equipatexto3 {
-      top: 400px;
-  }
-  
-  }
+}
 
 @media (max-width: 1600px) {
 

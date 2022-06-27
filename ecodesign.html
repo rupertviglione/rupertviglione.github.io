@@ -185,31 +185,42 @@
           
         
     
-            <div class="row col-sm-10 col-sm-offset-1 tabpanel" style="margin-top:60px;" id="botoeseducacao">
+            <div class="row col-sm-10 col-sm-offset-1 tabpanel" style="margin-top:60px;" id="botoesyoga">
               <div role="tabpanel" id="tabeducacao"> 
                 <ul class="col-xs-12 works-hover-g works-grid works-grid-gut works-grid-4 " role="tablist" id="educacaonavtabs">
-                  <li class="active col-xs-5 col-sm-4 col-md-3 col-lg-3 work-item illustration webdesign work-item-button" id="btnempresas">
-                  <a href="#profissionais" data-toggle="tab" id="btnempresa">
-                    <div class="work-image" ><img src="/assets/images/atelier11.webp" alt="Projectos"/></div>
+                  
+                  <li class=" col-xs-5 col-sm-4 col-md-3 col-lg-3 work-item illustration webdesign work-item-button" id="btninteriores">
+                  <a href="#interiores" data-toggle="tab" id="btnescola">
+                    <div class="work-image" ><img src="/assets/images/atelier/atelier11.webp" alt="INTERIORES"/></div>
                     <div class="work-caption font-alt">
-                      <div class="work-title">PROJECTOS</div>
+                      <div class="work-title" id="title-esc">INTERIORES</div>
                       
                     </div></a>
                   </li>
                 
-                    <li class="col-xs-5 col-sm-4 col-md-3 col-lg-3 btnescola work-item illustration webdesign work-item-button" id="btnescolas"><a href="#escolas" data-toggle="tab" id="btnescola">
-                      <div class="work-image" ><img src="/assets/images/equipamento14.webp" alt="Bazar"/></div>
+                    <li class="col-xs-5 col-sm-4 col-md-3 col-lg-3 btnescola work-item illustration webdesign work-item-button" id="btnequipamento"><a href="#equipamento" data-toggle="tab" id="btnescola">
+                      <div class="work-image" ><img src="/assets/images/equipamento24.webp" alt="EQUIPAMENTO"/></div>
                       <div class="work-caption font-alt">
-                        <div class="work-title" id="title-esc">BAZAR</div>
+                        <div class="work-title" id="title-esc">EQUIPAMENTO</div>
                         
                       </div></a>
                       </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="row col-sm-10 col-sm-offset-1">
-          <div class="tab-content">
-              <div class="tab-pane active col-sm-12" id="projectos">
+                      <li class="col-xs-5 col-sm-4 col-md-3 col-lg-3 btnescola work-item illustration webdesign work-item-button" id="btnacessorios"><a href="#acessorios" data-toggle="tab" id="btnescola">
+                        <div class="work-image" ><img src="/assets/images/adorno1.webp" alt="ACESSÓRIOS"/></div>
+                        <div class="work-caption font-alt">
+                          <div class="work-title" id="title-esc">ACESSÓRIOS
+                          </div>
+                          
+                        </div></a>
+                        </li>
+                        
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row col-sm-10 col-sm-offset-1">
+    
+                        <div class="tab-content hiddentext" id="tabcontenteducacao">
+                          <div class="tab-pane active" id="interiores" >
                 <h2 class="module-title font-alt ecodesigntitles" style="margin-top:-50px;">PROJECTOS DE ECODESIGN DE INTERIORES</h2>
                 <div class="module-subtitle font-serif" id="interiores">
                   Consideramos que os diferentes ambientes por onde circulamos têm um forte impacto em nós e que a possibilidade de neles contactar com elementos naturais, contribui muito positivamente para a nossa saúde e bem-estar. Criamos ambientes através da escolha cuidadosa de materiais, cores, iluminação, mobiliário, entre outros. Estas escolhas influenciam directamente o estado físico e mental, práticas e hábitos que experienciará nos ambientes criados pela SEIVA.  
@@ -900,6 +911,72 @@ window.onscroll = function() {
                 pagination: false
             })
           </script>
+
+<script>
+  $(document).ready(function() {
+   $("#btninteriores").click(function() {
+     if ( $("#tabcontenteducacao").hasClass('hiddentext')) {
+     $("#tabcontenteducacao").show();
+     $("#tabcontenteducacao").removeClass('hiddentext');
+     $("#tabcontenteducacao").addClass('showing1'); 
+    }     else if ( $("#tabcontenteducacao").hasClass('showing1')) {
+     $("#tabcontenteducacao").hide();
+     $("#tabcontenteducacao").removeClass('showing1');
+     $("#tabcontenteducacao").addClass('hiddentext'); 
+   } else if  ( $("#tabcontenteducacao").hasClass('showing2')) {
+     $("#tabcontenteducacao").removeClass('showing2');
+     $("#tabcontenteducacao").addClass('showing1'); 
+   } else if  ( $("#tabcontenteducacao").hasClass('showing3')) {
+     $("#tabcontenteducacao").removeClass('showing3');
+     $("#tabcontenteducacao").addClass('showing1'); 
+   } 
+ });
+ });
+</script>
+
+<script>
+$(document).ready(function() {
+$("#btnequipamento").click(function() {
+if ( $("#tabcontenteducacao").hasClass('hiddentext')) {
+$("#tabcontenteducacao").show();
+$("#tabcontenteducacao").removeClass('hiddentext');
+$("#tabcontenteducacao").addClass('showing2'); 
+}     else if ( $("#tabcontenteducacao").hasClass('showing2')) {
+$("#tabcontenteducacao").hide();
+$("#tabcontenteducacao").removeClass('showing2');
+$("#tabcontenteducacao").addClass('hiddentext'); 
+} else if  ( $("#tabcontenteducacao").hasClass('showing1')) {
+     $("#tabcontenteducacao").removeClass('showing1');
+     $("#tabcontenteducacao").addClass('showing2'); 
+   } else if  ( $("#tabcontenteducacao").hasClass('showing3')) {
+     $("#tabcontenteducacao").removeClass('showing3');
+     $("#tabcontenteducacao").addClass('showing2'); 
+   }
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+$("#btnacessorios").click(function() {
+if ( $("#tabcontenteducacao").hasClass('hiddentext')) {
+$("#tabcontenteducacao").show();
+$("#tabcontenteducacao").removeClass('hiddentext');
+$("#tabcontenteducacao").addClass('showing3'); 
+}     else if ( $("#tabcontenteducacao").hasClass('showing3')) {
+$("#tabcontenteducacao").hide();
+$("#tabcontenteducacao").removeClass('showing3');
+$("#tabcontenteducacao").addClass('hiddentext'); 
+} else if  ( $("#tabcontenteducacao").hasClass('showing1')) {
+      $("#tabcontenteducacao").removeClass('showing1');
+      $("#tabcontenteducacao").addClass('showing3'); 
+  
+   } else if  ( $("#tabcontenteducacao").hasClass('showing2')) {
+     $("#tabcontenteducacao").removeClass('showing2');
+     $("#tabcontenteducacao").addClass('showing3'); 
+   }
+});
+});
+</script>
   
   </body>
 </html>

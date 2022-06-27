@@ -3953,7 +3953,15 @@ padding-top: 20px;
   }
 }
 @media (min-width: 2400px) {
+  .drogaria #portfolio {
+    position: absolute;
 
+    color:#fbf5e9!important;
+    font-size:90px;
+    left: -2157px;
+    top: -184px;
+    font-size: 90px;
+  }
 
   .yoga #title-esc {
     padding-right: 0;
@@ -4015,7 +4023,12 @@ padding-top: 20px;
     padding-right: 115px;
     padding-top: 265px;
 }
-
+.ecodesign #title-esc {
+font-size:70px;
+}
+.ecodesign #myController {
+transform:translateY(-10px)scale(1.5);
+}
 #title-esc {
   font-size: 60px;
   font-weight: 900;

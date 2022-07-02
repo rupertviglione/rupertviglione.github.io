@@ -36,7 +36,7 @@
     
     -->
     <!-- Default stylesheets-->
-    <link href="/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Template specific stylesheets-->
     <script type="module" src="https://unpkg.com/media-chrome@0.6"></script>
@@ -54,62 +54,50 @@
     <link href="/assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="/assets/css/colors/default.css" rel="stylesheet">
   </head>
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <body class="index" data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
-    
-          <nav id="navbarindex" class="navbar navbar-custom navbar-transparent navbar-fixed-top" role="navigation">
-            <div class="container" id="containernav">
-              <div class="navbar-header" id="navbar-headerindex">
-                <button id="navbar-toggleindex" class="navbar-toggle" type="button" data-toggle="modal" data-target="#menuModal"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-              </div>
-              <div class="collapse navbar-collapse" id="custom-collapse">
-                <ul class="nav navbar-nav" id="navbar-navindex">
-              <li><a href="#" >INÍCIO</a></li>
-              <li class="dropdown">
-                 <a href="/"  data-toggle="dropdown"  >QUEM SOMOS</a>
-                  <ul class="dropdown-menu" id="dropdownmenuinicial">
-                    <li class="dropdown">
-                      <a href="/seivaatelier.html">SEIVA ATELIER</a>
-                    </li><li class="dropdown">
-                      <a href="/missao.html">MISSÃO</a>
-                    </li>
-                  </ul>
-                </li>
-              <li><a href="/educacao.html" >SERVIÇO EDUCATIVO</a></li>
-              <li><a href="/yoga.html" >YOGA</a></li>
-              <li><a href="/ecodesign.html" >ECODESIGN</a></li>
-              <li><a href="/drogaria.html" >DROGARIA NATURAL</a></li>
-              <li><a href="/bazar.html" >BAZAR</a></li>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>      
-      <div class="modal modal-fullscreen" id="menuModal">
-        <div class="modal-dialog">
+      
+      <nav class="navbar navbar-expand-md fixed-top navbar-light" id="navbar">
+        <div class="container-fluid navbargreen">
+          <a class="navbar-brand" href="#"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="modal" type="button" data-bs-target="#menuModal">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                  <div class="row justify-content-center collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                      <li class="col  nav-item"><a class="nav-link active" href="#">INÍCIO</a></li>
+                      <li class="nav-item col ">
+                         <a href="/seivaatelier.html" class="nav-link">QUEM SOMOS</a>
+                    
+                        </li>
+                      <li class="col  nav-item"><a class="nav-link" href="/educacao.html">SERVIÇO EDUCATIVO</a></li>
+                      <li class="col  nav-item"><a class="nav-link" href="/yoga.html">YOGA</a></li>
+                      <li class="col  nav-item"><a class="nav-link" href="/ecodesign.html">ECODESIGN</a></li>
+                      <li class="col  nav-item"><a class="nav-link" href="/drogaria.html">DROGARIA NATURAL</a></li>
+                      <li class="col  nav-item"><a class="nav-link" href="/bazar.html">BAZAR</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+         
+      <div class=" modal" tabindex="-1" id="menuModal" aria-labelledby="menuModal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down">
           <div class="modal-content">
           
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
               </button>
               
-            
+  
             <div class="modal-body">
-              <ul class="nav navbar-nav" style="margin-top:0px;">
+              <ul class="navbar-nav">
       <li><a href="index.html"><img id="seivabrandmobile" src="assets/images/seiva.webp"></a></li>
                 <li><a href="/index.html" style="color:#fbf5e9!important;">INÍCIO</a></li>
-                <li class="dropdown">
-                   <a href="/"  data-toggle="dropdown" style="color:#fbf5e9!important;">QUEM SOMOS</a>
-                     <ul class="dropdown-menu" id="dropdownmenumodal">
-                      <li class="dropdown">
-                        <a href="/seivaatelier.html" style="color:#fbf5e9!important;">SEIVA ATELIER</a>
-                      </li>                      <li class="dropdown">
-                        <a href="/missao.html" style="color:#fbf5e9!important;">MISSÃO</a>
-                      </li>
-                    </ul>
+                <li class="">
+                   <a href="/seivaatelier.html"   style="color:#fbf5e9!important;">QUEM SOMOS</a>
                   </li>
                 <li><a href="/educacao.html"  style="color:#fbf5e9!important;">SERVIÇO EDUCATIVO</a></li>
                 <li><a href="/yoga.html"  style="color:#fbf5e9!important;">YOGA</a></li>
@@ -123,9 +111,12 @@
           </div>
         </div>
       </div>
-
-      <section class="home-section home-parallax bg-light" id="home" data-background="assets/images/seivagif.gif">
-        <media-controller audio id="myController">
+<section class="home-section home-parallax">
+<div class="container-fluid homebanner">
+  <div class="row rowhomebanner">
+    <img class="img-fluid col-12" src="assets/images/seivagif.gif">
+  
+        <media-controller class="col-1" audio id="myController">
    <audio id="audioplayer"      slot="media"
    autobuffer="" loop="true" preload="auto" src="song.mp3">
  
@@ -146,27 +137,30 @@
         </media-play-button>
 
       </media-controller>
-        <!-- you must include JS after the player; otherwise you will get undifiend object-->
-        <script src="audio.js"></script>
-      </section>
-      <div class="main" style="margin-top:20px;">
-      <section class="module pb-0">
+      <script src="audio.js"></script>
+  </div>
+</div>    
+</section>
+
+  <section class="module pb-0 maincontent">
+
+      <div class="main maincontent" style="margin-top:20px;">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-4">
+          <div class="row justify-content-end">
+            <div class="col-8">
               <div class="module-subtitle font-serif large-text" id="slogan">Se por um lado trazemos as pessoas até à natureza, por outro, levamos a natureza às pessoas. Para nós, o mais importante é que o encontro se dê.
               </div>
             </div>
           </div>
         </div>
+      </div>
+
       </section>
-    </div>
 
-
-      <div class="module-small bg-light" style="margin-top:100px;">
+      <section class="module-small footer">
           <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
+            <div class="row footer">
+              <div class="col-6">
                 <div class="widget">
                   <h5 class="widget-title font-alt" style="font-family:Seiva;">SEIVA ATELIER</h5>
                   <p class="footer-text">Natureza, coisa mai' linda!</p>
@@ -174,7 +168,7 @@
                   <p>E-mail:<a href="#">geral@seivaatelier.pt</a></p>
                 </div>
               </div>
-              <div class="col-sm-6 footer bg-light">
+              <div class="col-6 footer">
                 
                       <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
                       </div>
@@ -182,17 +176,17 @@
                     </div>
                   </div>
                 </div>
-             
-                    </div>
+                <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+
+              </section>
       
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
     <!--  
     JavaScripts
     =============================================
     -->
     <script src="/assets/lib/jquery/dist/jquery.js"></script>
-    <script src="/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/assets/lib/wow/dist/wow.js"></script>
     <script src="/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
     <script src="/assets/lib/isotope/dist/isotope.pkgd.js"></script>

@@ -1,6 +1,68 @@
 /*--------------------------------------------------------------
-	Bootstrap specific
+	Bootstrap specific and video
 --------------------------------------------------------------*/
+.mt5 {
+  margin-top: 5%;
+}.owl-carouselest {
+  margin-top: 5%;
+
+}
+.tab-content {
+  margin-bottom: 5%;
+}
+.controls {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, #aebca7);
+  align-items: center;
+  transition: opacity .2s;
+}
+ .controls {
+  opacity: 0;
+}
+
+#videoyoga:hover + .controls {
+  opacity: 1;
+}
+
+.control-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  opacity: .8;
+  transition: all .2s;
+}
+
+.control-button:hover {
+  opacity: 1;
+}
+
+.control-button svg {
+  stroke: #fff;
+  fill: transparent;
+}
+.control-button.play-button {
+  height: 40px;
+  width: 40px;
+}
+
+.control-button.sound-button {
+  height: 40px;
+  width: 40px;
+}
+
+.control-button.fullscreen-button {
+  height: 35px;
+  width: 35px;
+}
+.lasttext, .mblast {
+  margin-bottom:5%!important;
+}
+.w-100 {
+  width: 100vw!important;
+}
 #ateliertab > .module-subtitle {
   margin-bottom: 10px;
 }
@@ -48,6 +110,7 @@
 }
 #navbar {
   position: absolute;
+  z-index: 50000;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 90, 35, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");

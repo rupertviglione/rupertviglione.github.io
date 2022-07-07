@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-PT" dir="ltr">
+  <?php 
+  header('Cache-Control: max-age=31536000');
+?>
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,140 +37,140 @@
     <!--  
     Stylesheets
     =============================================
-    
     -->
-    <!-- Default stylesheets-->
-    <link href="/assets/lib/bootstrap copy/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Template specific stylesheets-->
-    <script type="module" src="https://unpkg.com/media-chrome@0.6"></script>
+  
+  
 
-    <link href="/assets/lib/animate.css/animate.css" rel="stylesheet">
-    <link href="/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
-    <link href="/assets/lib/flexslider/flexslider.css" rel="stylesheet">
-    <link href="/assets/lib/owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="/assets/lib/owl-carousel/owl-carousel/owl.theme.css" rel="stylesheet">
-    <link href="/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-    <link href="/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
-    <!-- Main stylesheet and color file-->
-    <link href="/assets/css/style.css" rel="stylesheet">
-    <link id="color-scheme" href="/assets/css/colors/default.css" rel="stylesheet">
-  </head>
-  <body class="ecodesign" data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+   <!-- Default stylesheets-->
+   <link href="/assets/lib/bootstrap copy/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Template specific stylesheets-->
+   <script type="module" src="https://unpkg.com/media-chrome@0.6"></script>
+
+
+   <link href="/assets/lib/animate.css/animate.css" rel="stylesheet">
+   <link href="/assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <link href="/assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+   <link href="/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+   <link href="/assets/lib/owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+   <link href="/assets/lib/owl-carousel/owl-carousel/owl.theme.css" rel="stylesheet">
+   <link href="/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+   <link href="/assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+   <!-- Main stylesheet and color file-->
+   <link href="/assets/css/style.css" rel="stylesheet">
+   <link id="color-scheme" href="/assets/css/colors/default.css" rel="stylesheet">
+   <link href="node_modules/vue-video-section/dist/vue-video-section.css" rel="stylesheet">
+   
+ </head>
+ <body class="yoga" data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
-      <nav id="navbar" class="navbar navbar-custom navbar-transparent navbar-fixed-top" role="navigation">
-        <a class="navbar-brand col-sm-12" href="index.html"><img id="seivabrand" src="assets/images/seiva.webp"></a>
-                <div class="container" id="containernav">
-                  <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="modal" data-target="#menuModal"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                  </div>
-                  <div class="collapse navbar-collapse" id="custom-collapse">
-                    <ul class="nav navbar-nav">
-                  <li><a href="/index.html" >INÍCIO</a></li>
-                  <li class="dropdown">
-                     <a href="/"  data-toggle="dropdown">QUEM SOMOS</a>
-                      <ul class="dropdown-menu" id="dropdownmenuinicial">
-                        <li class="dropdown">
-                          <a href="/seivaatelier.html">SEIVA ATELIER</a>
-                        </li><li class="dropdown">
-                          <a href="/missao.html">MISSÃO</a>
-                        </li>
-                      </ul>
-                    </li>
-                  <li><a href="/educacao.html" >SERVIÇO EDUCATIVO</a></li>
-                  <li><a href="/yoga.html" >YOGA</a></li>
-                  <li><a href="/ecodesign.html" >ECODESIGN</a></li>
-                  <li><a href="/drogaria.html" >DROGARIA NATURAL</a></li>
-                  <li><a href="/bazar.html" >BAZAR</a></li>
-                  
-                </ul>
-              </div>
-            </div>
-          </nav>      
-          <div class="modal modal-fullscreen" id="menuModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-              
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  
-                
-                <div class="modal-body">
-                  <ul class="nav navbar-nav" style="margin-top:0px;">
-          <li><a href="index.html"><img id="seivabrandmobile" src="assets/images/seiva.webp"></a></li>
-                    <li><a href="/index.html" style="color:#fbf5e9!important;">INÍCIO</a></li>
-                    <li class="dropdown">
-                       <a href="/"  data-toggle="dropdown"   style="color:#fbf5e9!important;">QUEM SOMOS</a>
-                         <ul class="dropdown-menu" id="dropdownmenumodal">
-                            <li class="dropdown">
-                            <a href="/seivaatelier.html" style="color:#fbf5e9!important;">SEIVA ATELIER</a>
-                          </li>  
-                          <li class="dropdown">
-                            <a href="/missao.html" style="color:#fbf5e9!important;">MISSÃO</a>
-                          </li>   
-                                     
-                        </ul>
-                      </li>
-                    <li><a href="/educacao.html"  style="color:#fbf5e9!important;">SERVIÇO EDUCATIVO</a></li>
-                    <li><a href="/yoga.html"  style="color:#fbf5e9!important;">YOGA</a></li>
-                    <li><a href="/ecodesign.html"  style="color:#fbf5e9!important;">ECODESIGN</a></li>
-                    <li><a href="/drogaria.html"  style="color:#fbf5e9!important;">DROGARIA NATURAL</a></li>
-                    <li><a href="/bazar.html"  style="color:#fbf5e9!important;">BAZAR</a></li>
+      <nav class="navbar navbar-expand-md fixed-top navbar-light" id="navbar">
+        <div class="container-fluid navbarwhite">
+          <a class="navbar-brand col-12" href="index.html"><img id="seivabrand" src="assets/images/seiva.webp"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="modal" type="button" data-bs-target="#menuModal">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                  <div class="row justify-content-center collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                      <li class="col  nav-item"><a class="nav-link active" href="/index.html">INÍCIO</a></li>
+                      <li class="nav-item col ">
+                         <a href="/seivaatelier.html" class="nav-link">QUEM SOMOS</a>
                     
-                  </ul>
+                        </li>
+                      <li class="col  nav-item"><a class="nav-link" href="/educacao.html">SERVIÇO EDUCATIVO</a></li>
+                      <li class="col  nav-item"><a class="nav-link" href="/#">YOGA</a></li>
+                      <li class="col  nav-item"><a class="nav-link" href="/ecodesign.html">ECODESIGN</a></li>
+                      <li class="col  nav-item"><a class="nav-link" href="/drogaria.html">DROGARIA NATURAL</a></li>
+                      <li class="col  nav-item"><a class="nav-link" href="/bazar.html">BAZAR</a></li>
+                      
+                    </ul>
+                  </div>
                 </div>
+              </nav>
+         
+      <div class=" modal" tabindex="-1" id="menuModal" aria-labelledby="menuModal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down">
+          <div class="modal-content">
+          
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              </button>
               
-              </div>
+  
+            <div class="modal-body">
+              <ul class="navbar-nav">
+      <li><a href="index.html"><img id="seivabrandmobile" src="assets/images/seiva.webp"></a></li>
+                <li><a href="/index.html" style="color:#fbf5e9!important;">INÍCIO</a></li>
+                <li class="">
+                   <a href="/seivaatelier.html"   style="color:#fbf5e9!important;">QUEM SOMOS</a>
+                  </li>
+                <li><a href="/educacao.html"  style="color:#fbf5e9!important;">SERVIÇO EDUCATIVO</a></li>
+                <li><a href="/#"  style="color:#fbf5e9!important;">YOGA</a></li>
+                <li><a href="/ecodesign.html"  style="color:#fbf5e9!important;">ECODESIGN</a></li>
+                <li><a href="/drogaria.html"  style="color:#fbf5e9!important;">DROGARIA NATURAL</a></li>
+                <li><a href="/bazar.html"  style="color:#fbf5e9!important;">BAZAR</a></li>
+                
+              </ul>
             </div>
+          
           </div>
-      
-      <section class="home-section home-parallax bg-light" id="ecodesignhome" data-background="/assets/images/ecodesignbanner.webp">
-        <media-controller audio id="myController">
-          <audio id="audioplayer"      slot="media"
-          autobuffer="" loop="true" preload="auto" src="song.mp3">
+        </div>
+      </div>
+      <section class="home-section home-parallax">
+        <div class="container-fluid homebanner">
+          <div class="row rowhomebanner">
+            <img class="img-fluid col-12" src="assets/images/ecodesign.webp">
+          
+                <media-controller class="col-1" audio id="myController">
+           <audio id="audioplayer"      slot="media"
+           autobuffer="" loop="true" preload="auto" src="song.mp3">
+         
+                </audio>
         
-               </audio>
-       
-               <media-play-button id="myButton" >
-                 <svg style="padding-left:5px;" slot="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 600 600">
-                   <image id="Linha_3" data-name="Linha 3" x="42" y="15" width="501" height="574" xlink:href="data:img/png;base64,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"/>
-                 </svg>
-                 
-                 
-                 <svg slot="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 600 600">
-                   <image id="Linha_5" data-name="Linha 5" x="205" y="55" width="188" height="499" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAAHzCAYAAACaMHemAAAFdklEQVR4nO3dsY3DMBQFQcpgpALUf30qQJEAXXoF8GD7dqaABwaLn3J7nmescF/nkh2+19yPpXv3da6J85fX6kH4ZIInRfCkCJ4UwZMieFIET4rgSRE8KYInRfCkCJ4UwZMieFIET4rgSRE8KYInRfCkCJ4UwZMieFIET4rgSRE8KYInRfCkCJ4UwZMieFIET4rgSRE8KYInRfCkCJ4UwZMieFIET4rgSRE8KfMvfjue+7Gt3PPLN6u48KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJme9+AP/HfZ2rJ7cxxpj7sWzQhSdF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgiflBxF+F58OAkN7AAAAAElFTkSuQmCC"/>
-                 </svg>
-                 
-                 
-               </media-play-button>
-       
-             </media-controller>
-               <!-- you must include JS after the player; otherwise you will get undifiend object-->
-               <script src="audio.js"></script> <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-0 titan-title-size-4" id="ateliertitle"><span class="titleletter">E</span><span class="titleletter">C</span><span class="titleletter">O</span><span class="titleletter">D</span><span class="titleletter">E</span><span class="titleletter">S</span><span class="titleletter">I</span><span class="titleletter">G</span><span class="titleletter">N</span></div>
-            
-          </div></div>
+                <media-play-button id="myButton" >
+                  <svg slot="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 600 600">
+                    <image id="Linha_5" data-name="Linha 5" x="205" y="55" width="188" height="499" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAALwAAAHzCAYAAACaMHemAAAFdklEQVR4nO3dsY3DMBQFQcpgpALUf30qQJEAXXoF8GD7dqaABwaLn3J7nmescF/nkh2+19yPpXv3da6J85fX6kH4ZIInRfCkCJ4UwZMieFIET4rgSRE8KYInRfCkCJ4UwZMieFIET4rgSRE8KYInRfCkCJ4UwZMieFIET4rgSRE8KYInRfCkCJ4UwZMieFIET4rgSRE8KYInRfCkCJ4UwZMieFIET4rgSRE8KfMvfjue+7Gt3PPLN6u48KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJme9+AP/HfZ2rJ7cxxpj7sWzQhSdF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgidF8KQInhTBkyJ4UgRPiuBJETwpgiflBxF+F58OAkN7AAAAAElFTkSuQmCC"/>
+                  </svg>
+                     <svg style="padding-left:5px;" slot="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 600 600">
+                    <image id="Linha_3" data-name="Linha 3" x="42" y="15" width="501" height="574" xlink:href="data:img/png;base64,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"/>
+                  </svg>
+                  
+                  
+                  
+                  
+                  
+                </media-play-button>
+        
+              </media-controller>
+              <script src="audio.js"></script>
+              <div class="titan-caption">
+                <div class="caption-content">
+                  <div class="font-alt mb-20 titan-title-size-4" id="title"><span class="titleletter">E</span><span class="titleletter">C</span><span class="titleletter">O</span><span class="titleletter">D</span><span class="titleletter">E</span>
+<span class="titleletter">S</span><span class="titleletter">I</span><span class="titleletter">G</span><span class="titleletter">N</span>
+                  </div>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+                <!-- you must include JS after the player; otherwise you will get undifiend object-->
+          </section>
     
-
-        </section>
         
-        <div class="main">
-        <section class="module pb-0">
-          <div class="container">
-            <div class="row" id="quoterow">
-              <div class="col-sm-4 col-xs-5 highlightblock">
-                <div class="highlighttext">
+    <section class="main maincontent module pb-0">   
+  
+      <div class="container-fluid">
+        <div class="row rowfullxs justify-content-center" id="quoterow">
+          <div class="col-12 highlightblock">
+            <div class="highlighttext">
                   
                   Cada vez mais o velho paradigma comprar-usar-descartar da economia linear se revela insuficiente e perigoso, conduzindo-nos a um futuro dramático conseguido à custa de desequilíbrios sociais profundíssimos. O design está em tudo o que fazemos e  tem um papel crítico a desempenhar na criação de um mundo mais justo, saudável e sustentável. É neste contexto que nasce o ecodesign, a concepção de produtos, sistemas e ambientes sustentáveis que incluem critérios ecológicos, sociais e humanos em todas as suas fases.
 
                 </div>
               </div>
-              <div class="col-sm-6 col-xs-6">
+              <div class="col-10" id="quote">
                 <div class="module-subtitle font-serif large-text" id="quoteecodesign"><p>Criamos e recriamos peças de ecodesign para decorar com funcionalidade e sofisticação o interior da sua casa, alojamento local, espaços hoteleiros, estabelecimentos comerciais, escritórios, e eventos. Ou, criamos integralmente o projecto de ecodesign de interior para compor todo o recheio do seu espaço, focados em criar ambientes únicos, serenos, equilibrados e esteticamente apelativos sem descuidar do conforto que merecemos. Na SEIVA procuramos ao máximo produzir o que consumimos, produzir conscientemente e produzir qualidade. Todos os nossos processos, desde a produção, ao embalamento, são o mais ecológicos possível, respeitando tanto as pessoas, como a natureza.
                 </p>
 
@@ -174,8 +178,8 @@
               </div>
             </div>
             
-            <div class="row">
-              <div class="col-sm-2 col-sm-offset-5">
+            <div class="row justify-content-center">
+              <div class="col-2">
                 <div class="large-text align-center">
                   <a class="section-scroll" href="#ecodesign"><i class="fa fa-angle-down" id="arrow"></i></a>
                 </div>
@@ -183,399 +187,551 @@
             </div>
             
           
-        
-    
-            <div class="row col-sm-10 col-sm-offset-1 tabpanel" style="margin-top:60px;" id="botoesyoga">
+            <div class="row col-12 tabpanel" id="botoeseducacao">
               <div role="tabpanel" id="tabeducacao"> 
-                <ul class="col-xs-12 works-hover-g works-grid works-grid-gut works-grid-4 " role="tablist" id="educacaonavtabs">
-                  
-                  <li class=" col-xs-5 col-sm-4 col-md-3 col-lg-3 work-item illustration webdesign work-item-button" id="btninteriores">
-                  <a href="#interiores" data-toggle="tab" id="btnescola">
-                    <div class="work-image" ><img src="/assets/images/atelier/atelier11.webp" alt="INTERIORES"/></div>
-                    <div class="work-caption font-alt">
-                      <div class="work-title" id="title-esc">INTERIORES</div>
+                <ul class="col-12 works-hover-g works-grid works-grid-gut" role="tablist" id="educacaonavtabs">
+                  <li class="col-12 work-item illustration webdesign work-item-button btntabs" id="btntabs1">
+                  <a href="#equipa" data-toggle="tab" id="btnempresa">
+                    <div class="work-image" ><img src="/assets/images/btneventos.webp" alt="Ecodesign e ecodecoração de eventos"/></div>
+                    <div class="row work-caption font-alt align-items-end">
+                      <div class="work-title">EVENTOS</div>
                       
                     </div></a>
                   </li>
-                
-                    <li class="col-xs-5 col-sm-4 col-md-3 col-lg-3 btnescola work-item illustration webdesign work-item-button" id="btnequipamento"><a href="#equipamento" data-toggle="tab" id="btnescola">
-                      <div class="work-image" ><img src="/assets/images/equipamento24.webp" alt="EQUIPAMENTO"/></div>
-                      <div class="work-caption font-alt">
-                        <div class="work-title" id="title-esc">EQUIPAMENTO</div>
-                        
-                      </div></a>
-                      </li>
-                      <li class="col-xs-5 col-sm-4 col-md-3 col-lg-3 btnescola work-item illustration webdesign work-item-button" id="btnacessorios"><a href="#acessorios" data-toggle="tab" id="btnescola">
-                        <div class="work-image" ><img src="/assets/images/adorno1.webp" alt="ACESSÓRIOS"/></div>
-                        <div class="work-caption font-alt">
-                          <div class="work-title" id="title-esc">ACESSÓRIOS
-                          </div>
-                          
-                        </div></a>
-                        </li>
-                        
-                        </ul>
+             
+                    <li class="col-12 work-item illustration webdesign work-item-button btntabs" id="btntabs2">
+                      <a href="#ateliertab" data-toggle="tab" id="btnescola">
+                      <div class="work-image" >
+                        <img src="/assets/images/btninteriores.webp" alt="Ecodesign de Interiores"/>
                       </div>
-                    </div>
-                    <div class="row col-sm-10 col-sm-offset-1">
+                      <div class="row work-caption font-alt align-items-end">
+                        <div class="work-title">INTERIORES</div>
+                        
+                      </div>
+                    </a>
+                      </li>
+                      <li class="col-12 work-item illustration webdesign work-item-button btntabs" id="btntabs3">
+                        <a href="#cadeira" data-toggle="tab" id="btnescola">
+                        <div class="work-image" >
+                          <img src="/assets/images/btnestabelecimentos.webp" alt="Ecodesign de Estabelecimentos e Escritórios"/>
+                        </div>
+                        <div class="row work-caption font-alt align-items-end">
+                          <div class="work-title">ESTABELECIMENTOS</div>
+                          
+                        </div>
+                      </a>
+                        </li>
+                        <li class="col-12 work-item illustration webdesign work-item-button btntabs" id="btntabs4">
+                          <a href="#seniores" data-toggle="tab" id="btnescola">
+                          <div class="work-image" >
+                            <img src="/assets/images/btnequipamentos.webp" alt="Aulas de Yoga para Séniores"/>
+                          </div>
+                          <div class="row work-caption font-alt align-items-end">
+                            <div class="work-title">EQUIPAMENTOS</div>
+                            
+                          </div>
+                        </a>
+                          </li>
+                          <li class="col-12 work-item illustration webdesign work-item-button btntabs" id="btntabs5">
+                            <a href="#criancas" data-toggle="tab" id="btnescola">
+                            <div class="work-image" >
+                              <img src="/assets/images/btnacessorios.webp" alt="Aulas de Yoga para Crianças"/>
+                            </div>
+                            <div class="row work-caption font-alt align-items-end">
+                              <div class="work-title">ACESSÓRIOS</div>
+                              
+                            </div>
+                          </a>
+                            </li>
+                    </ul>
+                  </div>
+                </div>
     
-                        <div class="tab-content hiddentext" id="tabcontenteducacao">
-                          <div class="tab-pane active" id="interiores" >
-                <h2 class="module-title font-alt ecodesigntitles" style="margin-top:-50px;">PROJECTOS DE ECODESIGN DE INTERIORES</h2>
-                <div class="module-subtitle font-serif" id="interiores">
+                <div class="row col-12 justify-content-center">
+      
+                  <div class="tab-content" id="">
+                    <div class="tab-pane hiddentext" id="equipa" >
+                      <h2 class="module-title font-alt">PROJECTOS DE ECODESIGN DE INTERIORES</h2>
+                        <div class="module-subtitle font-serif" id="profissionais">
                   Consideramos que os diferentes ambientes por onde circulamos têm um forte impacto em nós e que a possibilidade de neles contactar com elementos naturais, contribui muito positivamente para a nossa saúde e bem-estar. Criamos ambientes através da escolha cuidadosa de materiais, cores, iluminação, mobiliário, entre outros. Estas escolhas influenciam directamente o estado físico e mental, práticas e hábitos que experienciará nos ambientes criados pela SEIVA.  
   Casa é abrigo. Seja ela permanente ou temporária, mais do que apenas um espaço físico, o seu ambiente interfere directamente com o nosso estado emocional. Procuramos a presença do natural nos espaços que projectamos, proporcionando momentos física e mentalmente saudáveis, que permitam descansar dos ritmos alucinantes e do excesso de informação da vida contemporânea. 
   Dedicamo-nos ao ecodesign de interiores, certos da importância de criar espaços e ambientes de pausa em que se sinta bem e que tenham efeitos positivos na sua vida. Mais do que reproduzir espaços de natureza, recriamos a partir dos elementos e estruturas que a natureza nos sugere, resultando num espaço de carácter único e absolutamente cativante. Priorizamos o orgânico e os sistemas sustentáveis, para criar deslumbrantes ambientes saudáveis e de paz. Materiais como a madeira, a pedra e a cerâmica, têxteis como o linho e o algodão e a presença abundante de vegetação e luz natural, são as características que nos definem. A natureza cria, nós interpretamo-la, valorizando a sua beleza. 
             </div>
               <div class="owl-carousel text-center" data-items="5" data-pagination="false" data-navigation="false">
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier1.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="//assets/images/atelier1.webp"><img src="/assets/images/atelier1.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier2.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier2.webp"><img src="/assets/images/atelier2.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier3.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier3.webp"><img src="/assets/images/atelier3.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier4.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier4.webp"><img src="/assets/images/atelier4.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier5.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier5.webp"><img src="/assets/images/atelier5.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier6.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier6.webp"><img src="/assets/images/atelier6.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier7.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier7.webp"><img src="/assets/images/atelier7.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier8.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier8.webp"><img src="/assets/images/atelier8.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier9.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier9.webp"><img src="/assets/images/atelier9.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier10.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier10.webp"><img src="/assets/images/atelier10.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
                 <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/atelier11.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div> 
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier11.webp"><img src="/assets/images/atelier11.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
               
-                              <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores1.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores1.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores2.webp" alt="Derby shoes"/>  
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores3.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores4.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores5.webp" alt="Chelsea boots"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores6.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores7.webp" alt="Leather belt"/>  </a>
-                      
-                    </div>
-                  </div>
-                </div>
-                  <div class="owl-item">
-                    <div class="col-sm-12">
-                      <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores8.webp" alt="Leather belt"/>  </a>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="owl-item">
-                    <div class="col-sm-12">
-                      <div class="ex-product">  <a href="/portfolio.html"><img src="/assets/images/interiores9.webp" alt="Leather belt"/>  </a>
-                        
-                      </div>
-                    </div>
-                  </div>
+                          
+              
+       
                 </div>
              
-    <div class="row">
-      <div class="col-sm-2 col-sm-offset-10">
    
-          <a class="btn btn-border-w" href="portfolio.html" id="portfolio">Portfolio  <span class="fa fa-angle-right"></span></a>
-        
+  </div>
+
+                    <div class="tab-pane hiddentext" id="ateliertab" >
+                      <h2 class="module-title font-alt">PROJECTOS DE ECODESIGN DE INTERIORES</h2>
+                        <div class="module-subtitle font-serif" id="profissionais">
+                  Consideramos que os diferentes ambientes por onde circulamos têm um forte impacto em nós e que a possibilidade de neles contactar com elementos naturais, contribui muito positivamente para a nossa saúde e bem-estar. Criamos ambientes através da escolha cuidadosa de materiais, cores, iluminação, mobiliário, entre outros. Estas escolhas influenciam directamente o estado físico e mental, práticas e hábitos que experienciará nos ambientes criados pela SEIVA.  
+  Casa é abrigo. Seja ela permanente ou temporária, mais do que apenas um espaço físico, o seu ambiente interfere directamente com o nosso estado emocional. Procuramos a presença do natural nos espaços que projectamos, proporcionando momentos física e mentalmente saudáveis, que permitam descansar dos ritmos alucinantes e do excesso de informação da vida contemporânea. 
+  Dedicamo-nos ao ecodesign de interiores, certos da importância de criar espaços e ambientes de pausa em que se sinta bem e que tenham efeitos positivos na sua vida. Mais do que reproduzir espaços de natureza, recriamos a partir dos elementos e estruturas que a natureza nos sugere, resultando num espaço de carácter único e absolutamente cativante. Priorizamos o orgânico e os sistemas sustentáveis, para criar deslumbrantes ambientes saudáveis e de paz. Materiais como a madeira, a pedra e a cerâmica, têxteis como o linho e o algodão e a presença abundante de vegetação e luz natural, são as características que nos definem. A natureza cria, nós interpretamo-la, valorizando a sua beleza. 
+            </div>
+              <div class="owl-carousel text-center" data-items="5" data-pagination="false" data-navigation="false">
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="//assets/images/atelier1.webp"><img src="/assets/images/atelier1.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier2.webp"><img src="/assets/images/atelier2.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier3.webp"><img src="/assets/images/atelier3.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier4.webp"><img src="/assets/images/atelier4.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier5.webp"><img src="/assets/images/atelier5.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier6.webp"><img src="/assets/images/atelier6.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier7.webp"><img src="/assets/images/atelier7.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier8.webp"><img src="/assets/images/atelier8.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier9.webp"><img src="/assets/images/atelier9.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier10.webp"><img src="/assets/images/atelier10.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+                <div class="owl-item">
+                 <div class="col-sm-12">
+                                <div class="gallery-item">
+                                 
+                                <div class="ex-product">  <div class="gallery-image"><a class="gallery"href="/assets/images/atelier11.webp"><img src="/assets/images/atelier11.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                </div>
+              </div>
+              
+                          
+              
        
-      </div>
-    </div>
+                </div>
+             
+   
   </div>
 
 
-            <div class="tab-pane" id="equipamento" >
-                <h2 class="module-title font-alt ecodesigntitles">ECODESIGN DE EQUIPAMENTO</h2>
-                <div class="module-subtitle font-serif" id="profissionais">Criamos e recuperamos peças únicas de ecodesign a partir de matéria-prima cuidadosamente selecionada na natureza, num processo de reutilização criativa (upcycling) baseado no conceito cradle-to-cradle. Partimos de desperdício da natureza, de materiais orgânicos obtidos de forma sustentável e de mobiliário descartado ou partido, criando peças irrepetíveis de artesanato, decoração e mobiliário que nos conectam com o que tem vida e que transformam os espaços em que são inseridas. Usamos meios de produção, embalamento e transporte que priorizam a sustentabilidade dos recursos humanos e materiais.
+  <div class="tab-pane hiddentext" id="cadeira">
+    <h2 class="module-title font-alt">ECODESIGN DE EQUIPAMENTO</h2>
+    <div class="module-subtitle font-serif justify-content-center" id="profissionais">Criamos e recuperamos peças únicas de ecodesign a partir de matéria-prima cuidadosamente selecionada na natureza, num processo de reutilização criativa (upcycling) baseado no conceito cradle-to-cradle. Partimos de desperdício da natureza, de materiais orgânicos obtidos de forma sustentável e de mobiliário descartado ou partido, criando peças irrepetíveis de artesanato, decoração e mobiliário que nos conectam com o que tem vida e que transformam os espaços em que são inseridas. Usamos meios de produção, embalamento e transporte que priorizam a sustentabilidade dos recursos humanos e materiais.
                   Dispomos de vários utensílios para a casa, peças decorativas e de mobiliário que surgem da nossa criatividade e necessidade e que nos ligam energeticamente à vida. 
                   
                 </div>
             
                 <div id="tabcarousel" class="row col-lg-10">
-                  <div class="owl-carousel text-center" data-items="5" data-pagination="false" data-navigation="false">
+                <div class="owl-carousel text-center" data-items="5" data-pagination="false" data-navigation="false">
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento1.webp" alt="Leather belt"/>  
-                        
-                        </div>
-                    </div>
-                  </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento1.webp"> <img src="/assets/images/equipamento1.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+            
                   <div class="owl-item">
                     <div class="col-sm-12">
-                      <div class="ex-product">  <img src="/assets/images/equipamento2.webp" alt="Derby shoes"/>  
-                        
-                      </div>
-                    </div>
-                  </div>
+                      <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento2.webp"> <img src="/assets/images/equipamento2.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                
                   <div class="owl-item">
                     <div class="col-sm-12">
-                      <div class="ex-product">  <img src="/assets/images/equipamento3.webp" alt="Leather belt"/>  
-                        
-                      </div>
-                    </div>
-                  </div>
+                      <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento3.webp"> <img src="/assets/images/equipamento3.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+           
                   <div class="owl-item">
                     <div class="col-sm-12">
-                      <div class="ex-product">  <img src="/assets/images/equipamento4.webp" alt="Leather belt"/>  
-                        
-                      </div>
-                    </div>
-                  </div>
+                      <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento4.webp"> <img src="/assets/images/equipamento4.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                
                   <div class="owl-item">
                     <div class="col-sm-12">
-                      <div class="ex-product">  <img src="/assets/images/equipamento5.webp" alt="Chelsea boots"/>  
-                        
-                      </div>
-                    </div>
-                  </div>
+                      <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento5.webp"> <img src="/assets/images/equipamento5.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+           
                   <div class="owl-item">
                     <div class="col-sm-12">
-                      <div class="ex-product">  <img src="/assets/images/equipamento6.webp" alt="Leather belt"/>  
-                        
-                      </div>
-                    </div>
-                  </div>
+                      <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento6.webp"> <img src="/assets/images/equipamento6.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+              
                   <div class="owl-item">
                     <div class="col-sm-12">
-                      <div class="ex-product">  <img src="/assets/images/equipamento7.webp" alt="Leather belt"/>  
-                        
-                      </div>
-                    </div>
-                  </div>
+                      <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento7.webp"> <img src="/assets/images/equipamento7.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
+                
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento8.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento8.webp"> <img src="/assets/images/equipamento8.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento9.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento9.webp"> <img src="/assets/images/equipamento9.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento10.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento10.webp"> <img src="/assets/images/equipamento10.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento11.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento11.webp"> <img src="/assets/images/equipamento11.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento12.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento12.webp"> <img src="/assets/images/equipamento12.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+          
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento13.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento13.webp"> <img src="/assets/images/equipamento13.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento14.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento14.webp"> <img src="/assets/images/equipamento14.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento15.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento15.webp"> <img src="/assets/images/equipamento15.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento16.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento16.webp"> <img src="/assets/images/equipamento16.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento17.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento17.webp"> <img src="/assets/images/equipamento17.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento18.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento18.webp"> <img src="/assets/images/equipamento18.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento19.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento19.webp"> <img src="/assets/images/equipamento19.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento20.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento20.webp"> <img src="/assets/images/equipamento20.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento21.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento21.webp"> <img src="/assets/images/equipamento21.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                
+                </div>
                     <div class="owl-item">
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento22.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento22.webp"> <img src="/assets/images/equipamento22.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                
+                </div>
                     <div class="owl-item">                  
                       <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento23.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="owl-item">
-                      <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento24.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="owl-item">
-                      <div class="col-sm-12">
-                        <div class="ex-product">  <img src="/assets/images/equipamento25.webp" alt="Leather belt"/>  
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento23.webp"> <img src="/assets/images/equipamento23.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
                 </div>
-                <div class="row">
+                
+                </div>
+                    <div class="owl-item">
+                      <div class="col-sm-12">
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento24.webp"> <img src="/assets/images/equipamento24.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                
+                </div>
+                    <div class="owl-item">
+                      <div class="col-sm-12">
+                        <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento25.webp"> <img src="/assets/images/equipamento25.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                    
+                  </div> 
+                </div>
+                
+                </div>
+                
+                </di class="row">
                   <div class="col-sm-2 col-sm-offset-10">
                
                       <a class="btn btn-border-w" href="bazar.html" id="portfolio">Bazar  <span class="fa fa-angle-right"></span></a>
@@ -584,274 +740,503 @@
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="tab-pane" id="acessorios">
-             
-                <h2 class="module-title font-alt ecodesigntitles"> ECODESIGN - ACESSÓRIOS</h2>
-                <div class="module-subtitle font-serif" id="profissionais">Os acessórios de ecodesign que criamos seguem a nossa linha estética, com vários materiais e técnicas diferentes para que se possam adaptar perfeitamente ao seu estilo, incorporando e levando consigo a simplicidade dos elementos orgânicos e a elegância e unicidade dos nossos designs. Aqui poderá encontrar diferentes colecções de adornos pessoais em madeira, macramê ou cerâmica, peças singulares e plenas de vida, com a garantia de sustentabilidade e de um design comprometido e cuidadoso.
-                </div>
 
-                  <div class="owl-carousel text-center" data-items="5" data-pagination="false" data-navigation="false">
-        <div class="owl-item">
-          <div class="col-sm-12">
-            <div class="ex-product">  <img src="/assets/images/adorno1.webp" alt="Leather belt"/>  
-              
-            </div>
-          </div>
-        </div>
-        <div class="owl-item">
-          <div class="col-sm-12">
-            <div class="ex-product">  <img src="/assets/images/adorno2.webp" alt="Derby shoes"/>  
-              
-            </div>
-          </div>
-        </div>
-        <div class="owl-item">
-          <div class="col-sm-12">
-            <div class="ex-product">  <img src="/assets/images/adorno3.webp" alt="Leather belt"/>  
-              
-            </div>
-          </div>
-        </div>
-        
-        <div class="owl-item">
-          <div class="col-sm-12">
-            <div class="ex-product">  <img src="/assets/images/adorno6.webp" alt="Leather belt"/>  
-              
-            </div>
-          </div>
-        </div>
-        <div class="owl-item">
-          <div class="col-sm-12">
-            <div class="ex-product">  <img src="/assets/images/adorno7.webp" alt="Leather belt"/>  
-            </div>              
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno8.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno4.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno5.webp" alt="Chelsea boots"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno9.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno10.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno11.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno12.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno13.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno14.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno15.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno16.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno17.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno18.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno19.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno20.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno21.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno22.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno23.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-          <div class="owl-item">
-            <div class="col-sm-12">
-              <div class="ex-product">  <img src="/assets/images/adorno24.webp" alt="Leather belt"/>  
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="row">
-        <div class="col-sm-2 col-sm-offset-10">
-     
-            <a class="btn btn-border-w" href="bazar.html" id="portfolio">Bazar  <span class="fa fa-angle-right"></span></a>
+            <div class="tab-pane hiddentext" id="seniores">
+              <h2 class="module-title font-alt">ECODESIGN DE EQUIPAMENTO</h2>
+              <div class="module-subtitle font-serif justify-content-center" id="profissionais">Criamos e recuperamos peças únicas de ecodesign a partir de matéria-prima cuidadosamente selecionada na natureza, num processo de reutilização criativa (upcycling) baseado no conceito cradle-to-cradle. Partimos de desperdício da natureza, de materiais orgânicos obtidos de forma sustentável e de mobiliário descartado ou partido, criando peças irrepetíveis de artesanato, decoração e mobiliário que nos conectam com o que tem vida e que transformam os espaços em que são inseridas. Usamos meios de produção, embalamento e transporte que priorizam a sustentabilidade dos recursos humanos e materiais.
+                            Dispomos de vários utensílios para a casa, peças decorativas e de mobiliário que surgem da nossa criatividade e necessidade e que nos ligam energeticamente à vida. 
+                            
+                          </div>
+                      
+                          <div id="tabcarousel" class="row col-lg-10">
+                          <div class="owl-carousel text-center" data-items="5" data-pagination="false" data-navigation="false">
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento1.webp"> <img src="/assets/images/equipamento1.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                      
+                            <div class="owl-item">
+                              <div class="col-sm-12">
+                                <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento2.webp"> <img src="/assets/images/equipamento2.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                          
+                            <div class="owl-item">
+                              <div class="col-sm-12">
+                                <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento3.webp"> <img src="/assets/images/equipamento3.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                     
+                            <div class="owl-item">
+                              <div class="col-sm-12">
+                                <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento4.webp"> <img src="/assets/images/equipamento4.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                          
+                            <div class="owl-item">
+                              <div class="col-sm-12">
+                                <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento5.webp"> <img src="/assets/images/equipamento5.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                     
+                            <div class="owl-item">
+                              <div class="col-sm-12">
+                                <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento6.webp"> <img src="/assets/images/equipamento6.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                        
+                            <div class="owl-item">
+                              <div class="col-sm-12">
+                                <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento7.webp"> <img src="/assets/images/equipamento7.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                          
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento8.webp"> <img src="/assets/images/equipamento8.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento9.webp"> <img src="/assets/images/equipamento9.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento10.webp"> <img src="/assets/images/equipamento10.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento11.webp"> <img src="/assets/images/equipamento11.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento12.webp"> <img src="/assets/images/equipamento12.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                    
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento13.webp"> <img src="/assets/images/equipamento13.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento14.webp"> <img src="/assets/images/equipamento14.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
           
-         
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento15.webp"> <img src="/assets/images/equipamento15.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento16.webp"> <img src="/assets/images/equipamento16.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento17.webp"> <img src="/assets/images/equipamento17.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento18.webp"> <img src="/assets/images/equipamento18.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento19.webp"> <img src="/assets/images/equipamento19.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento20.webp"> <img src="/assets/images/equipamento20.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento21.webp"> <img src="/assets/images/equipamento21.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento22.webp"> <img src="/assets/images/equipamento22.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                              <div class="owl-item">                  
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento23.webp"> <img src="/assets/images/equipamento23.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento24.webp"> <img src="/assets/images/equipamento24.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                              <div class="owl-item">
+                                <div class="col-sm-12">
+                                  <div class="ex-product"> <a class="gallery" href="/assets/images/equipamento25.webp"> <img src="/assets/images/equipamento25.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+                              
+                            </div> 
+                          </div>
+                          
+                          </div>
+                          
+                          </di class="row">
+                            <div class="col-sm-2 col-sm-offset-10">
+                         
+                                <a class="btn btn-border-w" href="bazar.html" id="portfolio">Bazar  <span class="fa fa-angle-right"></span></a>
+                              
+                             
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      <div class="tab-pane hiddentext" id="criancas">
+        <h2 class="module-title font-alt">ECODESIGN DE ACESSÓRIOS</h2>
+        <div class="module-subtitle font-serif justify-content-center" id="profissionais">Os acessórios de ecodesign que criamos seguem a nossa linha estética, com vários materiais e técnicas diferentes para que se possam adaptar perfeitamente ao seu estilo, incorporando e levando consigo a simplicidade dos elementos orgânicos e a elegância e unicidade dos nossos designs. Aqui poderá encontrar diferentes colecções de adornos pessoais em madeira, macramê ou cerâmica, peças singulares e plenas de vida, com a garantia de sustentabilidade e de um design comprometido e cuidadoso.
+          </div>
+
+            <div class="owl-carousel text-center" data-items="5" data-pagination="false" data-navigation="false">
+  <div class="owl-item">
+    <div class="col-sm-12">
+      <div class="ex-product"> <a class="gallery" href="/assets/images/adorno1.webp"> <img src="/assets/images/adorno1.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+       
         </div>
-      </div>
+  <div class="owl-item">
+    <div class="col-sm-12">
+      <div class="ex-product"> <a class="gallery" href="/assets/images/adorno2.webp"> <img src="/assets/images/adorno2.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+          </div>
+  
+  <div class="owl-item">
+    <div class="col-sm-12">
+      <div class="ex-product"> <a class="gallery" href="/assets/images/adorno3.webp"> <img src="/assets/images/adorno3.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+          </div>
+     
+  
+  <div class="owl-item">
+    <div class="col-sm-12">
+      <div class="ex-product"> <a class="gallery" href="/assets/images/adorno6.webp"> <img src="/assets/images/adorno6.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+  <div class="owl-item">
+    <div class="col-sm-12">
+      <div class="ex-product"> <a class="gallery" href="/assets/images/adorno7.webp"> <img src="/assets/images/adorno7.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno8.webp"> <img src="/assets/images/adorno8.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno4.webp"> <img src="/assets/images/adorno4.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno5.webp"> <img src="/assets/images/adorno5.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno9.webp"> <img src="/assets/images/adorno9.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno10.webp"> <img src="/assets/images/adorno10.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno11.webp"> <img src="/assets/images/adorno11.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno12.webp"> <img src="/assets/images/adorno12.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno13.webp"> <img src="/assets/images/adorno13.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno14.webp"> <img src="/assets/images/adorno14.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno15.webp"> <img src="/assets/images/adorno15.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno16.webp"> <img src="/assets/images/adorno16.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno17.webp"> <img src="/assets/images/adorno17.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno18.webp"> <img src="/assets/images/adorno18.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno19.webp"> <img src="/assets/images/adorno19.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno20.webp"> <img src="/assets/images/adorno20.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno21.webp"> <img src="/assets/images/adorno21.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno22.webp"> <img src="/assets/images/adorno22.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno23.webp"> <img src="/assets/images/adorno23.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+    <div class="owl-item">
+      <div class="col-sm-12">
+        <div class="ex-product"> <a class="gallery" href="/assets/images/adorno24.webp"> <img src="/assets/images/adorno24.webp" alt="Derby shoes"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+              
+            </div> 
+          </div>
+
+        </div>
+  </div>
+</div>
     </div>
   </div>
 
      
 
-<div class="row">
-<div class="btn-container col-sm-3 col-sm-offset-9" style="margin-top:50px">
-<button id="toggle">VER MAIS</button><div class="fa fa-angle-down" id="seta"></div>
-</div>
-</div>
-<div class="row">
-  <div class="module-subtitle font-serif small-text" id="serviço-educativo"><span id="mais">
+  <div class="row justify-content-start">
+    <div class="btn-container col-5">
+      <button id="toggle">VER MAIS</button><div class="fa fa-angle-down" id="seta"></div>
+      </div>
+    </div>
+<div id="mais">
+<div class="row module-subtitle font-serif small-text justify-content-center ateliertext">
 
-<div class="col-sm-8 col-sm-offset-2">
-  <p>                
-    Ao longo da sua evolução, a espécie humana tem-se adaptado ao meio natural criando perspectivas e acções que resultam na adaptação dos ambientes naturais, construindo, assim, ambientes modificados. 
+<div class="col-10">    Ao longo da sua evolução, a espécie humana tem-se adaptado ao meio natural criando perspectivas e acções que resultam na adaptação dos ambientes naturais, construindo, assim, ambientes modificados. 
      Nestes ambientes, o excesso de informação, a poluição, o ritmo e a pressão a que nos sujeitamos, tem impactos profundamente negativos na nossa saúde, nas nossas relações, nos ecossistemas e no próprio planeta.
     No estilo de vida contemporâneo, grande parte do tempo, estamos sujeitos a ritmos alucinantes, a contextos de excesso de informação e poluição visual, sonora e atmosférica. 
 
     Em oposição, o contacto com os ambientais naturais proporciona a redução de estados de humor negativos e, particularmente, dos níveis de stress.
-</p>
+  </div>
 </div>
-  <div class="col-sm-12" id="bannertext" > <p>Estudiosos destas temáticas, concluíram que temos uma atracção intrínseca pelos ambientes repletos de natureza. Algumas correntes teóricas defendem que o contacto com os ambientes naturais proporciona uma recuperação do sistema cognitivo, uma vez que utilizamos uma atenção involuntária que nos ajuda a recuperar da fadiga mental. Identificam-se não só benefícios físicos (como a promoção do funcionamento fisiológico, marcadores endócrinos, noradrenalina, adelina e cortisol, pressão arterial), mas também  benefícios psicológicos - mais emoções positivas e menos emoções negativas, maior atenção e concentração, sentimento de revitalização e menor percepção de cansaço, stress e fadiga mental.
+  <div class="row rowfull module-subtitle font-serif small-text justify-content-center ateliertext" >
+        
+    <div class="col-12" id="bannertext">              <p>Estudiosos destas temáticas, concluíram que temos uma atracção intrínseca pelos ambientes repletos de natureza. Algumas correntes teóricas defendem que o contacto com os ambientes naturais proporciona uma recuperação do sistema cognitivo, uma vez que utilizamos uma atenção involuntária que nos ajuda a recuperar da fadiga mental. Identificam-se não só benefícios físicos (como a promoção do funcionamento fisiológico, marcadores endócrinos, noradrenalina, adelina e cortisol, pressão arterial), mas também  benefícios psicológicos - mais emoções positivas e menos emoções negativas, maior atenção e concentração, sentimento de revitalização e menor percepção de cansaço, stress e fadiga mental.
     
   </p>
   </div>
-  <div class="col-sm-8 col-sm-offset-2 " style="margin-bottom:50px">
-  </br>  </br>
-   <p>
+</div>
+<div class="row module-subtitle font-serif small-text justify-content-center ateliertext lasttext">
+    
+  <div class="col-10">
       Os momentos de paz urgem nas nossas vidas e nos nossos ambientes.
-      
-  </p>
-  </div>
         </div>
+        </div>
+
       </div>
     </div>
   </section>
-</div>
-        
-  
-        <div class="module-small bg-light">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">SEIVA ATELIER</h5>
-                  <p class="footer-text">Natureza, coisa mai' linda!</p>
-                  <p >Telemóvel: +351 93 855 63 75</p><p>+351 91 420 15 03</p>
-                  <p>E-mail:<a href="mailto:geral@seivaatelier.pt">geral@seivaatelier.pt</a></p>
+
+  <section class="module-small footer">
+    <div class="container">
+      <div class="row footer">
+        <div class="col-6">
+          <div class="widget">
+            <h5 class="widget-title font-alt" style="font-family:Seiva;">SEIVA ATELIER</h5>
+            <p class="footer-text">Natureza, coisa mai' linda!</p>
+            <p >Telemóvel: +351 93 855 63 75</p><p>+351 91 420 15 03</p>
+            <p>E-mail:<a href="#">geral@seivaatelier.pt</a></p>
+          </div>
+        </div>
+        <div class="col-6 footer">
+          
+                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
                 </div>
+              
               </div>
-              <div class="col-sm-6 footer bg-light">
-                
-                      <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
-                      </div>
-                    
-                    </div>
-                  </div>
-                </div>
-             
-                    </div>
+            </div>
+          </div>
+          <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
 
-        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-      </div>
-    </main>
+        </section>
 
-    <!--  
-    JavaScripts
-    =============================================
-    -->
-    <script src="/assets/lib/jquery/dist/jquery.js"></script>
-    <script src="/assets/lib/bootstrap copy/dist/js/bootstrap.min.js"></script>
-    <script src="/assets/lib/wow/dist/wow.js"></script>
-    <script src="/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-    <script src="/assets/lib/isotope/dist/isotope.pkgd.js"></script>
-    <script src="/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script src="/assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="/assets/lib/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
-    <script src="/node_modules/smoothscroll-polyfill/dist/smoothscroll.js"></script>
-    <script src="/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-    <script src="/assets/js/plugins.js"></script>
-    <script src="/assets/js/main.js"></script>
+</main>
+
+<!--  
+JavaScripts
+=============================================
+--> <script src="/assets/lib/jquery/dist/jquery.js"></script>
+<script src="/assets/lib/bootstrap copy/dist/js/bootstrap.min.js"></script>
+<script src="/assets/lib/wow/dist/wow.js"></script>
+<script src="/assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+<script src="/assets/lib/isotope/dist/isotope.pkgd.js"></script>
+<script src="/assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+<script src="/assets/lib/flexslider/jquery.flexslider.js"></script>
+<script src="/assets/lib/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="/node_modules/smoothscroll-polyfill/dist/smoothscroll.js"></script>
+<script src="/assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/main.js"></script>
     <script>
       var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -886,97 +1271,123 @@ window.onscroll = function() {
             });
           });
           </script>
-           <script>
+        <script>
+          $(document).ready(function() {
+           $("#btntabs1").click(function() {
+             if ( $("#equipa").hasClass('hiddentext')) {
+             $("#equipa").removeClass('hiddentext');
+             $("#equipa").addClass('active'); 
+             $("#ateliertab").removeClass('active'); 
+             $("#cadeira").removeClass('active'); 
+             $("#seniores").removeClass('active'); 
+             $("#criancas").removeClass('active'); 
 
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-              // Number of items
-              autoHeight : false,
-                items : 7,	    
-                itemsDesktop : [1900,4.3], //4.3 items between 1900px and 901px
-                itemsDesktopSmall : [1200,3.3], // 3.3 items betweem 1200px and 601px
-                itemsTablet : [768,2.3], // 2.3 items 
-              itemsMobile : [600, 1.3], // 1.3 items between 600 and 0
+            }     else if ( $("#equipa").hasClass('active')) {
+             $("#equipa").removeClass('active');
+             $("#equipa").addClass('hiddentext'); 
+           } 
+         });
+         });
+        </script>
         
-                // LazyLoad
-                lazyLoad : false,
-                lazyEffect: 'zoom',
-                rewindNav: false,
+        <script>
+        $(document).ready(function() {
+        $("#btntabs2").click(function() {
+        if ( $("#ateliertab").hasClass('hiddentext')) {
+        $("#ateliertab").removeClass('hiddentext');
+        $("#ateliertab").addClass('active'); 
+        $("#equipa").removeClass('active'); 
+             $("#cadeira").removeClass('active'); 
+             $("#seniores").removeClass('active'); 
+             $("#criancas").removeClass('active'); 
         
-                // Navigation
-                navigation : true,
-                scrollPerPage: false,
-                slideSpeed: 300,
-                navigationText : ["",""],
-                pagination: false
-            })
-          </script>
-
-<script>
-  $(document).ready(function() {
-   $("#btninteriores").click(function() {
-     if ( $("#tabcontenteducacao").hasClass('hiddentext')) {
-     $("#tabcontenteducacao").show();
-     $("#tabcontenteducacao").removeClass('hiddentext');
-     $("#tabcontenteducacao").addClass('showing1'); 
-    }     else if ( $("#tabcontenteducacao").hasClass('showing1')) {
-     $("#tabcontenteducacao").hide();
-     $("#tabcontenteducacao").removeClass('showing1');
-     $("#tabcontenteducacao").addClass('hiddentext'); 
-   } else if  ( $("#tabcontenteducacao").hasClass('showing2')) {
-     $("#tabcontenteducacao").removeClass('showing2');
-     $("#tabcontenteducacao").addClass('showing1'); 
-   } else if  ( $("#tabcontenteducacao").hasClass('showing3')) {
-     $("#tabcontenteducacao").removeClass('showing3');
-     $("#tabcontenteducacao").addClass('showing1'); 
-   } 
- });
- });
-</script>
-
-<script>
-$(document).ready(function() {
-$("#btnequipamento").click(function() {
-if ( $("#tabcontenteducacao").hasClass('hiddentext')) {
-$("#tabcontenteducacao").show();
-$("#tabcontenteducacao").removeClass('hiddentext');
-$("#tabcontenteducacao").addClass('showing2'); 
-}     else if ( $("#tabcontenteducacao").hasClass('showing2')) {
-$("#tabcontenteducacao").hide();
-$("#tabcontenteducacao").removeClass('showing2');
-$("#tabcontenteducacao").addClass('hiddentext'); 
-} else if  ( $("#tabcontenteducacao").hasClass('showing1')) {
-     $("#tabcontenteducacao").removeClass('showing1');
-     $("#tabcontenteducacao").addClass('showing2'); 
-   } else if  ( $("#tabcontenteducacao").hasClass('showing3')) {
-     $("#tabcontenteducacao").removeClass('showing3');
-     $("#tabcontenteducacao").addClass('showing2'); 
-   }
-});
-});
-</script>
-<script>
-$(document).ready(function() {
-$("#btnacessorios").click(function() {
-if ( $("#tabcontenteducacao").hasClass('hiddentext')) {
-$("#tabcontenteducacao").show();
-$("#tabcontenteducacao").removeClass('hiddentext');
-$("#tabcontenteducacao").addClass('showing3'); 
-}     else if ( $("#tabcontenteducacao").hasClass('showing3')) {
-$("#tabcontenteducacao").hide();
-$("#tabcontenteducacao").removeClass('showing3');
-$("#tabcontenteducacao").addClass('hiddentext'); 
-} else if  ( $("#tabcontenteducacao").hasClass('showing1')) {
-      $("#tabcontenteducacao").removeClass('showing1');
-      $("#tabcontenteducacao").addClass('showing3'); 
-  
-   } else if  ( $("#tabcontenteducacao").hasClass('showing2')) {
-     $("#tabcontenteducacao").removeClass('showing2');
-     $("#tabcontenteducacao").addClass('showing3'); 
-   }
-});
-});
-</script>
-  
+        }     else if ( $("#ateliertab").hasClass('active')) {
+        $("#ateliertab").removeClass('active');
+        $("#ateliertab").addClass('hiddentext'); 
+        } 
+        });
+        });
+        </script>
+               <script>
+                $(document).ready(function() {
+                $("#btntabs3").click(function() {
+                if ( $("#cadeira").hasClass('hiddentext')) {
+                $("#cadeira").removeClass('hiddentext');
+                $("#cadeira").addClass('active'); 
+                $("#equipa").removeClass('active'); 
+        $("#ateliertab").removeClass('active'); 
+             $("#seniores").removeClass('active'); 
+             $("#criancas").removeClass('active'); 
+                
+                }     else if ( $("#cadeira").hasClass('active')) {
+                $("#cadeira").removeClass('active');
+                $("#cadeira").addClass('hiddentext'); 
+                } 
+                });
+                });
+                </script>
+                           <script>
+                            $(document).ready(function() {
+                            $("#btntabs4").click(function() {
+                            if ( $("#seniores").hasClass('hiddentext')) {
+                            $("#seniores").removeClass('hiddentext');
+                            $("#seniores").addClass('active'); 
+                            $("#equipa").removeClass('active'); 
+        $("#ateliertab").removeClass('active'); 
+             $("#cadeira").removeClass('active'); 
+             $("#criancas").removeClass('active');  
+                            
+                            }     else if ( $("#seniores").hasClass('active')) {
+                            $("#seniores").removeClass('active');
+                            $("#seniores").addClass('hiddentext'); 
+                            } 
+                            });
+                            });
+                            </script>
+                                                                       <script>
+                                                                        $(document).ready(function() {
+                                                                        $("#btntabs5").click(function() {
+                                                                        if ( $("#criancas").hasClass('hiddentext')) {
+                                                                        $("#criancas").removeClass('hiddentext');
+                                                                        $("#criancas").addClass('active'); 
+                                                                        $("#equipa").removeClass('active'); 
+        $("#ateliertab").removeClass('active'); 
+             $("#cadeira").removeClass('active'); 
+             $("#seniores").removeClass('active'); 
+                                                                        }     else if ( $("#criancas").hasClass('active')) {
+                                                                        $("#criancas").removeClass('active');
+                                                                        $("#criancas").addClass('hiddentext'); 
+                                                                        } 
+                                                                        });
+                                                                        });
+                                                                        </script>
+        <script>
+        
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+            // Number of items
+            autoHeight : false,
+         
+              itemsDesktop : [5600,5.3], //4.3 items between 1900px and 1201px
+              itemsDesktopSmall : [1900,4.3], // 3.3 items betweem 1200px and 769px
+              itemsTablet : [1200,3.3], // 2.3 items
+              itemsTableSmall : [768, 2.3],
+            itemsMobile : [600,1.3], // 1.3 items between 600 and 0
+        
+              // LazyLoad
+              lazyLoad : false,
+              lazyEffect: 'zoom',
+              rewindNav: true,
+        
+              // Navigation
+              navigation : false,
+              scrollPerPage: false,
+              autoPlay : 2000,
+              slideSpeed: 300,
+              loop: true,
+              navigationText : ["",""],
+              pagination: false
+          })
+        </script>
   </body>
 </html>

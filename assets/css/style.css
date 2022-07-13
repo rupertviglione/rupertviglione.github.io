@@ -57,6 +57,9 @@
   height: 35px;
   width: 35px;
 }
+#owlempresas {
+  margin: 3% 0;
+}
 .lasttext, .mblast {
   margin-bottom:5%!important;
 }

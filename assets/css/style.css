@@ -8,7 +8,7 @@
 
 }
 #botoeseducacaob {
-  margin: 5%;
+  margin-top: 5%;
 }
 .tab-content {
   margin-bottom: 5%;
@@ -3328,7 +3328,7 @@ font-style:italic;
 	Exclusive products
 ------------------------------------------------------------------- */
 .ex-product {
-  opacity: .7;
+
   transition: all 0.4s ease-in-out 0s;
 }
 

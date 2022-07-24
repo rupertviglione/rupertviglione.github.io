@@ -8,7 +8,7 @@
 
 }
 #botoeseducacaob {
-  margin: 5% 0;
+  margin: 5%;
 }
 .tab-content {
   margin-bottom: 5%;
@@ -2641,8 +2641,7 @@ Google map
 
 
 .work-item-button   {
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fe29e', endColorstr='#5bdad1',GradientType=1 );
-  opacity: 0.6;
+ 
 }
 .work-item-button .work-caption  {
   opacity: 1;

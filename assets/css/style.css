@@ -142,7 +142,14 @@ border:none;
 #tabcontenteducacao {
   display:none;
 }
+#linkhighlighttext {
+  color: #fbf5e9;
+}
 
+#linkhighlighttext:hover {
+  color: #9f8e6c;
+  text-decoration: underline;
+}
 
 .equipatexto {
   background-color: #fbf5e9;

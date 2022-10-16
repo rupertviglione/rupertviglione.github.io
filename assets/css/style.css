@@ -178,6 +178,10 @@ width: 3rem;
 height: 3rem;
 }
 
+#rownl {
+  height: 55vh;
+  margin-bottom:10%;
+}
 #myButton {
   background: var(--media-control-background,rgba(174, 188, 167, 0.8));
   background-color: transparent;

@@ -118,7 +118,7 @@
       </div>
       
       <nav class="navbar navbar-expand-md fixed-top navbar-light" id="navbar">
-        <div class="container-fluid navbargreen">
+        <div class="container-fluid navbargreen" id="navbarindex">
           <a class="navbar-brand" href="#"></a>
           <button type="button" class="navbar-toggler" data-bs-toggle="modal" type="button" data-bs-target="#menuModal">
             <span class="navbar-toggler-icon"></span>
@@ -170,7 +170,58 @@
   
 <div class="container-fluid homebanner">
   <div class="row rowhomebanner">
-    <img class="img-fluid col-12" src="assets/images/seivagif.gif">
+    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" data-bs-pause=false>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item special active" id="1" data-bs-interval="7000">
+          <img src="assets/images/seivagif.gif" class="d-block w-100 img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" id="2" data-bs-interval="4000">
+          <img src="assets/images/banner/cidades.webp" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption d-md-block col-10">
+            <h5>
+              <span class="row justify-content-center ntitle">Cidades</span>
+              <span class="row justify-content-center ntitle">Infinitas</span>
+            </h5>
+            <div class="bannerbtncont"><a href="cidadesinfinitas.html" class="bannerbtn"><span class="nbtn">Ver mais</span></a></div>
+        </div>
+      </div>
+        <div class="carousel-item" id="3" data-bs-interval="4000">
+          <img src="assets/images/banner/educacao.webp" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption d-md-block col-10">
+            <h5>
+              <span class="row justify-content-center ntitle">Serviço</span>
+              <span class="row justify-content-center ntitle">Educativo</span>
+            </h5>            
+            <div class="bannerbtncont"><a href="educacao.html" class="bannerbtn"><span class="nbtn">Ver mais</span></a></div>
+          </div>
+        </div>
+        <div class="carousel-item" id="4" data-bs-interval="4000">
+          <img src="assets/images/banner/yoga.webp" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption d-md-block col-10">
+<h5>
+  <span class="row justify-content-center ntitle">Aulas de</span>
+  <span class="row justify-content-center ntitle">Prana Yoga</span>
+</h5>              
+<div class="bannerbtncont"><a href="yoga.html" class="bannerbtn"><span class="nbtn">Ver mais</span></a></div>
+</div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Seguinte</span>
+      </button>
+    </div>
   
         <media-controller class="col-1" audio id="myController">
    <audio id="audioplayer"      slot="media"
@@ -197,6 +248,7 @@
   </div>
 </div>    
 </section>
+
 
   <section class="module pb-0 maincontent">
 
@@ -329,6 +381,68 @@ window.onscroll = function() {
 <script>
   var audio = document.getElementById("audioplayer");
   audio.volume = 0.2;
+</script>
+
+<script>
+  class ClassWatcher {
+
+constructor(targetNode, classToWatch, classAddedCallback, classRemovedCallback) {
+    this.targetNode = targetNode
+    this.classToWatch = classToWatch
+    this.classAddedCallback = classAddedCallback
+    this.classRemovedCallback = classRemovedCallback
+    this.observer = null
+    this.lastClassState = targetNode.classList.contains(this.classToWatch)
+
+    this.init()
+}
+
+init() {
+    this.observer = new MutationObserver(this.mutationCallback)
+    this.observe()
+}
+
+observe() {
+    this.observer.observe(this.targetNode, { attributes: true })
+}
+
+disconnect() {
+    this.observer.disconnect()
+}
+
+mutationCallback = mutationsList => {
+    for(let mutation of mutationsList) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+            let currentClassState = mutation.target.classList.contains(this.classToWatch)
+            if(this.lastClassState !== currentClassState) {
+                this.lastClassState = currentClassState
+                if(currentClassState) {
+                    this.classAddedCallback()
+                }
+                else {
+                    this.classRemovedCallback()
+                }
+            }
+        }
+    }
+}
+}
+  let targetNode = document.getElementById('1');
+let navbar = document.getElementById('navbarindex');
+
+function workOnClassAdd() {
+    navbar.className = 'container-fluid navbargreen'
+}
+
+function workOnClassRemoval() {
+  navbar.className = 'container-fluid navbarwhite2'
+}
+
+// watch for a specific class change
+let classWatcher = new ClassWatcher(targetNode, 'active', workOnClassAdd, workOnClassRemoval)
+
+
+
 </script>
 
    </body>

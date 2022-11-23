@@ -1,6 +1,128 @@
 /*--------------------------------------------------------------
 	Bootstrap specific and video
 --------------------------------------------------------------*/
+.carousel-caption {
+ top:10%;
+ left:0%;
+ right:0%;
+ padding: 0;
+ margin: 0 auto;
+}
+.quemsomos .carousel-caption, .yoga .carousel-caption {
+top: 40%;
+}
+#titleecodesign, #titlebazar {
+  top: 60%;
+}
+
+.fases {
+  list-style: lower-latin;
+  list-style-position: inside;
+  
+  
+  }
+  
+.navbarwhite2 .navbar-toggler .navbar-toggler-icon {
+  
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(251, 245, 233, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg>");
+}
+#carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > a {
+  font-family:Coves;
+  font-size: 20px;
+  color: #fbf5e9;
+  background: transparent;
+  text-decoration: none!important;
+  font-weight: 800;
+  opacity:0.9;
+}
+.carousel-indicators {
+  margin-bottom:0;
+}
+
+#carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div, .carousel-caption {
+  text-align: center;
+  transform: scale(0.90);
+  animation: escale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+#carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > a:hover {
+transform:scale(1.1);
+opacity: 1;
+}
+a span:nth-child(1):hover {
+  transform:scale(1.1);
+  opacity: 1;
+}
+.bannerbtncont {
+  position:absolute;
+bottom:1%;
+left: 0%;
+right: 0%;
+margin: 0 auto;
+}
+
+ #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > h5, body > main > section.home-section.home-parallax > div > div.row.rowhomebanner > div > h5, .carousel-caption > h5 {
+  font-family: Terrakota;
+  font-size: 80px;
+  line-height:90px;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  -webkit-text-stroke: #000;
+  -webkit-text-stroke-width: 0.1px;
+ }
+@keyframes fade-in2 {
+  100% {
+    border: 2px solid #fbf5e9;
+    padding-left: 2%;
+    padding-right: 2%;
+    opacity: 1;
+    filter: blur(0);
+    }
+    0% {
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+
+  }
+}
+@keyframes escale {
+  100% {
+    transform: scale(1);
+
+  }
+}
+.nbtn {
+  border: 2px solid #fbf5e9;
+padding-left: 2%;
+padding-right: 2%;
+}
+span .ntitle, a span .nbtn {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+a span:nth-child(1) {
+  animation: fade-in2 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 .mt5 {
   margin-top: 5%;
 }.owl-carouselest {
@@ -165,6 +287,7 @@ position:absolute;
 margin-bottom: 1%;
 width: 3rem;
 height: 3rem;
+z-index:99999;
 }
 
 #myController:hover {
@@ -176,6 +299,7 @@ position:absolute;
 margin-bottom: 1%;
 width: 3rem;
 height: 3rem;
+z-index:99999;
 }
 
 #rownl {
@@ -189,7 +313,7 @@ height: 3rem;
   width: 2rem;
   height: 3rem;
   padding: 0;
-
+  z-index:99999;
 }
 
 #myButton:hover {
@@ -199,6 +323,7 @@ height: 3rem;
   width: 2rem;
   height: 3rem;
   padding: 0;
+  z-index:99999;
 }
 
 
@@ -320,7 +445,7 @@ font-style: italic !important;
 #menuModal {
   padding-left: 0!important;
 }
-.navbargreen {
+.navbargreen, .navbarwhite2 {
   margin-top:17px;
 }
 #seivabrand {
@@ -1762,9 +1887,10 @@ margin-right: 0.063rem;
 /*--------------------------------------------------------------
 	Navbar
 --------------------------------------------------------------*/
-.navbargreen, .navbarwhite {
+.navbargreen, .navbarwhite, .navbarwhite2 {
   text-align: center;
   font-family: Seiva;
+  z-index:99999;
 
 }
 .navbar>.container-fluid {
@@ -1781,6 +1907,20 @@ color: #fbf5e9!important;
 .navbargreen a {
   text-align: center;
 color:#aebca7!important;
+}
+.navbarwhite2 a {
+  text-align:center;
+  color: #fbf5e9!important;
+  margin-top:17px;
+  -webkit-text-stroke-width: 0.05rem;
+-webkit-text-stroke-color: #fbf5e9;
+}
+.navbarwhite2 a:hover {
+  color:#5e410d!important;
+}
+.navbargreen a:hover {
+  text-align: center;
+ color:#5e410d!important;
 }
 .navbarwhite a:hover {
   color:#5e410d!important;
@@ -1825,7 +1965,7 @@ color:#aebca7!important;
 
 .btn-close {
 background: transparent url("data:image/svg+xml,%3csvg viewBox='0 0 500 500' xmlns='http://www.w3.org/2000/svg'%3e%3crect style='stroke: rgb(0, 0, 0); fill: rgb(251, 245, 233); stroke-width: 0px;' transform='matrix(0.707107, -0.707107, 0.707107, 0.707107, -17.212549, 62.939026)' x='1.154' y='-3.417' width='112.062' height='650.544' rx='50' ry='50'/%3e%3crect style='stroke: rgb(0, 0, 0); fill: rgb(251, 245, 233); paint-order: stroke; stroke-width: 0px;' x='294.808' y='-5.636' width='129.582' height='631.578' rx='50' ry='50' transform='matrix(0.707106, 0.707107, -0.707107, 0.707106, 215.575409, -223.300217)'/%3e%3c/svg%3e") center/1em auto no-repeat!important;
-margin: 12% 0 0 10%;
+margin: 25% 0 0 10%;
 opacity:.9;
 }
 .modal-content {
@@ -1844,6 +1984,17 @@ opacity:.9;
   text-align: center;
   vertical-align: center;
   font-size: 1rem;
+}
+@font-face {
+  font-family: 'Terrakota';
+  src: url('/assets/fonts/Terrakota\ signature\ alt.otf');
+  src: 
+      url('/assets/fonts/terrakota_signature_alt-webfont.woff2') format('woff2'),
+      url('/assets/fonts/terrakota_signature_alt-webfont.woff') format('woff'),
+      url('/assets/fonts/Terrakota\ signature\ alt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Seiva';
@@ -3499,6 +3650,9 @@ font-style:italic;
 #equipa > div.row.justify-content-center > nav > div {
   margin:0;
 }
+
+
+
 }
 @media (min-width: 0) and (orientation:landscape) {
   .img-fluid {
@@ -3506,6 +3660,7 @@ font-style:italic;
   }
 }
 @media (min-width:360px) {
+
   .rowfullxs {
     --bs-gutter-x: 0;
   } 
@@ -3520,7 +3675,28 @@ font-style:italic;
     width:50%;
   }
 }
+@media (min-width:390px) {
+
+
+}
+@media (min-width:424px) {
+
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > h5, body > main > section.home-section.home-parallax > div > div.row.rowhomebanner > div > h5, body > main > section:nth-child(4) > div > div > div.carousel-caption.d-md-block.col-10 > h5 { 
+    font-size: 80px;
+    line-height: 80px;
+  }
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > a  {
+    font-size: 20px;
+  }
+ 
+}
 @media (min-width:568px) {
+  .carousel-caption {  
+   top: 5%;
+  }
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > a  {
+    font-size: 20px;
+  }
   .formacoes {
     width:50%;
   }
@@ -3562,6 +3738,22 @@ font-style:italic;
   }
 }
 @media (min-width:768px) {
+
+
+
+  .carousel-caption {
+    top: 20%;
+  }
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > a {
+    font-size: 20px;
+  }
+  
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > h5, body > main > section.home-section.home-parallax > div > div.row.rowhomebanner > div > h5, body > main > section:nth-child(4) > div > div > div.carousel-caption.d-md-block.col-10 > h5 {
+    font-size: 120px;
+    line-height: 120px;
+  
+  }
+ 
   .formacoes {
     width:33%;
   }
@@ -3581,6 +3773,9 @@ font-size:30px;
 }
 
 @media (min-width:992px) {
+  
+
+  
   .img-fluid {
     max-width: 100vw;
     height:auto;
@@ -3600,7 +3795,20 @@ font-size:30px;
 }
 }
 
-
+@media (min-width:1024px) {
+  .carousel-caption {
+    top: 20%;
+  }
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > a {
+    font-size: 25px;
+  }
+  
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > h5, body > main > section.home-section.home-parallax > div > div.row.rowhomebanner > div > h5, body > main > section:nth-child(4) > div > div > div.carousel-caption.d-md-block.col-10 > h5 {
+    font-size: 140px;
+    line-height: 150px;
+  
+  }
+}
 
 @media (min-width:1200px) {
   .formacoes {
@@ -3627,6 +3835,21 @@ font-size:30px;
   .widget, .widget .widget-title, .footer-text {
     font-size:15px;
   }
+}
+@media (min-width:1400px) {
+  .carousel-caption {
+    top: 20%;
+  }
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > a {
+    font-size: 30px;
+  }
+  
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > h5, body > main > section.home-section.home-parallax > div > div.row.rowhomebanner > div > h5, body > main > section:nth-child(4) > div > div > div.carousel-caption.d-md-block.col-10 > h5 {
+    font-size: 180px;
+    line-height: 190px;
+  
+  }
+
 }
 @media (min-width:1500px) {
   .nav-link {
@@ -3695,6 +3918,21 @@ font-size:30px;
 }
 
 @media (min-width:2300px) {
+  .carousel-caption {
+    top: 20%;
+  }
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > div > a {
+    font-size: 40px;
+  }
+  
+  #carouselExampleIndicators > div.carousel-inner > div.carousel-item.active > div > h5, body > main > section.home-section.home-parallax > div > div.row.rowhomebanner > div > h5, body > main > section:nth-child(4) > div > div > div.carousel-caption.d-md-block.col-10 > h5 {
+    font-size: 250px;
+    line-height: 270px;
+  
+  }
+  .bannerbtncont {
+    bottom:10%;
+  }
   .formacoes {
     width:16.66666666667%;
   }

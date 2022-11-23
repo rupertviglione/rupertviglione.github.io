@@ -268,6 +268,17 @@
                             </div>
                           </a>
                             </li>
+                            <li class="col-12 work-item illustration webdesign work-item-button btntabs" id="btntabs6">
+                              <a href="#online" data-toggle="tab" id="btnescola">
+                              <div class="work-image" >
+                                <img src="/assets/images/btnonline.webp" alt="Aulas de Yoga Online"/>
+                              </div>
+                              <div class="row work-caption font-alt align-items-end">
+                                <div class="work-title">ONLINE</div>
+                                
+                              </div>
+                            </a>
+                              </li>
                     </ul>
                   </div>
                 </div>
@@ -343,10 +354,22 @@
                     </div>
         <div class="tab-pane hiddentext" id="ateliertab">
           <h2 class="module-title font-alt">AULAS DE GRUPO</h2>
-          <div class="module-subtitle font-serif justify-content-center" id="profissionais">As aulas de grupo, actualmente, acontecem para grupos específicos que adjudiquem o serviço ou em eventos pontuais abertos a todos devidamente programados e divulgados. Mais informações:<a href="/mailto:geral@seivaatelier.pt"> geral@seivaatelier.pt.</a>.
+          <div class="module-subtitle font-serif justify-content-center" id="profissionais">Estão abertas as inscrições para primeira turma de <span style="font-style:italic;">Prana Yoga</span> da Seiva Atelier. A partir de <strong>4 de Janeiro</strong>, todas as <strong>quartas-feiras</strong>, das <strong>18h00 às 19h00</strong>, num fantástico estúdio com vista para Monsanto, no <a href="https://goo.gl/maps/rH2Q1tv65ZxK8c7n6"><strong>Complexo Desportivo da Ajuda</strong></a>, em Lisboa. As aulas terão a mensalidade de 40€.
+<br>
+            Para além disso, as aulas de grupo, actualmente, acontecem para grupos específicos que adjudiquem o serviço ou em eventos pontuais abertos a todos devidamente programados e divulgados. Mais informações e inscrições:<a href="/mailto:geral@seivaatelier.pt"> geral@seivaatelier.pt</a>.
           </div>
 <div class="owl-carousel text-center" data-items="3" data-pagination="false" data-navigation="false">
   <div class="owl-item">
+    <div class="col-sm-12">
+      <div class="gallery-item">
+       
+      <div class="ex-product">  <div class="gallery-image"><a class="gallery" href="/assets/images/grupon.webp"> <img src="/assets/images/grupons.webp" alt="Chelsea boots"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+   <div class="owl-item">
     <div class="col-sm-12">
       <div class="gallery-item">
        
@@ -399,21 +422,14 @@
 </div>
 </div>
    <div class="owl-item">
-                              <div class="col-sm-12">
-                                <div class="gallery-item">
-                                 
-                                <div class="ex-product">  <div class="gallery-image"><a class="gallery" href="/assets/images/grupo3.webp"> <img src="/assets/images/grupo3.webp" alt="Leather belt"/> <div class="gallery-caption"><div class="gallery-icon"><span class="icon-magnifying-glass"></span></div></div></a>
-                                </div>
-                              </div>
-    </div>
-  </div>
-</div>
+                            
 <div class="owl-item">
   <div class="col-sm-12">
     <div class="ex-product"> <img src=""/>
       
     </div>
   </div>
+</div>
 </div>
 </div>
 </div>
@@ -778,7 +794,15 @@
  </div> 
   
       </div>        
-      
+      <div class="tab-pane hiddentext" id="online">
+        <h2 class="module-title font-alt">AULAS DE YOGA ONLINE</h2>
+        <div class="module-subtitle justify-content-center font-serif" id="profissionais"> Estão abertas as inscrições para as aulas online de <span style="font-style:italic">Prana Yoga </span> da Seiva Atelier. A partir de <strong>3 de Janeiro</strong>, todas as <strong>terças-feiras</strong> das <strong>18h30 às 19h30</strong>. 
+          As aulas terão a mensalidade de 25€.
+          <br>Mais informações e inscrições através de <a href="mailto:geral@seivaatelier.pt">geral@seivaatelier.pt</a>.
+        </div>
+     
+        
+            </div>       
 </div>   
                       </div>
 
@@ -1048,12 +1072,15 @@ window.onscroll = function() {
                              if ( $("#equipa").hasClass('hiddentext')) {
                              $("#equipa").removeClass('hiddentext');
                              $("#equipa").addClass('active'); 
-                             $("#ateliertab").removeClass('active'); 
-                             $("#cadeira").removeClass('active'); 
-                             $("#seniores").removeClass('active'); 
-                             $("#criancas").removeClass('active'); 
+                             $("#ateliertab").removeClass('active').addClass('hiddentext'); 
+                             $("#cadeira").removeClass('active').addClass('hiddentext'); 
+                             $("#seniores").removeClass('active').addClass('hiddentext'); 
+                             $("#criancas").removeClass('active').addClass('hiddentext'); 
+                             $("#online").removeClass('active').addClass('hiddentext'); 
 
-                            }     else if ( $("#equipa").hasClass('active')) {
+                            
+
+                                                          } else if ( $("#equipa").hasClass('active')) {
                              $("#equipa").removeClass('active');
                              $("#equipa").addClass('hiddentext'); 
                            } 
@@ -1067,10 +1094,12 @@ window.onscroll = function() {
                         if ( $("#ateliertab").hasClass('hiddentext')) {
                         $("#ateliertab").removeClass('hiddentext');
                         $("#ateliertab").addClass('active'); 
-                        $("#equipa").removeClass('active'); 
-                             $("#cadeira").removeClass('active'); 
-                             $("#seniores").removeClass('active'); 
-                             $("#criancas").removeClass('active'); 
+                        $("#equipa").removeClass('active').addClass('hiddentext'); 
+                             $("#cadeira").removeClass('active').addClass('hiddentext'); 
+                             $("#seniores").removeClass('active').addClass('hiddentext'); 
+                             $("#criancas").removeClass('active').addClass('hiddentext');
+                             $("#online").removeClass('active').addClass('hiddentext'); 
+
                         
                         }     else if ( $("#ateliertab").hasClass('active')) {
                         $("#ateliertab").removeClass('active');
@@ -1085,10 +1114,12 @@ window.onscroll = function() {
                                 if ( $("#cadeira").hasClass('hiddentext')) {
                                 $("#cadeira").removeClass('hiddentext');
                                 $("#cadeira").addClass('active'); 
-                                $("#equipa").removeClass('active'); 
-                        $("#ateliertab").removeClass('active'); 
-                             $("#seniores").removeClass('active'); 
-                             $("#criancas").removeClass('active'); 
+                                $("#equipa").removeClass('active').addClass('hiddentext'); 
+                        $("#ateliertab").removeClass('active').addClass('hiddentext'); 
+                             $("#seniores").removeClass('active').addClass('hiddentext'); 
+                             $("#criancas").removeClass('active').addClass('hiddentext'); 
+                             $("#online").removeClass('active').addClass('hiddentext'); 
+
                                 
                                 }     else if ( $("#cadeira").hasClass('active')) {
                                 $("#cadeira").removeClass('active');
@@ -1103,10 +1134,12 @@ window.onscroll = function() {
                                             if ( $("#seniores").hasClass('hiddentext')) {
                                             $("#seniores").removeClass('hiddentext');
                                             $("#seniores").addClass('active'); 
-                                            $("#equipa").removeClass('active'); 
-                        $("#ateliertab").removeClass('active'); 
-                             $("#cadeira").removeClass('active'); 
-                             $("#criancas").removeClass('active');  
+                                            $("#equipa").removeClass('active').addClass('hiddentext'); 
+                        $("#ateliertab").removeClass('active').addClass('hiddentext'); 
+                             $("#cadeira").removeClass('active').addClass('hiddentext'); 
+                             $("#criancas").removeClass('active').addClass('hiddentext');  
+                             $("#online").removeClass('active').addClass('hiddentext'); 
+
                                             
                                             }     else if ( $("#seniores").hasClass('active')) {
                                             $("#seniores").removeClass('active');
@@ -1121,10 +1154,12 @@ window.onscroll = function() {
                                                                                         if ( $("#criancas").hasClass('hiddentext')) {
                                                                                         $("#criancas").removeClass('hiddentext');
                                                                                         $("#criancas").addClass('active'); 
-                                                                                        $("#equipa").removeClass('active'); 
-                        $("#ateliertab").removeClass('active'); 
-                             $("#cadeira").removeClass('active'); 
-                             $("#seniores").removeClass('active'); 
+                                                                                        $("#equipa").removeClass('active').addClass('hiddentext'); 
+                        $("#ateliertab").removeClass('active').addClass('hiddentext'); 
+                             $("#cadeira").removeClass('active').addClass('hiddentext'); 
+                             $("#seniores").removeClass('active').addClass('hiddentext'); 
+                             $("#online").removeClass('active').addClass('hiddentext'); 
+
                                                                                         }     else if ( $("#criancas").hasClass('active')) {
                                                                                         $("#criancas").removeClass('active');
                                                                                         $("#criancas").addClass('hiddentext'); 
@@ -1132,6 +1167,25 @@ window.onscroll = function() {
                                                                                         });
                                                                                         });
                                                                                         </script>
+                                                                                         <script>
+                                                                                          $(document).ready(function() {
+                                                                                          $("#btntabs6").click(function() {
+                                                                                          if ( $("#online").hasClass('hiddentext')) {
+                                                                                          $("#online").removeClass('hiddentext');
+                                                                                          $("#online").addClass('active'); 
+                                                                                          $("#equipa").removeClass('active').addClass('hiddentext'); 
+                          $("#ateliertab").removeClass('active').addClass('hiddentext'); 
+                               $("#cadeira").removeClass('active').addClass('hiddentext'); 
+                               $("#seniores").removeClass('active').addClass('hiddentext'); 
+                               $("#criancas").removeClass('active').addClass('hiddentext'); 
+  
+                                                                                          }     else if ( $("#online").hasClass('active')) {
+                                                                                          $("#online").removeClass('active');
+                                                                                          $("#online").addClass('hiddentext'); 
+                                                                                          } 
+                                                                                          });
+                                                                                          });
+                                                                                          </script>
                         <script>
                         
                           var owl = $('.owl-carousel');

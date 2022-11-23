@@ -303,8 +303,8 @@ z-index:99999;
 }
 
 #rownl {
-  height: 55vh;
-  margin-bottom:10%;
+  margin-bottom: 10%;
+  min-height: 580px;
 }
 #myButton {
   background: var(--media-control-background,rgba(174, 188, 167, 0.8));
@@ -3641,6 +3641,10 @@ font-style:italic;
 	Responsive Styles - Media Queries
 --------------------------------------------------------------*/
 @media (min-width: 0) {
+  .controls {
+    opacity:1
+  }
+
   .nonmobiletext {
     display:none;
   }
@@ -3735,6 +3739,17 @@ font-style:italic;
   .work-item-quemsomos {
     width: 30%;
     margin: 0 1.666666666667%;
+  }
+}
+@media (max-width: 767px) {
+ 
+  .control-button.play-button {
+    height: 30px;
+    width: 30px;
+  }
+  .control-button.sound-button {
+    height: 30px;
+    width: 30px;
   }
 }
 @media (min-width:768px) {

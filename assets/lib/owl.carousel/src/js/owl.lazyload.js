@@ -62,7 +62,7 @@
 
 					while (i++ < n) {
 						this.load(clones / 2 + this._core.relative(position));
-						clones && $.each(this._core.clones(this._core.relative(position)), load);
+						
 						position++;
 					}
 				}
@@ -140,7 +140,7 @@
 			this._core.$element.off(handler, this.handlers[handler]);
 		}
 		for (property in Object.getOwnPropertyNames(this)) {
-			typeof this[property] != 'function' && (this[property] = null);
+			
 		}
 	};
 

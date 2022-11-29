@@ -87,7 +87,7 @@
 
 		this._core.$element.toggleClass('owl-hidden', !this._visible);
 
-		this._visible && (this._core.invalidate('width') && this._core.refresh());
+		
 	};
 
 	/**
@@ -102,7 +102,7 @@
 			this._core.$element.off(handler, this._handlers[handler]);
 		}
 		for (property in Object.getOwnPropertyNames(this)) {
-			typeof this[property] != 'function' && (this[property] = null);
+			
 		}
 	};
 

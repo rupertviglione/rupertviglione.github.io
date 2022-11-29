@@ -197,7 +197,7 @@ const noop = () => {}
  */
 const reflow = element => {
   // eslint-disable-next-line no-unused-expressions
-  element.offsetHeight
+  
 }
 
 const getjQuery = () => {

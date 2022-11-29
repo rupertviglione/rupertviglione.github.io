@@ -40,7 +40,7 @@
 
 	if (Modernizr.csstransitions) {
 		/* jshint -W053 */
-		$.support.transition = new String(Modernizr.prefixed('transition'))
+		$.support.transition =  String(Modernizr.prefixed('transition'))
 		$.support.transition.end = events.transition.end[ $.support.transition ];
 		// fix transitionend support detection, which does not work properly for older Android versions,
         	// as it does not give the prefixed event name. here we use Modernizr to ensure the correct event.
@@ -54,13 +54,13 @@
 
 	if (Modernizr.cssanimations) {
 		/* jshint -W053 */
-		$.support.animation = new String(Modernizr.prefixed('animation'))
+		$.support.animation =  String(Modernizr.prefixed('animation'))
 		$.support.animation.end = events.animation.end[ $.support.animation ];
 	}
 
 	if (Modernizr.csstransforms) {
 		/* jshint -W053 */
-		$.support.transform = new String(Modernizr.prefixed('transform'));
+		$.support.transform =  String(Modernizr.prefixed('transform'));
 		$.support.transform3d = Modernizr.csstransforms3d;
 	}
 })(window.Zepto || window.jQuery, window.Modernizr, window, document);

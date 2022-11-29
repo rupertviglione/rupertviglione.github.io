@@ -237,7 +237,7 @@
 			this._core[override] = this._overrides[override];
 		}
 		for (property in Object.getOwnPropertyNames(this)) {
-			typeof this[property] != 'function' && (this[property] = null);
+			
 		}
 	};
 
@@ -270,7 +270,7 @@
 					if (Math.min(maximum, i - lower) === maximum) {
 						break;
 					}
-					j = 0, ++k;
+					
 				}
 				j += this._core.mergers(this._core.relative(i));
 			}

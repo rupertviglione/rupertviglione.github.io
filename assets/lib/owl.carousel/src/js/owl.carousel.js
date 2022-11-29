@@ -288,7 +288,7 @@
 					'margin-right': rtl ? '' : margin
 				};
 
-			!grid && this.$stage.children().css(css);
+			
 
 			cache.css = css;
 		}
@@ -397,7 +397,7 @@
 	}, {
 		filter: [ 'items' ],
 		run: function() {
-			this._coordinates.length < 1 && this.$stage.removeAttr('style');
+			
 		}
 	}, {
 		filter: [ 'width', 'items', 'settings' ],
@@ -635,7 +635,7 @@
 
 		this._invalidated = {};
 
-		!this.is('valid') && this.enter('valid');
+		
 	};
 
 	/**
@@ -933,7 +933,7 @@
 	Owl.prototype.animate = function(coordinate) {
 		var animate = this.speed() > 0;
 
-		this.is('animating') && this.onTransitionEnd();
+		
 
 		if (animate) {
 			this.enter('animating');
@@ -1009,7 +1009,7 @@
 	Owl.prototype.invalidate = function(part) {
 		if ($.type(part) === 'string') {
 			this._invalidated[part] = true;
-			this.is('valid') && this.leave('valid');
+			
 		}
 		return $.map(this._invalidated, function(v, i) { return i });
 	};
@@ -1329,7 +1329,7 @@
 		} else if (document.documentElement && document.documentElement.clientWidth) {
 			width = document.documentElement.clientWidth;
 		} else {
-			console.warn('Can not detect viewport width.');
+			
 		}
 		return width;
 	};
@@ -1383,8 +1383,8 @@
 		content = this.prepare(content);
 
 		if (this._items.length === 0 || position === this._items.length) {
-			this._items.length === 0 && this.$stage.append(content);
-			this._items.length !== 0 && this._items[position - 1].after(content);
+			
+			
 			this._items.push(content);
 			this._mergers.push(Number(content.find('[data-merge]').addBack('[data-merge]').attr('data-merge')) || 1);
 		} else {
@@ -1393,7 +1393,7 @@
 			this._mergers.splice(position, 0, Number(content.find('[data-merge]').addBack('[data-merge]').attr('data-merge')) || 1);
 		}
 
-		this._items[current] && this.reset(this._items[current].index());
+		
 
 		this.invalidate('items');
 
@@ -1437,7 +1437,7 @@
 				element.attr('src', e.target.src);
 				element.css('opacity', 1);
 				this.leave('pre-loading');
-				!this.is('pre-loading') && !this.is('initializing') && this.refresh();
+				
 			}, this)).attr('src', element.attr('src') || element.attr('data-src') || element.attr('data-src-retina'));
 		}, this));
 	};

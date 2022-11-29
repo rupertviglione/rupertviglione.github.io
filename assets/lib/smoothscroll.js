@@ -156,7 +156,7 @@
      */
     function scrollArray(elem, left, top, delay) {
         
-        delay || (delay = 1000);
+        
         directionCheck(left, top);
     
         if (options.accelerationMax != 1) {

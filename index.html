@@ -57,16 +57,16 @@
     <link href="/assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="/assets/css/colors/default.css" rel="stylesheet">
     <!-- Google tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-238892451-2">
+<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-238892451-2">
 </script>
-<script>
+<script defer>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-238892451-2');
 </script>
-<script src="//code.tidio.co/2zx8zsxrxicj0knndauccfyavxa1ewao.js" async></script>
+<script defer src="//code.tidio.co/2zx8zsxrxicj0knndauccfyavxa1ewao.js"></script>
 <!-- Begin Sendinblue Form -->
 <!-- START - We recommend to place the below code in head tag of your website html  -->
 <style>
@@ -180,7 +180,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item special active" id="1" data-bs-interval="7000">
-          <img src="assets/images/seivagif.gif" class="d-block w-100 img-fluid" alt="...">
+          <video autoplay class="d-block w-100 img-fluid" alt="...">  <source src="assets/images/seivagif.mp4" type="video/mp4"></video>
         </div>
         <div class="carousel-item" id="2" data-bs-interval="4000">
           <img src="assets/images/banner/cidades.webp" class="d-block w-100 img-fluid" title="La Città Infitina © Mao Fusina, licensed under the Creative Commons Attribution-Share Alike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/deed.en)" alt="La Città Infitina © Mao Fusina, licensed under the Creative Commons  Attribution-Share Alike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/deed.en)">
@@ -314,24 +314,7 @@
     <script src="/assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="/assets/js/plugins.js"></script>
     <script src="/assets/js/main.js">   import 'media-chrome';</script>
-    <script>
-   
 
-      var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {    
-    document.getElementById("navbar").style.visibility ="visible";  
-    
-    
-  } else {
-    document.getElementById("navbar").style.visibility ="hidden";  
-    
-    
-  }
-  prevScrollpos = currentScrollPos;
-}
-    </script>
         <script>
           $(document).ready(function() {
             $("#toggle").click(function() {
@@ -374,7 +357,7 @@ window.onscroll = function() {
             </script>
             <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
             
-            <script src="https://www.google.com/recaptcha/api.js?hl=pt"></script>
+            <script defer src="https://www.google.com/recaptcha/api.js?hl=pt"></script>
             
             <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
             <!-- End Sendinblue Form -->
@@ -383,7 +366,7 @@ window.onscroll = function() {
   audio.volume = 0.2;
 </script>
 
-<script>
+<script defer>
   class ClassWatcher {
 
 constructor(targetNode, classToWatch, classAddedCallback, classRemovedCallback) {

@@ -18,7 +18,7 @@
  * ========================================================== */
 
 
-!function ($) {
+!(function ($) {
 
   "use strict"; // jshint ;_;
 
@@ -57,4 +57,4 @@
 
   })
 
-}(window.jQuery);
+}(window.jQuery));

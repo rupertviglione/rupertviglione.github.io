@@ -18,7 +18,7 @@
  * ======================================================== */
 
 
-!function ($) {
+!(function ($) {
 
   "use strict"; // jshint ;_;
 
@@ -141,4 +141,4 @@
     $(this).tab('show')
   })
 
-}(window.jQuery);
+}(window.jQuery));

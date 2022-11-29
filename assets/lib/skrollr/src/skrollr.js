@@ -110,7 +110,7 @@
 
 		for(var k in style) {
 			//We check the key and if the key is a number, we check the value as well, because safari's getComputedStyle returns some weird array-like thingy.
-			theCSSPrefix = (k.match(rxPrefixes) || (+k == k && style[k].match(rxPrefixes)));
+			theCSSPrefix = (k.match(rxPrefixes) || (Number(k) == k && style[k].match(rxPrefixes)));
 
 			if(theCSSPrefix) {
 				break;
@@ -604,7 +604,7 @@
 	 * Returns if an animation caused by animateTo is currently running.
 	 */
 	Skrollr.prototype.isAnimatingTo = function() {
-		return !!_scrollAnimation;
+		return Boolean(_scrollAnimation);
 	};
 
 	Skrollr.prototype.isMobile = function() {
@@ -1236,7 +1236,7 @@
 
 		//Now parse ANY number inside this string and create a format string.
 		val = val.replace(rxNumericValue, function(n) {
-			numbers.push(+n);
+			numbers.push(Number(n));
 			return '{?}';
 		});
 
@@ -1408,7 +1408,7 @@
 				style[prop] = val;
 			} else {
 				//Floor the number.
-				style[prop] = '' + (val | 0);
+				style[prop] = String(val | 0);
 			}
 		}
 		//#64: "float" can't be set across browsers. Needs to use "cssFloat" for all except IE.
@@ -1657,7 +1657,7 @@
 	};
 
 	var _now = Date.now || function() {
-		return +new Date();
+		return Number(new Date());
 	};
 
 	var _keyFrameComparator = function(a, b) {

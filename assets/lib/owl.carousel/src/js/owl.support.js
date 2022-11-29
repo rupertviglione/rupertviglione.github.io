@@ -31,16 +31,16 @@
 		},
 		tests = {
 			csstransforms: function() {
-				return !!test('transform');
+				return Boolean(test('transform'));
 			},
 			csstransforms3d: function() {
-				return !!test('perspective');
+				return Boolean(test('perspective'));
 			},
 			csstransitions: function() {
-				return !!test('transition');
+				return Boolean(test('transition'));
 			},
 			cssanimations: function() {
-				return !!test('animation');
+				return Boolean(test('animation'));
 			}
 		};
 

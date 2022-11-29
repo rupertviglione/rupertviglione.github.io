@@ -40,7 +40,7 @@ function noop() {}
 
 var logError = typeof console == 'undefined' ? noop :
   function( message ) {
-    console.error( message );
+    
   };
 
 // -------------------------- measurements -------------------------- //

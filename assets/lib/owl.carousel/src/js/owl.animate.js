@@ -112,7 +112,7 @@
 			this.core.$element.off(handler, this.handlers[handler]);
 		}
 		for (property in Object.getOwnPropertyNames(this)) {
-			typeof this[property] != 'function' && (this[property] = null);
+			
 		}
 	};
 

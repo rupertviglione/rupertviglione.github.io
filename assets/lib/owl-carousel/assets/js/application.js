@@ -1,5 +1,5 @@
 $(function(){
-    window.prettyPrint && prettyPrint();
+    
 }(window.jQuery));
 
 jQuery(document).ready(function($) {

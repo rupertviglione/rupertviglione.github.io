@@ -1329,7 +1329,7 @@
 		} else if (document.documentElement && document.documentElement.clientWidth) {
 			width = document.documentElement.clientWidth;
 		} else {
-			console.warn('Can not detect viewport width.');
+			
 		}
 		return width;
 	};

@@ -41,7 +41,7 @@ if (typeof Object.create !== "function") {
                     base.options.jsonSuccess.apply(this, [data]);
                 } else {
                     for (i in data.owl) {
-                        if (data.owl.hasOwnProperty(i)) {
+                        if (Object.prototype.hasOwnProperty.call(data.owl, i)) {
                             content += data.owl[i].item;
                         }
                     }

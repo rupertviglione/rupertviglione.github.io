@@ -3742,6 +3742,8 @@ font-style:italic;
   }
 }
 @media (max-width: 767px) {
+  .pcvid {
+    display: none;  }
  
   .control-button.play-button {
     height: 30px;
@@ -3754,8 +3756,11 @@ font-style:italic;
 }
 @media (min-width:768px) {
 
+.pcvid {
+display: inline-flex;}
 
-
+.mobvid {
+  display: none;  }
   .carousel-caption {
     top: 20%;
   }

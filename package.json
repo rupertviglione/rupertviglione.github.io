@@ -26,6 +26,7 @@
     "owl.carousel": "^2.3.4",
     "owl.carousel2": "^2.2.2",
     "smoothscroll-polyfill": "^0.4.4",
-    "vue-video-section": "^1.0.2"
+    "vue-video-section": "^1.0.2",
+    "wrangler": "^2.5.0"
   }
 }

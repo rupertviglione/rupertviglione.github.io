@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Installation actions for Glider.js.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function gliderjs_requirements($phase) {
+  $requirements = [];
+
+  // Check to see if the glider.js library is available.
+  if ($phase == 'runtime') {
+    $glider_found = FALSE;
+    $once_found = FALSE;
+    if (\Drupal::hasService('library.libraries_directory_file_finder')) {
+      /** @var \Drupal\Core\Asset\LibrariesDirectoryFileFinder $library_file_finder */
+      $library_file_finder = \Drupal::service('library.libraries_directory_file_finder');
+      $glider_found = (bool) $library_file_finder->find('glider-js/glider.min.js');
+      $once_found = (bool) $library_file_finder->find('drupal--once/dist/once.min.js');
+    }
+
+    if (!$glider_found) {
+      $requirements['gliderjs'] = [
+        'title' => t('Glider.js'),
+        'description' => t('Glider.js library not found. Please consult the gliderjs modules README.md file for installation instructions.'),
+        'severity' => REQUIREMENT_ERROR,
+      ];
+    }
+    if (!$once_found) {
+      $requirements['drupal_once'] = [
+        'title' => t('Drupal Once'),
+        'description' => t('Drupal Once library not found. Please consult the gliderjs modules README.md file for installation instructions.'),
+        'severity' => REQUIREMENT_ERROR,
+      ];
+    }
+  }
+  return $requirements;
+}

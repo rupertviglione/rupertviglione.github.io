@@ -1,0 +1,15 @@
+name: Glider.js
+description: Allow the creation of sliders using the Glider.js javascript library.
+package: Content
+
+type: module
+core_version_requirement: ^8.9 || ^9
+
+dependencies:
+  - drupal:views
+  - drupal:image
+
+# Information added by Drupal.org packaging script on 2022-05-18
+version: '1.0.0'
+project: 'gliderjs'
+datestamp: 1652859942

@@ -1,0 +1,11 @@
+gliderjs:
+  js:
+    /libraries/drupal--once/dist/once.min.js: { minified: true,  weight: -3 }
+    /libraries/glider-js/glider.min.js: { minified: true,  weight: -2 }
+    js/gliderjs.config.js: { minified: true, weight: -1 }
+  css:
+    component:
+      /libraries/glider-js/glider.min.css: { minified: true }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

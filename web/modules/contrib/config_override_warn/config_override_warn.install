@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Install and update functions for the config_override_warn module.
+ */
+
+/**
+ * Save the new settings.
+ */
+function config_override_warn_update_8101() {
+  \Drupal::configFactory()->getEditable('config_override_warn.settings')->setData([
+    'show_values' => TRUE,
+  ])->save();
+}

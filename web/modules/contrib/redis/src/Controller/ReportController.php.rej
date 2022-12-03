@@ -1,0 +1,90 @@
+***************
+*** 2,7 ****
+  
+  namespace Drupal\redis\Controller;
+  
+  use Drupal\Core\Controller\ControllerBase;
+  use Drupal\Core\Datetime\DateFormatterInterface;
+  use Drupal\Core\Url;
+--- 2,8 ----
+  
+  namespace Drupal\redis\Controller;
+  
++ use Drupal\Component\Utility\Unicode;
+  use Drupal\Core\Controller\ControllerBase;
+  use Drupal\Core\Datetime\DateFormatterInterface;
+  use Drupal\Core\Url;
+***************
+*** 297,305 ****
+          yield from $keys;
+        }
+      }
+      elseif ($this->redis instanceof \Predis\Client) {
+        yield from new Keyspace($this->redis, $match, $count);
+      }
+    }
+  
+  }
+--- 306,367 ----
+          yield from $keys;
+        }
+      }
++     elseif ($this->redis instanceof \RedisCluster) {
++       $master = current($this->redis->_masters());
++       while ($keys = $this->redis->scan($it, $master, $this->getPrefix() . '*', $count)) {
++         yield from $keys;
++       }
++     }
+      elseif ($this->redis instanceof \Predis\Client) {
+        yield from new Keyspace($this->redis, $match, $count);
+      }
+    }
+  
++   /**
++    * Wrapper to get various statistical information from Redis
++    *
++    * @return array
++    */
++   protected function info() {
++     $normalized_info = [];
++     if ($this->redis instanceof \RedisCluster) {
++       $master = current($this->redis->_masters());
++       $info = $this->redis->info($master);
++     }
++     else {
++       $info = $this->redis->info();
++     }
++ 
++     $normalized_info['redis_version'] = $info['redis_version'] ?? $info['Server']['redis_version'];
++     $normalized_info['redis_mode'] = $info['redis_mode'] ?? $info['Server']['redis_mode'];
++     $normalized_info['connected_clients'] = $info['connected_clients'] ?? $info['Clients']['connected_clients'];
++     if ($this->redis instanceof \RedisCluster) {
++       $master = current($this->redis->_masters());
++       $normalized_info['db_size'] = $this->redis->dbSize($master);
++     }
++     else {
++       $normalized_info['db_size'] = $this->redis->dbSize();
++     }
++     $normalized_info['used_memory'] = $info['used_memory'] ?? $info['Memory']['used_memory'];
++     $normalized_info['used_memory_human'] = $info['used_memory_human'] ?? $info['Memory']['used_memory_human'];
++ 
++     if (empty($info['maxmemory_policy'])) {
++       $memory_config = $this->redis->config('get', 'maxmemory*');
++       $normalized_info['maxmemory_policy'] = $memory_config['maxmemory-policy'];
++       $normalized_info['maxmemory'] = $memory_config['maxmemory'];
++     }
++     else {
++       $normalized_info['maxmemory_policy'] = $info['maxmemory_policy'];
++       $normalized_info['maxmemory'] = $info['maxmemory'];
++     }
++ 
++     $normalized_info['uptime_in_seconds'] = $info['uptime_in_seconds'] ?? $info['Server']['uptime_in_seconds'];
++     $normalized_info['total_net_output_bytes'] = $info['total_net_output_bytes'] ?? $info['Stats']['total_net_output_bytes'];
++     $normalized_info['total_net_input_bytes'] = $info['total_net_input_bytes'] ?? $info['Stats']['total_net_input_bytes'];
++     $normalized_info['total_commands_processed'] = $info['total_commands_processed'] ?? $info['Stats']['total_commands_processed'];
++     $normalized_info['total_connections_received'] = $info['total_connections_received'] ?? $info['Stats']['total_connections_received'];
++ 
++     return $normalized_info;
++   }
++ 
+  }

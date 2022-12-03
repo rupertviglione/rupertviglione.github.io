@@ -5438,7 +5438,6 @@ jQuery.Event.prototype = {
 		this.isDefaultPrevented = returnTrue;
 
 		if ( e && !this.isSimulated ) {
-			e.preventDefault();
 		}
 	},
 	stopPropagation: function() {

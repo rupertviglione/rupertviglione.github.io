@@ -1,9 +1,0 @@
-# Schema for the configuration files of the Configuration Override Warn module.
-
-config_override_warn.settings:
-  type: config_object
-  label: 'Configuration Override Warn settings'
-  mapping:
-    show_values:
-      type: boolean
-      label: 'Show overridden values'

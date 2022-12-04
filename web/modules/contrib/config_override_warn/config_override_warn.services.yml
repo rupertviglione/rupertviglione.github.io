@@ -1,4 +1,0 @@
-services:
-  config_override_warn.form_overrides:
-    class: Drupal\config_override_warn\FormOverrides
-    arguments: ['@config.factory', '@config.typed']

@@ -1,2 +1,5 @@
 User-Agent: *
 Allow: /
+Sitemap: https://seivaatelier.pt/sitemap_index.xml
+Sitemap: https://seivaatelier.pt/sitemap.xml
+Sitemap: https://seivaatelier.pt/sitemap_index.xml.gz

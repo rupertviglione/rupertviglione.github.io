@@ -22,3 +22,8 @@ ExpiresDefault "access 1 month"
 
 AddType image/svg+xml svg svgz
 AddEncoding gzip svgz
+
+ewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html

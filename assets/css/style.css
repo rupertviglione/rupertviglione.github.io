@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
 	Bootstrap specific and video
 --------------------------------------------------------------*/
-
+.carousel-control-prev, .carousel-control-next {
+  display:none;
+}
 
 .carousel-caption {
  top:10%;

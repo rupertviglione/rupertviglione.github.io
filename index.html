@@ -35,11 +35,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!--  
-    Stylesheets
-    =============================================
-    
-    -->
+
+    <script src="/assets/lib/lazysizes/lazysizes.min.js"></script>
+
     <!-- Default stylesheets-->
     <link href="/assets/lib/bootstrap copy/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -112,12 +110,14 @@
 <!--  END - We recommend to place the above code in head tag of your website html -->
   </head>
   <body class="index" data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <h1 style="display:none">SEIVA Atelier - página inicial - Educação, Ambiente, Ecodesign, Yoga</h1>
     <main>
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
       
       <nav class="navbar navbar-expand-md fixed-top navbar-light" id="navbar">
+        <h1 style="display:none">Menu de navegação da página Seiva Atelier - Início, Quem Somos, Serviço Educativo, Yoga, Ecodesign, Bazar</h1>
         <div class="container-fluid navbargreen" id="navbarindex">
           <a class="navbar-brand" href="#"></a>
           <button type="button" class="navbar-toggler" data-bs-toggle="modal" type="button" data-bs-target="#menuModal">
@@ -150,7 +150,7 @@
   
             <div class="modal-body">
               <ul class="navbar-nav">
-      <li><a href="index.html"><img id="seivabrandmobile" src="assets/images/seiva.webp" alt="logótipo seiva atelier"></a></li>
+      <li><a href="index.html"><img id="seivabrandmobile" class="lazyload" data-src="assets/images/seiva.webp" alt="logótipo seiva atelier"></a></li>
                 <li><a href="/index.html" style="color:#fbf5e9!important;">INÍCIO</a></li>
                 <li class="">
                    <a href="/seivaatelier.html"   style="color:#fbf5e9!important;">QUEM SOMOS</a>
@@ -183,7 +183,7 @@
           <video autoplay class="d-block w-100 img-fluid" alt="Animação do logo da Seiva em fade in">  <source class="pcvid" src="assets/images/seivagif.mp4" type="video/mp4"><source class="mobvid" src="assets/images/seivagifmob.mp4" type="video/mp4">/video>
         </div>
         <div class="carousel-item" id="2" data-bs-interval="4000">
-          <img src="assets/images/banner/cidades.webp" class="d-block w-100 img-fluid" title="La Città Infitina © Mao Fusina, licensed under the Creative Commons Attribution-Share Alike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/deed.en)" alt="La Città Infitina © Mao Fusina, licensed under the Creative Commons  Attribution-Share Alike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/deed.en)">
+          <img class="lazyload" data-src="assets/images/banner/cidades.webp" class="d-block w-100 img-fluid" title="La Città Infitina © Mao Fusina, licensed under the Creative Commons Attribution-Share Alike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/deed.en)" alt="La Città Infitina © Mao Fusina, licensed under the Creative Commons  Attribution-Share Alike 4.0 International license (https://creativecommons.org/licenses/by-sa/4.0/deed.en)">
           <div class="carousel-caption d-md-block col-10">
             <h5>
               <span class="row justify-content-center ntitle">Cidades</span>
@@ -193,7 +193,7 @@
         </div>
       </div>
         <div class="carousel-item" id="3" data-bs-interval="4000">
-          <img src="assets/images/banner/educacao.webp" class="d-block w-100 img-fluid" alt="Fotografia de cabeçalho - Serviço Educativo">
+          <img class="lazyload" data-src="assets/images/banner/educacao.webp" class="d-block w-100 img-fluid" alt="Fotografia de cabeçalho - Serviço Educativo">
           <div class="carousel-caption d-md-block col-10">
             <h5>
               <span class="row justify-content-center ntitle">Serviço</span>
@@ -203,7 +203,7 @@
           </div>
         </div>
         <div class="carousel-item" id="4" data-bs-interval="4000">
-          <img src="assets/images/banner/yoga.webp" class="d-block w-100 img-fluid" alt="Fotografia de cabeçalho - Aulas de Prana Yoga">
+          <img class="lazyload" data-src="assets/images/banner/yoga.webp" class="d-block w-100 img-fluid" alt="Fotografia de cabeçalho - Aulas de Prana Yoga">
           <div class="carousel-caption d-md-block col-10">
 <h5>
   <span class="row justify-content-center ntitle">Aulas de</span>
@@ -251,6 +251,7 @@
 
 
   <section class="module pb-0 maincontent">
+    <h1 style="display:none">Breve apresentação Seiva Atelier, inscrição newsletter.</h1>
 
       <div class="main maincontent" style="margin-top:20px;">
      
@@ -273,6 +274,7 @@
       </section>
 
       <section class="module-small footer">
+        <h1 style="display:none">Rodapé Seiva Atelier - Contactos, Morada - Encontros com Vida</h1>
           <div class="container">
             <div class="row footer">
               <div class="col-6">
@@ -422,6 +424,6 @@ let classWatcher = new ClassWatcher(targetNode, 'active', workOnClassAdd, workOn
 
 
 </script>
-
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Seiva Atelier","url":"https://seivaatelier.pt","address":"Lisboa, Portugal","sameAs":["https://www.facebook.com/seivaatelier","https://www.instagram.com/seiva.atelier/"]}</script>
    </body>
 </html>
